@@ -36,8 +36,6 @@
 (load-theme 'gl-dark t)
 (enable-theme 'gl-dark)
 
-;;(xterm-mouse-mode 1)
-
 ;; better find-file
 (ido-mode t)
 (setq ido-enable-flex-matching t)
