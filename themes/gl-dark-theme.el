@@ -24,7 +24,7 @@
  '(minibuffer-prompt ((t (:foreground "#ffffff" :bold t))))
  '(font-lock-warning-face ((t (:foreground "Red" :bold t))))
  ;;'(linum ((t (:foreground "#fda331" :background "#000000" :underline nil))))	
- '(linum ((t (:foreground "#d8d8d8" :background "#000000" :underline nil))))	
+ '(linum ((t (:foreground "#b0b0b0" :background "#000000" :underline nil))))	
 
  '(ido-subdir ((t (:foreground "#a1c659")))) 
  '(ido-first-match ((t (:foreground "#ffffff" :bold t :underline t))))
