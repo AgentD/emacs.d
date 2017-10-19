@@ -6,7 +6,7 @@
 (global-set-key (kbd "M-n") 'forward-paragraph)
 
 (global-set-key (kbd "<f11>") 'global-linum-mode)
-(global-set-key (kbd "<f9") 'font-lock-mode)
+(global-set-key (kbd "<f9>") 'font-lock-mode)
 (global-set-key (kbd "s-s") 'save-buffer)
 
 ;;buffer switching 
