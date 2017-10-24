@@ -21,7 +21,7 @@
  '(font-lock-variable-name-face ((t (:foreground "#eeeeec"))))
  '(minibuffer-prompt ((t (:foreground "#ffffff" :bold t))))
  '(font-lock-warning-face ((t (:foreground "Red" :bold t))))
- '(linum ((t (:foreground "#fda331" :underline nil))))
+ '(linum ((t (:foreground "#0080fa" :underline nil))))
 
  '(ido-subdir ((t (:foreground "#0080fa")))) 
  '(ido-first-match ((t (:foreground "#ffffff" :bold t :underline t))))
