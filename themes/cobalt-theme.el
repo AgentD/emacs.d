@@ -27,7 +27,12 @@
  '(ido-first-match ((t (:foreground "#ffffff" :bold t :underline t))))
  '(ido-only-match ((t (:foreground "#ffcc33")))) 
  '(ido-indicator ((t (:foreground "#ffffff")))) 
- '(ido-incomplete-regexp ((t (:foreground "#ffffff")))) 
+ '(ido-incomplete-regexp ((t (:foreground "#ffffff"))))
+
+ 
+ '(diff-added ((t (:foreground "green"))))
+ '(diff-removed ((t (:foreground "red"))))
+ '(diff-header ((t (nil))))
  )
 
 ;;;###autoload

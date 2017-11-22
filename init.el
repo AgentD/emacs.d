@@ -33,8 +33,8 @@
 ;; custom color-theme
 (add-to-list 'custom-theme-load-path
 			              (file-name-as-directory "~/.emacs.d/themes"))
-(load-theme 'xcode-dark t)
-(enable-theme 'xcode-dark)
+(load-theme 'gl-dark t)
+(enable-theme 'gl-dark)
 
 ;; better find-file
 (ido-mode t)
