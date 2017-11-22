@@ -9,7 +9,7 @@
  '(cursor ((t (:background "white"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#121212"))))
- '(mode-line ((t (:foreground "#000000" :background "#d8d8d8" ))))
+ '(mode-line ((t (:foreground "#d8d8d8" :background "#292929" ))))
  '(region ((t (:background "#00077a"))))
  '(font-lock-builtin-face ((t (:foreground "#4c99eb"))))
  '(font-lock-comment-face ((t (:foreground "#ff6805"))))
