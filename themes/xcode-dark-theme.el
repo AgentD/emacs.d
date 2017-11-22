@@ -24,7 +24,7 @@
  ;;'(linum ((t (:foreground "#fda331" :background "#000000" :underline nil))))	
  '(linum ((t (:foreground "#b0b0b0" :background "#000000" :underline nil))))	
 
- '(ido-subdir ((t (:foreground "#ff47f3")))) 
+ '(ido-subdir ((t (:foreground "#d381c3")))) 
  '(ido-first-match ((t (:foreground "#ffffff" :bold t :underline t))))
  '(ido-only-match ((t (:foreground "#ffcc33")))) 
  '(ido-indicator ((t (:foreground "#ffffff")))) 
