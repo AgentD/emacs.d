@@ -11,7 +11,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (flx-ido markdown-mode auto-complete-auctex jdee haskell-mode fill-column-indicator auto-complete auctex)))
+    (yasnippet flx-ido markdown-mode auto-complete-auctex jdee haskell-mode fill-column-indicator auto-complete auctex)))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(size-indication-mode t)
