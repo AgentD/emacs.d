@@ -47,6 +47,7 @@
 (load-library "custom-keys")
 (load-library "fci-mode")
 (load-library "custom-editing")
+(load-library "snippets")
 ;; load emacs goodies 
 (load-library "emacs-goodies-el")
 
