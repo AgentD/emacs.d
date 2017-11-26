@@ -20,3 +20,4 @@
 (global-set-key (kbd "<s-right>") 'enlarge-window-horizontally)
 
 (global-set-key (kbd "M-k") 'compile)
+(global-set-key (kbd "<f8>") 'compile)
