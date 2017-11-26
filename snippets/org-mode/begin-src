@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: bgsrc
+# key: bgsrc
+# --
+#+BEGIN_SRC
+
+#+END_SRC
