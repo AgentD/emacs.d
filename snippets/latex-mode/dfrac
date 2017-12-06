@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: dfrac
+# key: frac
+# --
+\dfrac{}{}

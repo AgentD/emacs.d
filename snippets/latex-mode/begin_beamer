@@ -1,0 +1,40 @@
+# -*- mode: snippet -*-
+# name: Begin Beamer
+# key: bgbeamer
+# --
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath, capt-of,lipsum}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage[euler]{textgreek}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{subcaption}
+\usepackage{ragged2e}
+\usepackage[version=4]{mhchem}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+
+\usetheme{Copenhagen}
+\hypersetup{
+    colorlinks=true, % make the links colored
+    linkcolor=black, % color TOC links in blue
+    urlcolor=red, % color URLs in red
+    linktoc=all % 'all' will create links for everything in the TOC
+}
+
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+
+\end{document}
