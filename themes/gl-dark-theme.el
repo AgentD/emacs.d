@@ -8,7 +8,7 @@
  '(mouse ((t (:foreground "black"))))
  '(cursor ((t (:background "white"))))
  '(border ((t (:foreground "blue"))))
- '(fringe ((t (:background "#292929"))))
+ '(fringe ((t (:background "#151515"))))
  '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
  '(region ((t (:background "#00077a"))))
  '(font-lock-builtin-face ((t (:foreground "#6fb3d2"))))
