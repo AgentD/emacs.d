@@ -26,15 +26,18 @@
 \usetheme{Copenhagen}
 \hypersetup{
     colorlinks=true, % make the links colored
-    linkcolor=black, % color TOC links in blue
+    linkcolor=white, % color TOC links in blue
     urlcolor=red, % color URLs in red
     linktoc=all % 'all' will create links for everything in the TOC
 }
 
 \title{}
+\subtitle{}
 \author{}
 \date{}
 
 \begin{document}
+\frame{\titlepage}
+
 
 \end{document}
