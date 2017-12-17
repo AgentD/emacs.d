@@ -23,4 +23,5 @@
 (global-set-key (kbd "<f8>") 'compile)
 (global-set-key (kbd "C-c p") 'org-latex-export-to-pdf)
 (global-set-key (kbd "<f7>") 'org-latex-export-to-pdf)
+(global-set-key (kbd "C-<print>") 'org-latex-export-to-pdf)
 
