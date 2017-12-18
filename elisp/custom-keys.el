@@ -11,7 +11,9 @@
 
 ;;buffer switching 
 (global-set-key (kbd "<f6>") 'next-buffer)
+(global-set-key (kbd "M-<next>") 'next-buffer)
 (global-set-key (kbd "<f5>") 'previous-buffer)
+(global-set-key (kbd "M-<prior>") 'previous-buffer)
 
 ;;window resizing
 (global-set-key (kbd "<s-left>") 'shrink-window-horizontally)
