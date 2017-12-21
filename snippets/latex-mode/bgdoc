@@ -9,6 +9,7 @@
 \usepackage{amsmath, capt-of,lipsum}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage{booktabs}
 \usepackage{multicol}
 \usepackage{textcomp}
 \usepackage{wrapfig}
