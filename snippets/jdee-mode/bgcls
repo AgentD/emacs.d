@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: begin class
+# key: bgcls
+# --
+public class  {
+        public static void main(String[] args) {
+
+	}
+}
