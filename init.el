@@ -9,7 +9,7 @@
  '(display-battery-mode t)
  '(display-time-mode t)
  '(inhibit-startup-screen t)
- '(jdee-server-dir "/home/gabriel/.emacs.d/jdee-jar")
+ '(jdee-server-dir "~/.emacs.d/jdee-jar")
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
