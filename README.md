@@ -4,7 +4,7 @@
 
 	$ git clone git://github.com/Minato4869/emacs.d ~/.emacs.d
 	$ cd ~/.emacs.d
-	$ mkdir backup autosave
+	$ mkdir backup autosave /* important */
 
 ## Keybinds
 	C = Control
@@ -26,13 +26,13 @@
 	s-Down  Makes the current window smaller.
 	s-Right Makes the current window wider.
 ### Compilation
-	s-k; F8		Run a compiler asynchronously under Emacs, with error 
-			messages going to the \*compilation\* buffer.
-	s-S-k; M-F8     Invoke a compiler with the same command as in the last
+	s-k F8		Run a compiler asynchronously under Emacs, with error 
+			messages going to the *compilation* buffer.
+	s-S-kM-F8       Invoke a compiler with the same command as in the last
 			invocation of 'compile'.
-	C-F8; s-C-k	Kill the running compilation subprocess.
+	C-F8;s-C-k	Kill the running compilation subprocess.
 ### Org-Mode
-	F7; C-c PrtSc; M-PrtSc	Export as LaTeX and then process to PDF.
+	F7;C-c PrtSc;M-PrtSc	Export as LaTeX and then process to PDF.
 ### Miscellaneous
 	PrtSc	Opens the menu bar
 	F11	Toggles Line Numbers in the current buffer.
