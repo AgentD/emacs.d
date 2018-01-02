@@ -6,7 +6,7 @@
 	$ cd ~/.emacs.d
 	$ mkdir backup autosave /* important */
 
-## Keybinds
+## Custom Keybinds
 	C = Control
 	M = Meta
 	s = Super
