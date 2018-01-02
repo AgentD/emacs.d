@@ -4,7 +4,7 @@
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 
-(global-set-key (kbd "<print>") 'menu-bar-open) 
+(global-set-key (kbd "<f1>") 'menu-bar-open) 
 (global-set-key (kbd "<f11>") 'linum-mode)
 (global-set-key (kbd "<f9>") 'font-lock-mode)
 (global-set-key (kbd "s-s") 'save-buffer)
