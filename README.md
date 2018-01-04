@@ -34,7 +34,7 @@
 ### Org-Mode
 	F7, C-c PrtSc, M-PrtSc	Export as LaTeX and then process to PDF.
 ### Miscellaneous
-	PrtSc	Opens the menu bar
+	F1	Opens the menu bar
 	F11	Toggles Line Numbers in the current buffer.
 	F12	Toggles the Fill-Column-Indicator in the current buffer.
 	s-S 	Saves the current buffer.
