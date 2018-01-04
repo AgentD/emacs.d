@@ -29,6 +29,9 @@
 (global-set-key (kbd "M-<f8>") 'recompile)
 (global-set-key (kbd "C-<f8>") 'kill-compilation)
 (global-set-key (kbd "s-C-k") 'kill-compilation)
+(global-set-key (kbd "C-=") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
+(global-set-key (kbd "C-0") 'text-scale-adjust)
 
 (add-hook 'org-mode-hook (lambda()
 (local-set-key (kbd "<f7>") 'org-latex-export-to-pdf)

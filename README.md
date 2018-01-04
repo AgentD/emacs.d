@@ -38,3 +38,6 @@
 	F11	Toggles Line Numbers in the current buffer.
 	F12	Toggles the Fill-Column-Indicator in the current buffer.
 	s-S 	Saves the current buffer.
+	C-=	Increase font size.
+	C--	Decrease font size.
+	C-0	Reset font size.
