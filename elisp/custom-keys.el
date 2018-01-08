@@ -36,5 +36,6 @@
 (add-hook 'org-mode-hook (lambda()
 (local-set-key (kbd "<f7>") 'org-latex-export-to-pdf)
 	(local-set-key (kbd "C-c <print>") 'org-latex-export-to-pdf)
+	(local-set-key (kbd "C-<print>") 'org-latex-export-to-pdf)
 	(local-set-key (kbd "M-<print>") 'org-latex-export-to-pdf)))
 
