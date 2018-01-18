@@ -23,12 +23,13 @@
 (global-set-key (kbd "<s-down>") 'shrink-window)
 (global-set-key (kbd "<s-right>") 'enlarge-window-horizontally)
 
-(global-set-key (kbd "s-k") 'compile)
-(global-set-key (kbd "<f8>") 'compile)
-(global-set-key (kbd "s-S-k") 'recompile)
-(global-set-key (kbd "M-<f8>") 'recompile)
+(global-set-key (kbd "s-k") 'recompile)
+(global-set-key (kbd "<f8>") 'recompile)
+(global-set-key (kbd "s-S-k") 'compile)
+(global-set-key (kbd "M-<f8>") 'compile)
 (global-set-key (kbd "C-<f8>") 'kill-compilation)
 (global-set-key (kbd "s-C-k") 'kill-compilation)
+
 (global-set-key (kbd "C-=") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
 (global-set-key (kbd "C-0") 'text-scale-adjust)
