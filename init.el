@@ -36,9 +36,8 @@
 (add-to-list 'custom-theme-load-path
 			              (file-name-as-directory "~/.emacs.d/themes"))
 (load-theme 'gl-dark t)
-;;(load-theme 'xcode-dark t)
+
 (enable-theme 'gl-dark)
-;;(enable-theme 'xcode-dark)
 
 ;; better find-file
 (ido-mode t)
@@ -47,7 +46,7 @@
 
 ;; custom evil mode
 ;;(load-library "evil-mode-custom") 
-
+(load-library "custom-buffer-mode")
 (load-library "custom-keys")
 (load-library "fci-mode")
 (load-library "custom-editing")
