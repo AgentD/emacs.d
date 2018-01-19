@@ -12,3 +12,5 @@
 (setq-default fill-column 80)
 (setq mouse-autoselect-window t)
 (xterm-mouse-mode 1)
+(fset 'yes-or-no-p 'y-or-n-p)
+
