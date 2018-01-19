@@ -16,6 +16,11 @@
 (global-set-key (kbd "<f5>") 'previous-buffer)
 (global-set-key (kbd "M-<prior>") 'previous-buffer)
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
+(global-set-key (kbd "s-b") 'ibuffer)
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "C-<print>") 'ibuffer)
+(global-set-key (kbd "<f4>") 'ibuffer)
+(global-set-key (kbd "<f3>") 'kill-buffer)
 
 ;;window resizing
 (global-set-key (kbd "<s-left>") 'shrink-window-horizontally)
@@ -23,20 +28,28 @@
 (global-set-key (kbd "<s-down>") 'shrink-window)
 (global-set-key (kbd "<s-right>") 'enlarge-window-horizontally)
 
-(global-set-key (kbd "s-k") 'recompile)
-(global-set-key (kbd "<f8>") 'recompile)
-(global-set-key (kbd "s-S-k") 'compile)
-(global-set-key (kbd "M-<f8>") 'compile)
-(global-set-key (kbd "C-<f8>") 'kill-compilation)
-(global-set-key (kbd "s-C-k") 'kill-compilation)
-
+;; font resize
 (global-set-key (kbd "C-=") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
 (global-set-key (kbd "C-0") 'text-scale-adjust)
 
+;;disabled commands
+(put 'kmacro-start-macro-or-insert-counter 'disabled t)
+(put 'kmacro-end-or-call-macro 'disabled t)
+(put 'apply-macro-to-region-line 'disabled t)
+
+;; Keys which only work in certain modes
+(add-hook 'c-common-mode-hook
+          'c++-mode-hook
+          'java-mode-hook  (lambda()
+                               (global-set-key (kbd "s-k") 'recompile)
+                               (global-set-key (kbd "<f8>") 'recompile)
+                               (global-set-key (kbd "s-S-k") 'compile)
+                               (global-set-key (kbd "M-<f8>") 'compile)
+                               (global-set-key (kbd "C-<f8>") 'kill-compilation)
+                               (global-set-key (kbd "s-C-k") 'kill-compilation)))
+
+
 (add-hook 'org-mode-hook (lambda()
-(local-set-key (kbd "<f7>") 'org-latex-export-to-pdf)
-	(local-set-key (kbd "C-c <print>") 'org-latex-export-to-pdf)
-	(local-set-key (kbd "C-<print>") 'org-latex-export-to-pdf)
-	(local-set-key (kbd "M-<print>") 'org-latex-export-to-pdf)))
+(local-set-key (kbd "<f8>") 'org-latex-export-to-pdf)))
 
