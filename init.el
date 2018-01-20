@@ -33,20 +33,18 @@
 (load-theme 'gl-dark t)
 (enable-theme 'gl-dark)
 
-(when (display-graphic-p)
-	(require 'package)
-	(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-	(package-initialize)
-	;;(load-library "evil-mode-custom") 
-	(load-library "snippets")
-	(load-library "emacs-goodies-el"))
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(package-initialize)
 
 ;; better find-file
 (ido-mode t)
 (setq ido-enable-flex-matching t)
 (ido-everywhere t)
 
-
+;;(load-library "evil-mode-custom") 
+(load-library "snippets")
+(load-library "emacs-goodies-el")
 (load-library "custom-buffer-mode")
 (load-library "custom-editing")
 (load-library "custom-keys")
@@ -54,9 +52,3 @@
 ;; manage backups/autosaves
 (load-library "backup-autosave")
 
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
