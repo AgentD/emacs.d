@@ -16,11 +16,11 @@
 (global-set-key (kbd "<f5>") 'previous-buffer)
 (global-set-key (kbd "M-<prior>") 'previous-buffer)
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
-(global-set-key (kbd "s-b") 'ibuffer)
-(global-set-key (kbd "C-x C-b") 'ibuffer)
-(global-set-key (kbd "C-<print>") 'ibuffer)
-(global-set-key (kbd "<f4>") 'ibuffer)
-(global-set-key (kbd "<f3>") 'ido-mode)
+(global-set-key (kbd "C-x C-b") 'switch-to-buffer)
+(global-set-key (kbd "C-x b") 'ibuffer)
+(global-set-key (kbd "C-x b") 'ibuffer)
+(global-set-key (kbd "S-<f4>") 'ibuffer)
+(global-set-key (kbd "S-<f3>") 'ido-mode)
 
 ;;window resizing
 (global-set-key (kbd "<s-left>") 'shrink-window-horizontally)
