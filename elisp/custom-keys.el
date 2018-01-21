@@ -16,11 +16,12 @@
 (global-set-key (kbd "<f5>") 'previous-buffer)
 (global-set-key (kbd "M-<prior>") 'previous-buffer)
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
-(global-set-key (kbd "C-x C-b") 'switch-to-buffer)
-(global-set-key (kbd "C-x b") 'ibuffer)
-(global-set-key (kbd "C-x b") 'ibuffer)
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "C-c b") 'ibuffer)
+(global-set-key (kbd "C-x C-d") 'dired)
 (global-set-key (kbd "S-<f4>") 'ibuffer)
 (global-set-key (kbd "S-<f3>") 'ido-mode)
+
 
 ;;window resizing
 (global-set-key (kbd "<s-left>") 'shrink-window-horizontally)
@@ -34,17 +35,13 @@
 (global-set-key (kbd "C-0") 'text-scale-adjust)
 
 ;;disabled commands
-(put 'kmacro-start-macro-or-insert-counter 'disabled t)
-(put 'kmacro-end-or-call-macro 'disabled t)
-(put 'apply-macro-to-region-line 'disabled t)
+(global-unset-key (kbd "<f3>"))
+(global-unset-key (kbd "<f4>"))
 
 ;; Keys which only work in certain modes
-(global-set-key (kbd "s-k") 'recompile)
 (global-set-key (kbd "<f8>") 'recompile)
-(global-set-key (kbd "s-S-k") 'compile)
 (global-set-key (kbd "M-<f8>") 'compile)
 (global-set-key (kbd "C-<f8>") 'kill-compilation)
-(global-set-key (kbd "s-C-k") 'kill-compilation)
 
 
 (add-hook 'org-mode-hook (lambda()
