@@ -28,10 +28,10 @@
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
 ;; custom color-theme
-(add-to-list 'custom-theme-load-path
-(file-name-as-directory "~/.emacs.d/themes"))
+(add-to-list 'custom-theme-load-path (file-name-as-directory "~/.emacs.d/themes"))
 (load-theme 'gl-dark t)
 (enable-theme 'gl-dark)
+
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
