@@ -42,7 +42,6 @@
 (setq ido-enable-flex-matching t)
 (ido-everywhere t)
 
-;;(load-library "evil-mode-custom") 
 (load-library "snippets")
 (load-library "emacs-goodies-el")
 (load-library "custom-buffer-mode")
