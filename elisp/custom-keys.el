@@ -23,6 +23,7 @@
 (global-set-key (kbd "S-<f4>") 'ibuffer)
 (global-set-key (kbd "S-<f3>") 'ido-mode)
 
+(global-set-key (kbd "C-x 4") 'make-frame-command)
 
 ;;window resizing
 (global-set-key (kbd "<s-left>") 'shrink-window-horizontally)
