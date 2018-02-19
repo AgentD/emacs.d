@@ -4,7 +4,7 @@
 (custom-theme-set-faces
  'gl-dark
  
- '(default ((t (:background "black" :foreground "#e0e0e0"))))
+ '(default ((t (:background "black" :foreground "#ffffff"))))
  '(mouse ((t (:foreground "black"))))
  ;;'(cursor ((t (:background "white"))))
  '(cursor ((t (:background "magenta"))))
