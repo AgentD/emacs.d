@@ -30,8 +30,8 @@
 
 ;; custom color-theme
 (add-to-list 'custom-theme-load-path (file-name-as-directory "~/.emacs.d/themes"))
-(load-theme 'dark-grey t)
-(enable-theme 'dark-grey)
+(load-theme 'gl-dark t)
+(enable-theme 'gl-dark)
 
 
 (require 'package)
