@@ -2,7 +2,7 @@
 # name: Begin Document
 # key: bgdoc
 # --
-\documentclass[12pt,a4paper]{scrreprt}
+\documentclass[12pt,a4paper]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage[ngerman]{babel}

@@ -42,6 +42,7 @@
 (ido-mode t)
 (setq ido-enable-flex-matching t)
 (ido-everywhere t)
+(add-hook 'doc-view-mode-hook 'auto-revert-mode) ;; doc view auto update
 
 (load-library "snippets")
 ;;(load-library "emacs-goodies-el")
