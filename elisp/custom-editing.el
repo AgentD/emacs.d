@@ -11,7 +11,7 @@
 ;; max. 80 char 
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 (setq-default fill-column 80)
-(setq mouse-autoselect-window t)
+;;(setq mouse-autoselect-window t)
 (xterm-mouse-mode 1)
 (fset 'yes-or-no-p 'y-or-n-p)
 
