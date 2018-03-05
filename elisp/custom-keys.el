@@ -4,7 +4,7 @@
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 
-(global-set-key (kbd "<f11>") 'linum-mode)
+(global-set-key (kbd "C-<f11>") 'linum-mode)
 (global-set-key (kbd "<f9>") 'font-lock-mode)
 (global-set-key (kbd "s-s") 'save-buffer)
 
@@ -47,5 +47,5 @@
 
 
 (add-hook 'org-mode-hook (lambda()
-(local-set-key (kbd "<f8>") 'org-latex-export-to-pdf)))
+                           (local-set-key (kbd "<f8>") 'org-latex-export-to-pdf)))
 

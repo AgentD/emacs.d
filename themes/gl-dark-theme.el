@@ -6,13 +6,12 @@
  
  '(default ((t (:background "black" :foreground "#ffffff"))))
  '(mouse ((t (:foreground "black"))))
- ;;'(cursor ((t (:background "white"))))
  '(cursor ((t (:background "magenta"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#151515"))))
  '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
- ;; '(mode-line ((t (:foreground "#ffffff" :background "#104387" ))))
- '(region ((t (:background "#00077a"))))
+ '(mode-line-buffer-id ((t (:foreground "#a1c659":background nil))))
+ '(region ((t (:background "#114488" :foreground "#ffffff"))))
  '(font-lock-builtin-face ((t (:foreground "#6fb3d2"))))
  '(font-lock-comment-face ((t (:foreground "#76c7b7"))))
  ;;'(font-lock-constant-face ((t (:foreground "#d315c3"))))
@@ -23,9 +22,9 @@
  '(font-lock-variable-name-face ((t (:foreground "#fda331"))))
  '(minibuffer-prompt ((t (:foreground "#ffffff" :bold t))))
  '(font-lock-warning-face ((t (:foreground "Red" :bold t))))
- ;; '(linum ((t (:foreground "#fda331" :background "#000000" :underline nil))))	
  '(linum ((t (:foreground "#585858" :background "#000000" :underline nil))))	
 
+ 
  '(ido-subdir ((t (:foreground "#a1c659")))) 
  '(ido-first-match ((t (:foreground "#ffffff" :bold t :underline t))))
  '(ido-only-match ((t (:foreground "#ffcc33")))) 
