@@ -22,8 +22,6 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-c b") 'ibuffer)
 (global-set-key (kbd "C-x C-d") 'dired)
-(global-set-key (kbd "S-<f4>") 'ibuffer)
-(global-set-key (kbd "S-<f3>") 'ido-mode)
 
 (global-set-key (kbd "C-x 4") 'make-frame-command)
 
