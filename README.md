@@ -9,8 +9,11 @@
 ## Usage
 ### GUI:
 Use:
+
 	$ emacsclient -nc
+
 or
+
 	$ emacsclient -nc --alternate-editor=""
 
 ### Terminal:
