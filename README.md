@@ -10,13 +10,16 @@
 ### GUI:
 Use:
 	$ emacsclient -nc
-	or
+or
 	$ emacsclient -nc --alternate-editor=""
 
 ### Terminal:
 Use: 
+
 	$ emacs -nw -Q -l ~/.emacs.d/term_init.el
-   	or
+	
+or
+
 	$ emacsclient -nw --alternate-editor=""
 
 ## Custom Keybinds
