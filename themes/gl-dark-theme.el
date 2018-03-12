@@ -15,7 +15,7 @@
  '(font-lock-builtin-face ((t (:foreground "#6fb3d2"))))
  '(font-lock-comment-face ((t (:foreground "#76c7b7"))))
  ;;'(font-lock-constant-face ((t (:foreground "#d315c3"))))
- '(font-lock-function-name-face ((t (:foreground "cyan"))))
+ '(font-lock-function-name-face ((t (:foreground "#6fb3d2"))))
  '(font-lock-keyword-face ((t (:foreground "#fb0120"))))
  '(font-lock-string-face ((t (:foreground "#d381c3"))))
  '(font-lock-type-face ((t (:foreground "#a1c659"))))
