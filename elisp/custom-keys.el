@@ -1,6 +1,8 @@
 ;; Custom keybinds
 (global-set-key (kbd "C-h") 'delete-backward-char)
 (global-set-key (kbd "C-w") 'backward-kill-sexp)
+(global-set-key (kbd "M-S-d") 'kill-sexp)
+(global-set-key (kbd "<s-d>") 'kill-sexp)
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 
@@ -47,5 +49,5 @@
 
 
 (add-hook 'org-mode-hook (lambda()
-                           (local-set-key (kbd "<f8>") 'org-latex-export-to-pdf)))
+                           (local-set-key (kbd "C-c C-c") 'org-latex-export-to-pdf)))
 
