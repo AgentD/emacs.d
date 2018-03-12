@@ -9,15 +9,15 @@
 ## Usage
 ### GUI:
 Use:
-    $ emacsclient -nc
-    or
-    $ emacsclient -nc --alternate-editor=""
+	$ emacsclient -nc
+	or
+	$ emacsclient -nc --alternate-editor=""
 
 ### Terminal:
 Use: 
-    $ emacs -nw -Q -l ~/.emacs.d/term_init.el
-    or
-    $ emacsclient -nw --alternate-editor=""
+	$ emacs -nw -Q -l ~/.emacs.d/term_init.el
+   	or
+	$ emacsclient -nw --alternate-editor=""
 
 ## Custom Keybinds
 	C = Control
