@@ -10,6 +10,7 @@
  '(border ((t (:foreground "#203f6a"))))
  '(fringe ((t (:background "#000d1a"))))
  '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
+ '(mode-line-buffer-id ((t (:family "Monospace" :slant normal :weight bold :height 85 :width normal :foreground "#ffffff"))))
  '(region ((t (:background "#423c38"))))
  '(font-lock-builtin-face ((t (:foreground "#ef851f"))))
  '(font-lock-comment-face ((t (:foreground "#0080fa"))))

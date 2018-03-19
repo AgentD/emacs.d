@@ -1,6 +1,7 @@
 ;; tab width
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 8)
+(setq-default tab-always-indent nil)
 (defvaralias 'c-basic-offset 'tab-width)
 (setq c-default-style "Linux" 
       c-basic-offset 8)
@@ -8,6 +9,8 @@
                             (setq c-basic-offset 4)))
 (add-hook 'text-mode-hook (lambda()
                             (setq c-basic-offset 4)))
+(add-hook 'org-mode-hook (lambda()
+                           (setq c-basic-offset 4)))
 ;; max. 80 char 
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 (setq-default fill-column 80)

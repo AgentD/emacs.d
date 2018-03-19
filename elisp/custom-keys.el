@@ -26,10 +26,10 @@
 (global-set-key (kbd "C-x 4") 'make-frame-command)
 
 ;;window resizing
-(global-set-key (kbd "<s-left>") 'shrink-window-horizontally)
-(global-set-key (kbd "<s-up>") 'enlarge-window)
-(global-set-key (kbd "<s-down>") 'shrink-window)
-(global-set-key (kbd "<s-right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "M-C-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "M-C-<up>") 'enlarge-window)
+(global-set-key (kbd "M-C-<down>") 'shrink-window)
+(global-set-key (kbd "M-C-<right>") 'enlarge-window-horizontally)
 
 ;; font resize
 (global-set-key (kbd "C-=") 'text-scale-increase)

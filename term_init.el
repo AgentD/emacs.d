@@ -5,10 +5,8 @@
  '(display-battery-mode t)
  '(display-time-mode t)
  '(inhibit-startup-screen t)
- '(scroll-bar-mode (quote right))
  '(show-paren-mode t)
  '(size-indication-mode t)
- '(tool-bar-mode nil)
  '(menu-bar-mode t)
  '(tooltip-mode nil))
 
@@ -23,7 +21,6 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
-(load-library "custom-buffer-mode")
 (load-library "custom-editing")
 (load-library "custom-keys")
 ;; manage backups/autosaves

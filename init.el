@@ -24,7 +24,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(scroll-bar ((t (:background "grey9" :distant-foreground "grey9" :foreground "gray9")))))
+ '(scroll-bar ((t (:border nil :background "gray9" :distant-foreground "gray9" :foreground "gray9" :width narrow)))))
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
