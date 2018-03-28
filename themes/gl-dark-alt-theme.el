@@ -9,6 +9,7 @@
  '(cursor ((t (:background "magenta"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#151515"))))
+ '(fringe ((t (:background "#000000"))))
  '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
  '(mode-line-buffer-id ((t (:family "Monospace" :slant normal :weight bold :height 85 :width normal :foreground "#ffffff"))))
  '(region ((t (:background "#114488" :foreground "#ffffff"))))
