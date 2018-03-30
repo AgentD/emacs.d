@@ -6,12 +6,11 @@
  
  '(default ((t (:background "black" :foreground "white"))))
  '(mouse ((t (:foreground "black"))))
- ;;'(cursor ((t (:background "white"))))
  '(cursor ((t (:background "#ff00ff"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#121212"))))
  '(mode-line ((t (:foreground "#d8d8d8" :background "#292929" ))))
- '(mode-line-buffer-id ((t (:family "Monospace" :slant normal :weight bold :height 85 :width normal :foreground "#ffffff"))))
+ '(mode-line-buffer-id ((t (:bold nil :foreground "#ffffff"))))
  '(region ((t (:background "#00077a"))))
  '(font-lock-builtin-face ((t (:foreground "#4c99eb"))))
  '(font-lock-comment-face ((t (:foreground "#ff6805"))))

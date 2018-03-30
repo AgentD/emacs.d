@@ -11,7 +11,7 @@
  '(fringe ((t (:background "#151515"))))
  '(fringe ((t (:background "#000000"))))
  '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
- '(mode-line-buffer-id ((t (:family "Monospace" :slant normal :weight bold :height 80 :width normal :foreground "#ffffff"))))
+ '(mode-line-buffer-id ((t (:bold nil :foreground "#ffffff"))))
  '(region ((t (:background "#114488" :foreground "#ffffff"))))
  '(font-lock-builtin-face ((t (:foreground "#75507b"))))
  '(font-lock-comment-face ((t (:foreground "#cc0000"))))

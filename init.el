@@ -3,11 +3,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
  '(display-battery-mode t)
  '(display-time-mode t)
+ '(fringe-mode (quote (nil . 0)) nil (fringe))
  '(inhibit-startup-screen t)
  '(jdee-server-dir "~/.emacs.d/jdee-jar")
  '(menu-bar-mode nil)
@@ -24,7 +24,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(scroll-bar ((t (:border nil :background "#454545" :distant-foreground "#454545" :foreground "#454545" :width narrow)))))
+ '(scroll-bar ((t (:border nil :background "#292929" :distant-foreground "#292929" :foreground "#292929" :width narrow)))))
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
 

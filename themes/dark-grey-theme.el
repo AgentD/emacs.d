@@ -11,7 +11,7 @@
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#DCDCCC" :background "#4F4F4F"))))
  '(mode-line ((t (:foreground "#000000" :background "#aeaeae" ))))
- '(mode-line-buffer-id ((t (:family "Monospace" :slant normal :weight bold :height 85 :width normal :foreground "#000000"))))
+ '(mode-line-buffer-id ((t (:bold nil :foreground "#000000"))))
  '(region ((t (:background "#00077a"))))
  '(font-lock-builtin-face ((t (:foreground "#DCDCCC"))))
  '(font-lock-comment-face ((t (:foreground "#7F9F7F"))))
