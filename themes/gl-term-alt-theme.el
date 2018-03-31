@@ -2,7 +2,7 @@
   "gl-term-alt theme")
 
 (custom-theme-set-faces
- 'gl-term
+ 'gl-term-alt
  
  '(default ((t (:background "black" :foreground "#ffffff"))))
  '(mouse ((t (:foreground "black"))))

@@ -30,8 +30,8 @@
 
 ;; custom color-theme
 (add-to-list 'custom-theme-load-path (file-name-as-directory "~/.emacs.d/themes"))
-(load-theme 'gl-dark t)
-(enable-theme 'gl-dark)
+(load-theme 'gl-dark-alt t)
+(enable-theme 'gl-dark-alt)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))

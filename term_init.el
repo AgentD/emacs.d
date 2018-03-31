@@ -14,8 +14,8 @@
 
 ;; custom color-theme
 (add-to-list 'custom-theme-load-path (file-name-as-directory "~/.emacs.d/themes"))
-(load-theme 'gl-term t)
-(enable-theme 'gl-term)
+(load-theme 'gl-term-alt t)
+(enable-theme 'gl-term-alt)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
