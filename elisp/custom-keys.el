@@ -11,7 +11,7 @@
 (global-set-key (kbd "s-s") 'save-buffer)
 
 (global-set-key (kbd "C-<f2>") 'help)
-(global-set-key (kbd "<f11>") 'writeroom-mode)
+(global-set-key (kbd "C-<f12>") 'writeroom-mode)
 
 ;;buffer switching 
 (global-set-key (kbd "<f6>") 'next-buffer)

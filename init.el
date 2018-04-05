@@ -7,7 +7,6 @@
  '(cua-mode t nil (cua-base))
  '(display-battery-mode t)
  '(display-time-mode t)
- '(fringe-mode (quote (nil . 0)) nil (fringe))
  '(inhibit-startup-screen t)
  '(jdee-server-dir "~/.emacs.d/jdee-jar")
  '(menu-bar-mode nil)
