@@ -3,8 +3,10 @@
 (global-set-key (kbd "C-w") 'backward-kill-sexp)
 (global-set-key (kbd "M-S-d") 'kill-sexp)
 (global-set-key (kbd "<s-d>") 'kill-sexp)
-(global-set-key (kbd "M-p") 'backward-paragraph)
-(global-set-key (kbd "M-n") 'forward-paragraph)
+(global-set-key (kbd "<s-p>") 'backward-paragraph)
+(global-set-key (kbd "<s-n>") 'forward-paragraph)
+(global-set-key (kbd "M-p") 'scroll-down-command)
+(global-set-key (kbd "M-n") 'scroll-up-command)
 
 (global-set-key (kbd "C-<f11>") 'linum-mode)
 (global-set-key (kbd "<f9>") 'font-lock-mode)
