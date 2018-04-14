@@ -12,7 +12,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (writeroom-mode markdown-mode undo-tree magit yasnippet flx-ido auto-complete-auctex jdee haskell-mode fill-column-indicator auto-complete auctex)))
+    (hlinum writeroom-mode markdown-mode undo-tree magit yasnippet flx-ido auto-complete-auctex jdee haskell-mode fill-column-indicator auto-complete auctex)))
  '(scroll-bar-mode (quote right))
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -48,6 +48,7 @@
 (load-library "custom-terminal-mode")
 (load-library "custom-editing")
 (load-library "custom-keys")
+(load-library "custom-linum")
 (load-library "fci-mode")
 ;; manage backups/autosaves
 (load-library "backup-autosave")
