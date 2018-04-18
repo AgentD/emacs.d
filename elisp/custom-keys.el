@@ -22,6 +22,7 @@
 (global-set-key (kbd "<f5>") 'previous-buffer)
 (global-set-key (kbd "M-<prior>") 'previous-buffer)
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
+(global-set-key (kbd "<f4>") 'ibuffer)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-c b") 'ibuffer)
 (global-set-key (kbd "C-x C-d") 'dired)
