@@ -11,6 +11,7 @@
 (global-set-key (kbd "C-<f11>") 'linum-mode)
 (global-set-key (kbd "<f9>") 'font-lock-mode)
 (global-set-key (kbd "s-s") 'save-buffer)
+(global-set-key (kbd "s-r") 'revert-buffer)
 
 (global-set-key (kbd "C-<f2>") 'help)
 (global-set-key (kbd "C-<f12>") 'writeroom-mode)
