@@ -12,7 +12,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (hlinum writeroom-mode markdown-mode undo-tree magit yasnippet flx-ido auto-complete-auctex jdee haskell-mode fill-column-indicator auto-complete auctex)))
+    (markdown-mode undo-tree magit yasnippet flx-ido auto-complete-auctex jdee haskell-mode fill-column-indicator auto-complete auctex)))
  '(scroll-bar-mode (quote right))
  '(show-paren-mode t)
  '(size-indication-mode t)
