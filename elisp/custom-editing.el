@@ -19,7 +19,8 @@
 (add-hook 'haskell-mode-hook (lambda()
                             (setq c-basic-offset 4)))
 ;; max. 80 char 
-(add-hook 'text-mode-hook 'turn-on-auto-fill)
+;;(add-hook 'text-mode-hook 'turn-on-auto-fill)
+(setq-default auto-fill-function 'do-auto-fill)
 (setq-default fill-column 80)
 (setq mouse-autoselect-window t)
 (xterm-mouse-mode 1)
