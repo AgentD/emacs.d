@@ -23,6 +23,7 @@
 
 (load-library "custom-editing")
 (load-library "custom-keys")
+(load-library "snippets")
 ;; manage backups/autosaves
 (load-library "backup-autosave")
 
