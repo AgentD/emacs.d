@@ -13,7 +13,8 @@
  '(package-selected-packages
    (quote
     (markdown-mode undo-tree magit yasnippet flx-ido auto-complete-auctex jdee haskell-mode fill-column-indicator auto-complete auctex)))
- '(scroll-bar-mode (quote right))
+;; '(scroll-bar-mode (quote right))
+ '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(tool-bar-mode nil)

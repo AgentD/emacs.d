@@ -52,5 +52,5 @@
 
 
 (add-hook 'org-mode-hook (lambda()
-                           (local-set-key (kbd "C-c C-c") 'org-latex-export-to-pdf)))
+                           (local-set-key (kbd "C-c c") 'org-latex-export-to-pdf)))
 
