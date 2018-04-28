@@ -50,11 +50,12 @@
                         exec-path))
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
+(require 'iso-transl)
 
 (add-to-list 'custom-theme-load-path (file-name-as-directory
-				      "~/.emacs.d/themes"))
-(load-theme 'gl-dark t)
-(enable-theme 'gl-dark)
+									  "~/.emacs.d/themes"))
+(load-theme 'subl-dark t)
+(enable-theme 'subl-dark)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))

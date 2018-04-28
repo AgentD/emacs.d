@@ -2,7 +2,8 @@
 ;; tab width
 (setq-default indent-tabs-mode t)
 (setq-default tab-width 8)
-(setq-default show-trailing-whitespace nil)
+(setq-default show-trailing-whitespace t)
+(setq-default tab-always-indent nil)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (defvaralias 'c-basic-offset 'tab-width)
