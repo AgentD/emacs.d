@@ -4,9 +4,8 @@
 (custom-theme-set-faces
  'gl-term
  
- '(default ((t (:background "black" :foreground "#ffffff"))))
+;; '(default ((t (:background "black" :foreground "#ffffff"))))
  '(mouse ((t (:foreground "black"))))
- '(cursor ((t (:background "magenta"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#151515"))))
  '(mode-line ((t (:foreground "#000000" :background "#bcbcbc" ))))
