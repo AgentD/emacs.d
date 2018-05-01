@@ -17,7 +17,8 @@
 						  (setq c-basic-offset 4)
                           (setq lisp-body-indent 4)))
 (add-hook 'haskell-mode-hook (lambda()
-                            (setq c-basic-offset 4)))
+								 (setq c-basic-offset 4)
+		                         (setq c-basic-offset 8)))
 ;; max. 80 char 
 ;;(add-hook 'text-mode-hook 'turn-on-auto-fill)
 (setq-default auto-fill-function 'do-auto-fill)
