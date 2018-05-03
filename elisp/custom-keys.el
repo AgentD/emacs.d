@@ -13,7 +13,8 @@
 (global-set-key (kbd "C-<f10>") 'menu-bar-mode)
 (global-unset-key (kbd "<f10>"))
 (global-set-key (kbd "C-<f11>") 'linum-mode)
-(global-set-key (kbd "<f9>") 'font-lock-mode)
+(global-set-key (kbd "C-<f9>") 'font-lock-mode)
+(global-set-key (kbd "<f9>") 'whitespace-mode)
 (global-set-key (kbd "s-s") 'save-buffer)
 (global-set-key (kbd "s-r") 'revert-buffer)
 
