@@ -7,6 +7,7 @@
 (global-set-key (kbd "<s-n>") 'forward-paragraph)
 (global-set-key (kbd "M-p") 'scroll-down-command)
 (global-set-key (kbd "M-n") 'scroll-up-command)
+(global-set-key (kbd "M-g") 'goto-line)
 
 
 (global-set-key (kbd "C-<f10>") 'menu-bar-mode)
