@@ -6,21 +6,54 @@
 ;; (setq-default tab-always-indent 'complete) ;; make tab key do indent first then completion.
 
 (defvaralias 'c-basic-offset 'tab-width)
-(setq c-default-style "Linux" 
+(setq c-default-style "Linux"
       c-basic-offset 8)
+
 (add-hook 'java-mode-hook (lambda()
-                            (setq c-basic-offset 4)))
+			      (setq c-basic-offset 4))
+		              (setq show-trailing-whitespace t))
+
 (add-hook 'sh-mode-hook (lambda()
-                          (setq sh-basic-offset 8)
-                          (setq sh-intendation 8)))
+			    (setq sh-basic-offset 8)
+			    (setq sh-intendation 8))
+                     	    (setq show-trailing-whitespace t))
+
 (add-hook 'emacs-lisp-mode-hook (lambda()
-						  (setq c-basic-offset 4)
-                          (setq lisp-body-indent 4)))
+				    (setq c-basic-offset 4)
+				    (setq lisp-body-indent 4))
+	                            (setq show-trailing-whitespace t))
+
 (add-hook 'haskell-mode-hook (lambda()
-								 (setq c-basic-offset 4)
-		                         (setq indent-tabs-mode nil)))
+				 (setq c-basic-offset 4)
+		                 (setq indent-tabs-mode nil))
+		                 (setq show-trailing-whitespace t))
+
+(defun c-lineup-arglist-tabs-only (ignored)
+  "Line up argument lists by tabs, not spaces"
+  (let* ((anchor (c-langelem-pos c-syntactic-element))
+         (column (c-langelem-2nd-pos c-syntactic-element))
+         (offset (- (1+ column) anchor))
+         (steps (floor offset c-basic-offset)))
+    (* (max steps 1)
+       c-basic-offset)))
+
+(add-hook 'c-mode-common-hook (lambda ()
+				  ;; Add kernel style
+				  (c-add-style
+				   "linux-tabs-only"
+				   '("linux" (c-offsets-alist
+					      (arglist-cont-nonempty
+					       c-lineup-gcc-asm-reg
+					       c-lineup-arglist-tabs-only))))))
+
+(add-hook 'c-mode-hook (lambda ()
+			   (setq indent-tabs-mode t)
+			   (setq show-trailing-whitespace t)
+			   (c-set-style "linux-tabs-only")))
+
 ;; max. 80 char 
 ;;(add-hook 'text-mode-hook 'turn-on-auto-fill)
+
 (setq-default auto-fill-function 'do-auto-fill)
 (setq-default fill-column 80)
 (setq mouse-autoselect-window t)
