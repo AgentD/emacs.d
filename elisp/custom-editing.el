@@ -1,6 +1,7 @@
 ;; tab width
 (setq-default indent-tabs-mode t)
 (setq-default tab-width 8)
+(setq-default show-trailing-whitespace t)
 ;; (setq-default tab-always-indent t) ;; make tab key always call a indent command.
 ;; (setq-default tab-always-indent nil) ;; make tab key call indent command or insert tab character, depending on cursor position
 ;; (setq-default tab-always-indent 'complete) ;; make tab key do indent first then completion.
@@ -10,23 +11,20 @@
       c-basic-offset 8)
 
 (add-hook 'java-mode-hook (lambda()
-			      (setq c-basic-offset 4))
-		              (setq show-trailing-whitespace t))
+			      (setq c-basic-offset 4)))
+
 
 (add-hook 'sh-mode-hook (lambda()
 			    (setq sh-basic-offset 8)
-			    (setq sh-intendation 8))
-                     	    (setq show-trailing-whitespace t))
+			    (setq sh-intendation 8)))
 
 (add-hook 'emacs-lisp-mode-hook (lambda()
 				    (setq c-basic-offset 4)
-				    (setq lisp-body-indent 4))
-	                            (setq show-trailing-whitespace t))
+				    (setq lisp-body-indent 4)))
 
 (add-hook 'haskell-mode-hook (lambda()
 				 (setq c-basic-offset 4)
-		                 (setq indent-tabs-mode nil))
-		                 (setq show-trailing-whitespace t))
+				 (setq indent-tabs-mode nil)))
 
 (defun c-lineup-arglist-tabs-only (ignored)
   "Line up argument lists by tabs, not spaces"
@@ -48,7 +46,6 @@
 
 (add-hook 'c-mode-hook (lambda ()
 			   (setq indent-tabs-mode t)
-			   (setq show-trailing-whitespace t)
 			   (c-set-style "linux-tabs-only")))
 
 ;; max. 80 char 
