@@ -3,7 +3,7 @@
 
 (custom-theme-set-faces
  'gl-dark-alt
- 
+
  '(default ((t (:background "black" :foreground "#ffffff"))))
  '(mouse ((t (:foreground "black"))))
  '(cursor ((t (:background "magenta"))))
@@ -25,14 +25,14 @@
  '(font-lock-warning-face ((t (:foreground "Red" :bold t))))
 
  '(minibuffer-prompt ((t (:foreground "#ffffff" :bold t))))
- '(linum ((t (:foreground "#585858" :background "#000000" :underline nil))))	
+ '(linum ((t (:foreground "#585858" :background "#000000" :underline nil))))
  '(trailing-whitespace ((t (:foreground "#d8d8d8" :background "#fb0120"))))
- 
- '(ido-subdir ((t (:foreground "#a1c659")))) 
+
+ '(ido-subdir ((t (:foreground "#a1c659"))))
  '(ido-first-match ((t (:foreground "#ffffff" :bold t :underline t))))
- '(ido-only-match ((t (:foreground "#ffcc33")))) 
- '(ido-indicator ((t (:foreground "#ffffff")))) 
- '(ido-incomplete-regexp ((t (:foreground "#ffffff")))) 
+ '(ido-only-match ((t (:foreground "#ffcc33"))))
+ '(ido-indicator ((t (:foreground "#ffffff"))))
+ '(ido-incomplete-regexp ((t (:foreground "#ffffff"))))
 
  '(diff-added ((t (:foreground "green"))))
  '(diff-removed ((t (:foreground "red"))))
@@ -45,4 +45,3 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'gl-dark-alt)
-
