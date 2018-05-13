@@ -7,12 +7,14 @@
 ;; (setq-default tab-always-indent 'complete) ;; make tab key do indent first then completion.
 
 (defvaralias 'c-basic-offset 'tab-width)
-(setq c-default-style "Linux"
-      c-basic-offset 8)
+(setq c-default-style "linux"
+	  c-basic-offset 8)
 
+;; usabel java indentation
 (add-hook 'java-mode-hook (lambda()
-			      (setq c-basic-offset 4)))
-
+							  (setq c-basic-offset 4)
+							  (setq tab-width 4)
+							  (c-set-offset 'inline-open 0)))
 
 (add-hook 'sh-mode-hook (lambda()
 			    (setq sh-basic-offset 8)
@@ -32,8 +34,7 @@
          (column (c-langelem-2nd-pos c-syntactic-element))
          (offset (- (1+ column) anchor))
          (steps (floor offset c-basic-offset)))
-    (* (max steps 1)
-       c-basic-offset)))
+    (* (max steps 1) )))
 
 (add-hook 'c-mode-common-hook (lambda ()
 				  ;; Add kernel style

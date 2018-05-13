@@ -11,11 +11,11 @@
 
 
 (global-set-key (kbd "C-<f10>") 'menu-bar-mode)
-(global-set-key (kbd "C-<f11>") 'linum-mode)
+(global-set-key (kbd "<f11>") 'linum-mode)
 (global-set-key (kbd "C-<f9>") 'font-lock-mode)
-(global-set-key (kbd "<f9>") 'whitespace-mode)
 (global-set-key (kbd "s-s") 'save-buffer)
 (global-set-key (kbd "s-r") 'revert-buffer)
+(global-set-key (kbd "<f9>") 'delete-trailing-whitespace)
 
 (global-set-key (kbd "C-<f2>") 'help)
 
@@ -52,7 +52,6 @@
 (global-set-key (kbd "<f8>") 'recompile)
 (global-set-key (kbd "M-<f8>") 'compile)
 (global-set-key (kbd "C-<f8>") 'kill-compilation)
-
 
 (add-hook 'org-mode-hook (lambda()
                            (local-set-key (kbd "C-c c") 'org-latex-export-to-pdf)))
