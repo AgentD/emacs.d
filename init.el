@@ -19,7 +19,6 @@
 ;; custom color-theme
 (add-to-list 'custom-theme-load-path (file-name-as-directory
 									  "~/.emacs.d/themes"))
-(add-to-list 'custom-theme-load-path (file-name-as-directory "~/.emacs.d/themes/reworking"))
 (load-theme 'gl-dark-alt t)
 (enable-theme 'gl-dark-alt)
 

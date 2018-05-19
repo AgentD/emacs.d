@@ -14,15 +14,12 @@
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
-;; custom color-theme
+(require 'package)
+(package-initialize)
 (add-to-list 'custom-theme-load-path (file-name-as-directory
 									  "~/.emacs.d/themes"))
 (load-theme 'dark t)
 (enable-theme 'dark)
-
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(package-initialize)
 
 ;; better find-file
 (ido-mode t)

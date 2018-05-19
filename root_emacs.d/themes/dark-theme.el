@@ -1,17 +1,17 @@
 (deftheme dark
-  "dark")
+  "dark theme")
 
 (custom-theme-set-faces
- 'xcode-dark
+ 'dark
 
  '(default ((t (:background "black" :foreground "white"))))
  '(mouse ((t (:foreground "black"))))
  '(cursor ((t (:background "#ff0000"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#121212"))))
- '(mode-line ((t (:foreground "#00000" :background "#bcbcbc" ))))
- '(menu ((t (:foreground "#00000" :background "#bcbcbc" ))))
- '(mode-line-buffer-id ((t (:bold nil :foreground "#ff0000"))))
+ '(menu ((t (:foreground "#000000" :background "#bcbcbc" ))))
+ '(mode-line ((t (:foreground "#000000" :background "#bcbcbc" ))))
+ '(mode-line-buffer-id ((t (:bold t :foreground "#ff0000"))))
  '(region ((t (:background "#00077a"))))
 
  '(font-lock-builtin-face ((t (:foreground "#4c99eb"))))
