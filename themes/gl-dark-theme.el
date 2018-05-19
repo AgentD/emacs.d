@@ -3,7 +3,7 @@
 
 (custom-theme-set-faces
  'gl-dark
- 
+
  '(default ((t (:background "black" :foreground "#ffffff"))))
  '(mouse ((t (:foreground "black"))))
  '(cursor ((t (:background "magenta"))))
@@ -12,6 +12,7 @@
  '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
  '(mode-line-buffer-id ((t (:bold nil :foreground "#ffffff"))))
  '(region ((t (:background "#114488" :foreground "#ffffff"))))
+
  '(font-lock-builtin-face ((t (:foreground "#6fb3d2"))))
  '(font-lock-comment-face ((t (:foreground "#76c7b7"))))
  '(font-lock-constant-face ((t (:foreground "#a1c659"))))
@@ -20,16 +21,17 @@
  '(font-lock-string-face ((t (:foreground "#d381c3"))))
  '(font-lock-type-face ((t (:foreground "#a1c659"))))
  '(font-lock-variable-name-face ((t (:foreground "#fda331"))))
- '(minibuffer-prompt ((t (:foreground "#ffffff" :bold t))))
  '(font-lock-warning-face ((t (:foreground "Red" :bold t))))
- '(linum ((t (:foreground "#585858" :background "#000000" :underline nil))))	
 
- 
- '(ido-subdir ((t (:foreground "#a1c659")))) 
+ '(minibuffer-prompt ((t (:foreground "#ffffff" :bold t))))
+ '(linum ((t (:foreground "#585858" :background "#000000" :underline nil))))
+ '(trailing-whitespace ((t (:foreground "#d8d8d8" :background "#fb0120"))))
+
+ '(ido-subdir ((t (:foreground "#a1c659"))))
  '(ido-first-match ((t (:foreground "#ffffff" :bold t :underline t))))
- '(ido-only-match ((t (:foreground "#ffcc33")))) 
- '(ido-indicator ((t (:foreground "#ffffff")))) 
- '(ido-incomplete-regexp ((t (:foreground "#ffffff")))) 
+ '(ido-only-match ((t (:foreground "#ffcc33"))))
+ '(ido-indicator ((t (:foreground "#ffffff"))))
+ '(ido-incomplete-regexp ((t (:foreground "#ffffff"))))
 
  '(diff-added ((t (:foreground "green"))))
  '(diff-removed ((t (:foreground "red"))))
@@ -42,4 +44,3 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'gl-dark)
-

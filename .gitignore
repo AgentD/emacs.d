@@ -3,12 +3,13 @@ backup/
 auto-save-list/
 url/
 elpa/gnupg
+root_emacs.d/elpa/gnupg
 ido.last
 ido.last~
 eshell/
 abbrev_defs
 semanticdb/
-elpa/archives
+root_emacs.d/elpa/archives
 games/
 zile_backup/
 recentf
