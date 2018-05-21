@@ -23,8 +23,6 @@
 
 (load-library "custom-editing")
 (load-library "custom-keys")
-(load-library "snippets")
-(load-library "fci-mode")
 ;; manage backups/autosaves
 (load-library "backup-autosave")
 

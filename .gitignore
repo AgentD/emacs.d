@@ -10,6 +10,7 @@ eshell/
 abbrev_defs
 semanticdb/
 root_emacs.d/elpa/archives
+elpa/archives
 games/
 zile_backup/
 recentf
