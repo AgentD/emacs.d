@@ -10,7 +10,7 @@
 (setq c-default-style "linux"
 	  c-basic-offset 8)
 
-;; usabel java indentation
+;; usable java indentation
 (add-hook 'java-mode-hook (lambda()
 							  (setq c-basic-offset 4)
 							  (setq tab-width 4)
@@ -28,28 +28,27 @@
 				 (setq c-basic-offset 4)
 				 (setq indent-tabs-mode nil)))
 
-(defun c-lineup-arglist-tabs-only (ignored)
-  "Line up argument lists by tabs, not spaces"
-  (let* ((anchor (c-langelem-pos c-syntactic-element))
-         (column (c-langelem-2nd-pos c-syntactic-element))
-         (offset (- (1+ column) anchor))
-         (steps (floor offset c-basic-offset)))
-    (* (max steps 1) )))
-
-(add-hook 'c-mode-common-hook (lambda ()
-				  ;; Add kernel style
-				  (c-add-style
-				   "linux-tabs-only"
-				   '("linux" (c-offsets-alist
-					      (arglist-cont-nonempty
-					       c-lineup-gcc-asm-reg
-					       c-lineup-arglist-tabs-only))))))
+;; (defun c-lineup-arglist-tabs-only (ignored)
+;;   "Line up argument lists by tabs, not spaces"
+;;   (let* ((anchor (c-langelem-pos c-syntactic-element))
+;;          (column (c-langelem-2nd-pos c-syntactic-element))
+;;          (offset (- (1+ column) anchor))
+;;          (steps (floor offset c-basic-offset)))
+;;     (* (max steps 1) )))
+;; (add-hook 'c-mode-common-hook (lambda ()
+;; 				  ;; Add kernel style
+;; 				  (c-add-style
+;; 				   "linux-tabs-only"
+;; 				   '("linux" (c-offsets-alist
+;; 					      (arglist-cont-nonempty
+;; 					       c-lineup-gcc-asm-reg
+;; 					       c-lineup-arglist-tabs-only))))))
 
 (add-hook 'c-mode-hook (lambda ()
 			   (setq indent-tabs-mode t)
-			   (c-set-style "linux-tabs-only")))
+			   (c-set-style "linux")))
 
-;; max. 80 char 
+;; max. 80 char
 ;;(add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 (setq-default auto-fill-function 'do-auto-fill)
@@ -58,4 +57,3 @@
 (xterm-mouse-mode 1)
 (setq undo-tree-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)
-
