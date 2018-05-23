@@ -1,8 +1,4 @@
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
@@ -10,9 +6,6 @@
  '(display-time-mode t)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
- '(package-selected-packages
-   (quote
-	(yasnippet visual-fill-column undo-tree s memoize markdown-mode magit haskell-mode goto-chg flycheck fill-column-indicator)))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -50,9 +43,3 @@
 (load-library "fci-mode")
 ;; manage backups/autosaves
 (load-library "backup-autosave")
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

@@ -14,8 +14,8 @@
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
-(require 'package)
-(package-initialize)
+;;(require 'package)
+;;(package-initialize)
 (add-to-list 'custom-theme-load-path (file-name-as-directory
 									  "~/.emacs.d/themes"))
 (load-theme 'dark t)
