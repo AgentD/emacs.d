@@ -18,9 +18,9 @@
 (enable-theme 'gl-term-alt)
 ;;(global-font-lock-mode 0)
 
-;; (require 'package)
-;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-;; (package-initialize)
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(package-initialize)
 
 (load-library "custom-editing")
 (load-library "custom-keys")
