@@ -9,18 +9,23 @@
  '(size-indication-mode t)
  '(menu-bar-mode t)
  '(tooltip-mode nil))
+(custom-set-faces
+ '(dired-directory ((t (:foreground "#75507b"))))
+;; '(default ((t (:family "Monospace" :foundry "xft" :slant normal :weight
+ ;; normal :height 69 :width normal))))
+ )
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
 ;; custom color-theme
-(add-to-list 'custom-theme-load-path (file-name-as-directory "~/.emacs.d/themes"))
-(load-theme 'gl-term-alt t)
-(enable-theme 'gl-term-alt)
+;;(add-to-list 'custom-theme-load-path (file-name-as-directory "~/.emacs.d/themes"))
+;;(load-theme 'gl-term-alt t)
+;;(enable-theme 'gl-term-alt)
 ;;(global-font-lock-mode 0)
 
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(package-initialize)
+;;(require 'package)
+;;(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+;;(package-initialize)
 
 (load-library "custom-editing")
 (load-library "custom-keys")

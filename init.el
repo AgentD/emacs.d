@@ -1,4 +1,8 @@
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
@@ -6,13 +10,20 @@
  '(display-time-mode t)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
+ '(package-selected-packages
+   (quote
+	(evil yasnippet visual-fill-column undo-tree s popup memoize markdown-mode magit haskell-mode goto-chg flycheck flx fill-column-indicator)))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
-;;(custom-set-faces
-;; '(default ((t (:family "Monospace" :foundry "xft" :slant normal :weight normal :height 69 :width normal)))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(dired-directory ((t (:foreground "#75507b")))))
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
@@ -41,6 +52,7 @@
 (load-library "custom-editing")
 (load-library "custom-dired-mode")
 (load-library "custom-keys")
+(load-library "custom-evil-mode")
 (load-library "custom-linum")
 (load-library "fci-mode")
 ;; manage backups/autosaves

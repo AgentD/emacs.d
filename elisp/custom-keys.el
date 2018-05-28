@@ -44,15 +44,13 @@
 (global-set-key (kbd "C-=") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
 (global-set-key (kbd "C-0") 'text-scale-adjust)
+(global-set-key (kbd "M-<f8>") 'compile)
+
+
 
 ;;disabled commands
+(global-unset-key (kbd "<f2>"))
 (global-unset-key (kbd "<f3>"))
-(global-unset-key (kbd "<f4>"))
-
-;; Keys which only work in certain modes
-(global-set-key (kbd "<f8>") 'recompile)
-(global-set-key (kbd "M-<f8>") 'compile)
-(global-set-key (kbd "C-<f8>") 'kill-compilation)
 
 (add-hook 'org-mode-hook (lambda()
                            (local-set-key (kbd "C-c c") 'org-latex-export-to-pdf)))
