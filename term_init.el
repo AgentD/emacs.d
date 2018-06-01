@@ -4,7 +4,7 @@
  '(cua-mode t nil (cua-base))
  '(display-battery-mode t)
  '(display-time-mode t)
- '(inhibit-startup-screen nil)
+;; '(inhibit-startup-screen t)
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(menu-bar-mode t)

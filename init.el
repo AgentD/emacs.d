@@ -55,5 +55,6 @@
 (load-library "custom-evil-mode")
 (load-library "custom-linum")
 (load-library "fci-mode")
+(load-library "theme-switch")
 ;; manage backups/autosaves
 (load-library "backup-autosave")
