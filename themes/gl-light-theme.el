@@ -1,17 +1,17 @@
-(deftheme gl-dark-alt
-  "gl-dark-alt theme")
+(deftheme gl-light
+  "gl-light theme")
 
 (custom-theme-set-faces
- 'gl-dark-alt
+ 'gl-light
 
- '(default ((t (:background "black" :foreground "#ffffff"))))
+ '(default ((t (:background "#ffffdd" :foreground "#000000"))))
  '(mouse ((t (:foreground "black"))))
- '(cursor ((t (:background "#ff00ff"))))
+ '(cursor ((t (:background "#0000ff"))))
  '(border ((t (:foreground "blue"))))
- '(fringe ((t (:background "#151515"))))
+ '(fringe ((t (:background "#ffffbb"))))
  '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
  '(mode-line-buffer-id ((t (:bold nil :foreground "#ffffff"))))
- '(region ((t (:background "#114488" :foreground "#ffffff"))))
+ '(region ((t (:background "#0000ff"))))
 
  '(font-lock-builtin-face ((t (:foreground "#75507b"))))
  '(font-lock-comment-face ((t (:foreground "#cc0000"))))
@@ -23,15 +23,15 @@
  '(font-lock-variable-name-face ((t (:foreground "#c4a000"))))
  '(font-lock-warning-face ((t (:foreground "Red" :bold t))))
 
- '(minibuffer-prompt ((t (:foreground "#ffffff" :bold t))))
- '(linum ((t (:foreground "#585858" :underline nil))))
+ '(minibuffer-prompt ((t (:foreground "#000000" :bold t))))
+ '(linum ((t (:foreground "#000000" :underline nil))))
  '(trailing-whitespace ((t (:foreground "#d8d8d8" :background "#fb0120"))))
 
- '(ido-subdir ((t (:foreground "#a1c659"))))
- '(ido-first-match ((t (:foreground "#ffffff" :bold t :underline t))))
+ '(ido-subdir ((t (:foreground "#114488"))))
+ '(ido-first-match ((t (:foreground "#000000" :bold t :underline t))))
  '(ido-only-match ((t (:foreground "#ffcc33"))))
- '(ido-indicator ((t (:foreground "#ffffff"))))
- '(ido-incomplete-regexp ((t (:foreground "#ffffff"))))
+ '(ido-indicator ((t (:foreground "#000000"))))
+ '(ido-incomplete-regexp ((t (:foreground "#000000"))))
 
  '(diff-added ((t (:foreground "green"))))
  '(diff-removed ((t (:foreground "red"))))

@@ -9,8 +9,8 @@
  '(cursor ((t (:background "#ff00ff"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#DCDCCC" :background "#4F4F4F"))))
- '(mode-line ((t (:foreground "#000000" :background "#aeaeae" ))))
- '(mode-line-buffer-id ((t (:bold nil :foreground "#000000"))))
+ '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
+ '(mode-line-buffer-id ((t (:bold nil :foreground "#ffffff"))))
  '(region ((t (:background "#00077a"))))
 
  '(font-lock-builtin-face ((t (:foreground "#DCDCCC"))))
@@ -24,7 +24,7 @@
  '(font-lock-warning-face ((t (:foreground "#D0BF8F" :bold t))))
 
  '(minibuffer-prompt ((t (:foreground "#ffffff" :bold t))))
- '(linum ((t (:foreground "#585858" :background "#000000" :underline nil))))
+ '(linum ((t (:foreground "#585858" :underline nil))))
  '(trailing-whitespace ((t (:foreground "#d8d8d8" :background "#fb0120"))))
 
  '(ido-subdir ((t (:foreground "#a1c659"))))
