@@ -1,4 +1,6 @@
-(setq custom-themes '(gl-dark-alt xcode-dark gl-light))
+(setq custom-themes '(gl-dark-alt xcode-dark cobalt gl-light b16-grayscale-dark
+								  b16-grayscale-light b16-bright b16-irblack
+								  gl-dark dark-grey))
 (setq custom-themes-index 0)
 
 (defun custom-cycle-theme ()
