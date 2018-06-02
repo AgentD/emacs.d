@@ -6,12 +6,12 @@
 
  '(default ((t (:background "#ffffdd" :foreground "#000000"))))
  '(mouse ((t (:foreground "black"))))
- '(cursor ((t (:background "#0000ff"))))
+ '(cursor ((t (:background "#ff00ff"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#ffffbb"))))
  '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
  '(mode-line-buffer-id ((t (:bold nil :foreground "#ffffff"))))
- '(region ((t (:background "#0000ff"))))
+ '(region ((t (:background "#0000ff" :foreground "#ffffff"))))
 
  '(font-lock-builtin-face ((t (:foreground "#75507b"))))
  '(font-lock-comment-face ((t (:foreground "#cc0000"))))

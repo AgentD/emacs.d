@@ -10,6 +10,7 @@
  '(menu-bar-mode t)
  '(tooltip-mode nil))
 (custom-set-faces
+ '(minibuffer-prompt ((t (:inherit foreground))))
  '(dired-directory ((t (:foreground "#75507b"))))
 ;; '(default ((t (:family "Monospace" :foundry "xft" :slant normal :weight
  ;; normal :height 69 :width normal))))

@@ -6,7 +6,7 @@
 
  '(default ((t (:background "#f7f7f7" :foreground "#464646"))))
  '(mouse ((t (:foreground "black"))))
- '(cursor ((t (:background "#0000ff"))))
+ '(cursor ((t (:background "#ff00ff"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#e3e3e3"))))
  '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
@@ -27,7 +27,7 @@
  '(linum ((t (:foreground "#585858" :underline nil))))
  '(trailing-whitespace ((t (:foreground "#d8d8d8" :background "#fb0120"))))
 
- '(ido-subdir ((t (:foreground "#75507b"))))
+ '(ido-subdir ((t (:foreground "#ff0000" :bold))))
  '(ido-first-match ((t (:foreground "#000000" :bold t :underline t))))
  '(ido-only-match ((t (:foreground "#ffcc33"))))
  '(ido-indicator ((t (:foreground "#000000"))))

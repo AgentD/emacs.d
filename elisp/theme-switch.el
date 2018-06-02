@@ -1,6 +1,6 @@
-(setq custom-themes '(gl-dark-alt xcode-dark cobalt gl-light b16-grayscale-dark
-								  b16-grayscale-light b16-bright b16-irblack
-								  gl-dark dark-grey))
+(setq custom-themes '(gl-dark-alt xcode-dark b16-bright b16-irblack 
+								  gl-dark b16-grayscale-dark cobalt
+								  dark-grey gl-light b16-grayscale-light ))
 (setq custom-themes-index 0)
 
 (defun custom-cycle-theme ()
@@ -17,9 +17,10 @@
   (custom-load-indexed-theme))
 
 (defun custom-try-load-theme (theme)
-  (if (ignore-errors (load-theme theme :no-confirm))
-      (mapcar #'disable-theme (remove theme custom-enabled-themes))
-    (message "Unable to find theme file for ‘%s’" theme)))
+	(if (ignore-errors (load-theme theme :no-confirm))
+			(progn (message "Currently enabled theme: '%s'" theme)
+		    (mapcar #'disable-theme (remove theme custom-enabled-themes)))
+		(message "Unable to find theme file for '%s'" theme)))
 
 
 (global-set-key (kbd "<f2>") 'custom-cycle-theme)
