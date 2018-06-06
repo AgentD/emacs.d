@@ -12,7 +12,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-	(evil yasnippet visual-fill-column undo-tree s popup memoize markdown-mode magit haskell-mode goto-chg flycheck flx fill-column-indicator)))
+	(auctex neotree evil yasnippet visual-fill-column undo-tree s popup memoize markdown-mode magit haskell-mode goto-chg flycheck flx fill-column-indicator)))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(size-indication-mode t)

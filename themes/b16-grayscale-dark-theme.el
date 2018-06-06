@@ -4,9 +4,10 @@
 (custom-theme-set-faces
  'b16-grayscale-dark
 
- '(default ((t (:background "#101010" :foreground "#b9b9b9"))))
+ ;; '(default ((t (:background "#101010" :foreground "#b9b9b9"))))
+ '(default ((t (:background "#000000" :foreground "#b9b9b9"))))
  '(mouse ((t (:foreground "black"))))
- '(cursor ((t (:background "#ff0000"))))
+ '(cursor ((t (:background "#ffffff"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#151515"))))
  '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
