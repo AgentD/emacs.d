@@ -23,7 +23,6 @@
  '(font-lock-warning-face ((t (:foreground "Red" :bold t))))
 
  '(minibuffer-prompt ((t (:foreground "#ffffff" :bold t))))
- '(linum ((t (:foreground "#585858" :background "#000000" :underline nil))))
  '(trailing-whitespace ((t (:foreground "#d8d8d8" :background "#fb0120"))))
 
  '(ido-subdir ((t (:foreground "#a1c659"))))

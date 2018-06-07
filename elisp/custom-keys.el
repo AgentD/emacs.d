@@ -11,7 +11,8 @@
 
 
 (global-set-key (kbd "C-<f10>") 'menu-bar-mode)
-(global-set-key (kbd "<f11>") 'linum-mode)
+(global-set-key (kbd "<f11>") 'display-line-numbers-mode)
+(global-set-key (kbd "C-<f11>") 'linum-mode)
 (global-set-key (kbd "C-<f9>") 'font-lock-mode)
 (global-set-key (kbd "S-<f9>") 'whitespace-mode)
 (global-set-key (kbd "s-s") 'save-buffer)

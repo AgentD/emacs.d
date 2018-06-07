@@ -25,6 +25,8 @@
  ;; If there is more than one, they won't work right.
  '(dired-directory ((t (:foreground "#75507b")))))
 
+
+
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
 ;; custom color-theme
@@ -53,7 +55,6 @@
 (load-library "custom-dired-mode")
 (load-library "custom-keys")
 (load-library "custom-evil-mode")
-(load-library "custom-linum")
 (load-library "fci-mode")
 (load-library "theme-switch")
 ;; manage backups/autosaves
