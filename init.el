@@ -26,6 +26,8 @@
  '(dired-directory ((t (:foreground "#75507b")))))
 
 
+(setq frame-title-format '("" "emacs@" system-name " - %b"))
+;; display buffername in titlebar
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
 

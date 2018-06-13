@@ -4,10 +4,12 @@
  '(cua-mode t nil (cua-base))
  '(display-battery-mode t)
  '(display-time-mode t)
-;; '(inhibit-startup-screen t)
+ '(inhibit-startup-screen t)
+ '(tool-bar-mode nil)
+ '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(size-indication-mode t)
- '(menu-bar-mode t)
+ '(menu-bar-mode nil)
  '(tooltip-mode nil))
 (custom-set-faces
  '(minibuffer-prompt ((t (:inherit foreground))))
@@ -15,6 +17,15 @@
 ;; '(default ((t (:family "Monospace" :foundry "xft" :slant normal :weight
  ;; normal :height 69 :width normal))))
  )
+(when (display-graphic-p)
+    (progn
+	(custom-set-faces
+		 '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
+		 '(mode-line-buffer-id ((t (:bold nil :foreground "#ffffff"))))))
+	(require 'package)
+	(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+	(package-initialize)
+	)
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
 

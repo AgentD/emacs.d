@@ -1,6 +1,7 @@
 ;; Custom keybinds
 (global-set-key (kbd "C-h") 'delete-backward-char)
-(global-set-key (kbd "C-w") 'backward-kill-sexp)
+(global-set-key (kbd "C-w") 'backward-kill-word)
+(global-set-key (kbd "M-S-w") 'backward-kill-sexp)
 (global-set-key (kbd "M-S-d") 'kill-sexp)
 (global-set-key (kbd "<s-d>") 'kill-sexp)
 (global-set-key (kbd "<s-p>") 'backward-paragraph)

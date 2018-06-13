@@ -2,8 +2,10 @@
 # name: begin class
 # key: bgcls
 # --
-public class  {
-        public static void main(String[] args) {
+public class
+{
+        public static void main(String[] args)
+	{
 
 	}
 }
