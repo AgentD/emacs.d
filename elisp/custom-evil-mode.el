@@ -1,7 +1,0 @@
-(global-set-key (kbd "<f8>") 'evil-mode)
-(setq evil-normal-state-cursor '(box)
-      evil-insert-state-cursor '(box)
-      evil-visual-state-cursor '(box)
-      evil-motion-state-cursor '(box)
-      evil-replace-state-cursor '(box)
-      evil-operator-state-cursor '(box))
