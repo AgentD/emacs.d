@@ -33,8 +33,6 @@
 									  "~/.emacs.d/themes"))
 (load-theme 'gl-dark-alt t)
 (enable-theme 'gl-dark-alt)
-;;(load-theme 'xcode-dark t)
-;;(enable-theme 'xcode-dark)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
