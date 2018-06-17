@@ -1,0 +1,58 @@
+(custom-set-variables
+ '(blink-cursor-mode nil)
+ '(column-number-mode t)
+ '(cua-mode t nil (cua-base))
+ '(inhibit-startup-screen t)
+ '(tool-bar-mode nil)
+ '(scroll-bar-mode nil)
+ '(show-paren-mode t)
+ '(size-indication-mode t)
+ '(menu-bar-mode nil)
+ '(tooltip-mode nil))
+(custom-set-faces
+ '(minibuffer-prompt ((t (:inherit foreground))))
+ '(mode-line ((t (:background "#bcbcbc" :foreground "#0000aa"))))
+ '(mode-line-buffer-id ((t (:background "#bcbcbc" :foreground "#fb0120" :bold t))))
+ '(dired-directory ((t (:foreground "#75507b")))))
+
+;; Custom keybinds
+(global-set-key (kbd "C-h") 'delete-backward-char)
+(global-set-key (kbd "C-w") 'backward-kill-word)
+(global-set-key (kbd "M-S-w") 'backward-kill-sexp)
+(global-set-key (kbd "M-S-d") 'kill-sexp)
+(global-set-key (kbd "<s-d>") 'kill-sexp)
+(global-set-key (kbd "<s-p>") 'backward-paragraph)
+(global-set-key (kbd "<s-n>") 'forward-paragraph)
+(global-set-key (kbd "M-p") 'scroll-down-command)
+(global-set-key (kbd "M-n") 'scroll-up-command)
+(global-set-key (kbd "M-g") 'goto-line)
+
+(global-set-key (kbd "C-<f10>") 'menu-bar-mode)
+(global-set-key (kbd "<f11>") 'display-line-numbers-mode)
+(global-set-key (kbd "C-<f9>") 'font-lock-mode)
+(global-set-key (kbd "S-<f9>") 'whitespace-mode)
+(global-set-key (kbd "<f9>") 'delete-trailing-whitespace)
+
+;;buffer switching
+(global-set-key (kbd "<f6>") 'next-buffer)
+(global-set-key (kbd "C-<next>") 'next-buffer)
+(global-set-key (kbd "<f5>") 'previous-buffer)
+(global-set-key (kbd "C-<prior>") 'previous-buffer)
+(global-set-key (kbd "<s-tab>") 'other-window)
+
+(setq-default indent-tabs-mode t)
+(setq-default tab-width 8)
+(setq-default show-trailing-whitespace t)
+(defvaralias 'c-basic-offset 'tab-width)
+(setq c-default-style "linux"
+	  c-basic-offset 8)
+(setq-default auto-fill-function 'do-auto-fill)
+(setq-default fill-column 80)
+(setq mouse-autoselect-window t)
+(xterm-mouse-mode 1)
+(setq undo-tree-mode t)
+
+(defvar backup-dir (expand-file-name "~/.emacs.d/backup/"))
+(defvar autosave-dir (expand-file-name "~/.emacs.d/autosave/"))
+(setq backup-directory-alist '(("" . "~/.emacs.d/backup")))
+(setq auto-save-file-name-transforms '((".*" "~/.emacs.d/autosave/" t)))
