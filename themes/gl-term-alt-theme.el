@@ -5,7 +5,7 @@
  'gl-term-alt
 
  '(mouse ((t (:foreground "black"))))
- '(cursor ((t (:background "magenta"))))
+ '(cursor ((t (:foreground "#ff0000"))))
  '(border ((t (:foreground "blue"))))
  '(mode-line ((t (:foreground "#000000" :background "#bcbcbc" ))))
  '(menu ((t (:foreground "#000000" :background "#bcbcbc" ))))
