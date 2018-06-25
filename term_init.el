@@ -1,5 +1,5 @@
 (custom-set-variables
- '(blink-cursor-mode nil)
+ '(blink-cursor-mode t)
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
  '(display-battery-mode t)
