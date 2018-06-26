@@ -14,6 +14,9 @@
  '(display-time-mode t)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
+ '(package-selected-packages
+   (quote
+	(yasnippet visual-fill-column s popup neotree memoize markdown-mode magit haskell-mode flycheck flx fill-column-indicator evil auctex)))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(size-indication-mode t)

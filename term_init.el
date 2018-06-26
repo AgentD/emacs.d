@@ -29,6 +29,7 @@
 		(load-theme 'xcode-dark t)
 		(enable-theme 'xcode-dark)
 		(load-library "custom-buffer-mode")
+		(load-library "emacs-goodies-el")
 		(load-library "custom-terminal-mode")
 		(load-library "custom-dired-mode"))
 	)
