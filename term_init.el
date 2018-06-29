@@ -26,8 +26,8 @@
 		(setq frame-title-format '("" "emacs@" system-name " - %b"))
 		(add-to-list 'custom-theme-load-path (file-name-as-directory
 											  "~/.emacs.d/themes"))
-		(load-theme 'xcode-dark t)
-		(enable-theme 'xcode-dark)
+		(load-theme 'memacs t)
+		(enable-theme 'memacs)
 		(load-library "custom-buffer-mode")
 		(load-library "emacs-goodies-el")
 		(load-library "custom-terminal-mode")
