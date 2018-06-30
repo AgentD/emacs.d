@@ -50,7 +50,7 @@
 (add-hook 'doc-view-mode-hook 'auto-revert-mode) ;; doc view auto update
 
 (load-library "snippets")
-(load-library "emacs-goodies-el")
+;;(load-library "emacs-goodies-el")
 (load-library "custom-buffer-mode")
 (load-library "custom-terminal-mode")
 (load-library "custom-editing")
