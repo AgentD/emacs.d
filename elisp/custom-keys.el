@@ -54,6 +54,8 @@
 
 ;;disabled commands
 (global-unset-key (kbd "<f2>"))
+(global-unset-key (kbd "<f3>"))
+(global-unset-key (kbd "<f4>"))
 
 (add-hook 'org-mode-hook (lambda()
                            (local-set-key (kbd "C-c c") 'org-latex-export-to-pdf)))

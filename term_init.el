@@ -12,6 +12,7 @@
  '(menu-bar-mode nil)
  '(tooltip-mode nil))
 (custom-set-faces
+ '(trailing-whitespace ((t (:background "#ffb6b0"))))
  '(minibuffer-prompt ((t (:inherit foreground))))
  '(dired-directory ((t (:foreground "#75507b"))))
 ;; '(default ((t (:family "Monospace" :foundry "xft" :slant normal :weight

@@ -27,7 +27,6 @@
  '(minibuffer-prompt ((t (:foreground "#ffffff" :bold t))))
  '(linum ((t (:foreground "#585858" :underline nil))))
  '(line-number ((t (:foreground "#585858" :underline nil))))
- '(trailing-whitespace ((t (:foreground "#d8d8d8" :background "#fb0120"))))
 
  '(ido-subdir ((t (:foreground "#a1c659"))))
  '(ido-first-match ((t (:foreground "#ffffff" :bold t :underline t))))

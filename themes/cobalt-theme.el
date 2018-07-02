@@ -6,7 +6,7 @@
 
  '(default ((t (:background "#001b33" :foreground "white"))))
  '(mouse ((t (:foreground "black"))))
- '(cursor ((t (:background "#ffffff"))))
+ '(cursor ((t (:background "#ff00ff"))))
  '(border ((t (:foreground "#203f6a"))))
  '(fringe ((t (:background "#000d1a"))))
  '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
@@ -26,8 +26,6 @@
  '(minibuffer-prompt ((t (:foreground "#ffffff" :bold t))))
  '(linum ((t (:foreground "#0080fa" :underline nil))))
  '(line-number ((t (:foreground "#0080fa" :underline nil))))
- '(trailing-whitespace ((t (:foreground "#d8d8d8" :background "#fb0120"))))
-
 
  '(ido-subdir ((t (:foreground "#0080fa"))))
  '(ido-first-match ((t (:foreground "#ffffff" :bold t :underline t))))

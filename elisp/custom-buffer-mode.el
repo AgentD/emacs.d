@@ -3,10 +3,8 @@
 (kill-buffer "*Messages*")
 
 ;; Disabled *Completions*
-(add-hook 'minibuffer-exit-hook 
+(add-hook 'minibuffer-exit-hook
           '(lambda ()
              (let ((buffer "*Completions*"))
               (and (get-buffer buffer)
-                    (kill-buffer buffer)))))	
-
-
+                    (kill-buffer buffer)))))

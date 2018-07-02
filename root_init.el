@@ -10,6 +10,7 @@
  '(menu-bar-mode nil)
  '(tooltip-mode nil))
 (custom-set-faces
+ '(trailing-whitespace ((t (:background "#ffb6b0"))))
  '(minibuffer-prompt ((t (:inherit foreground))))
  '(mode-line ((t (:background "#bcbcbc" :foreground "#0000aa"))))
  '(mode-line-buffer-id ((t (:background "#bcbcbc" :foreground "#fb0120" :bold t))))
