@@ -15,7 +15,7 @@
  '(global-yascroll-bar-mode t)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
- '(scroll-bar-mode nil)
+ '(scroll-bar-mode t)
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(tool-bar-mode nil)
