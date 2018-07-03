@@ -15,7 +15,7 @@
  '(global-yascroll-bar-mode t)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
- '(scroll-bar-mode t)
+ '(scroll-bar-mode (quote right))
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(tool-bar-mode nil)
@@ -25,8 +25,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(trailing-whitespace ((t (:background "#ffb6b0"))))
- '(dired-directory ((t (:foreground "#75507b")))))
+ '(dired-directory ((t (:foreground "#75507b"))))
+ '(scroll-bar ((t (:background "#151515" :distant-foreground "#151515" :foreground "#151515"))))
+ '(trailing-whitespace ((t (:background "#ffb6b0")))))
 
 
 (setq frame-title-format '("" "emacs@" system-name " - %b"))

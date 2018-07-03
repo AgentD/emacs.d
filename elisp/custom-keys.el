@@ -29,14 +29,14 @@
 (global-set-key (kbd "<f5>") 'previous-buffer)
 (global-set-key (kbd "M-<prior>") 'previous-buffer)
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
-(global-set-key (kbd "C-<f4>") 'ibuffer)
+(global-set-key (kbd "<f4>") 'ibuffer)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-c b") 'ibuffer)
 (global-set-key (kbd "C-x C-d") 'dired)
 
 (global-set-key (kbd "C-x 4") 'make-frame-command)
 (global-set-key (kbd "<s-tab>") 'other-window)
-(global-set-key (kbd "C-<f3>") 'neotree-toggle)
+(global-set-key (kbd "<f3>") 'neotree-toggle)
 
 ;;window resizing
 (global-set-key (kbd "M-C-<left>") 'shrink-window-horizontally)
@@ -54,8 +54,8 @@
 
 ;;disabled commands
 (global-unset-key (kbd "<f2>"))
-(global-unset-key (kbd "<f3>"))
-(global-unset-key (kbd "<f4>"))
+;;(global-unset-key (kbd "<f3>"))
+;;(global-unset-key (kbd "<f4>"))
 
 (add-hook 'org-mode-hook (lambda()
                            (local-set-key (kbd "C-c c") 'org-latex-export-to-pdf)))
