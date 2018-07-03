@@ -4,7 +4,8 @@
 (custom-theme-set-faces
  'subl-dark
 
- '(default ((t (:background "black" :foreground "#ffffff"))))
+;; '(default ((t (:background "#1b1e1c" :foreground "#ffffff"))))
+ '(default ((t (:background "#272822" :foreground "#ffffff"))))
  '(mouse ((t (:foreground "black"))))
  '(cursor ((t (:background "#ff0000"))))
  '(border ((t (:foreground "blue"))))
