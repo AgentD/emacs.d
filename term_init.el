@@ -6,7 +6,7 @@
  '(display-time-mode t)
  '(inhibit-startup-screen t)
  '(tool-bar-mode nil)
- '(scroll-bar-mode t)
+ '(scroll-bar-mode (quote right))
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(menu-bar-mode nil)
@@ -14,6 +14,7 @@
 (custom-set-faces
  '(trailing-whitespace ((t (:background "#ffb6b0"))))
  '(minibuffer-prompt ((t (:inherit foreground))))
+ '(scroll-bar ((t (:background "#454545" :distant-foreground "#454545" :foreground "#454545"))))
  '(dired-directory ((t (:foreground "#75507b"))))
 ;; '(default ((t (:family "Monospace" :foundry "xft" :slant normal :weight
  ;; normal :height 69 :width normal))))

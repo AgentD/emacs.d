@@ -26,7 +26,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(dired-directory ((t (:foreground "#75507b"))))
- '(scroll-bar ((t (:background "#151515" :distant-foreground "#151515" :foreground "#151515"))))
+ '(scroll-bar ((t (:background "#454545" :distant-foreground "#454545" :foreground "#454545"))))
  '(trailing-whitespace ((t (:background "#ffb6b0")))))
 
 
