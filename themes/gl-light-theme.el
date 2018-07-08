@@ -23,15 +23,15 @@
  '(font-lock-variable-name-face ((t (:foreground "#c4a000"))))
  '(font-lock-warning-face ((t (:foreground "Red" :bold t))))
 
- '(minibuffer-prompt ((t (:foreground "#ffffff" :bold t))))
- '(linum ((t (:foreground "#585858" :underline nil))))
- '(line-number ((t (:foreground "#585858" :underline nil))))
+ '(minibuffer-prompt ((t (:foreground "#000000" :bold t))))
+ '(linum ((t (:foreground "#000000" :underline nil))))
+ '(line-number ((t (:foreground "#000000" :underline nil))))
 
- '(ido-subdir ((t (:foreground "#a1c659"))))
- '(ido-first-match ((t (:foreground "#ffffff" :bold t :underline t))))
+ '(ido-subdir ((t (:foreground "#0080fa"))))
+ '(ido-first-match ((t (:foreground "#000000" :bold t :underline t))))
  '(ido-only-match ((t (:foreground "#ffcc33"))))
- '(ido-indicator ((t (:foreground "#ffffff"))))
- '(ido-incomplete-regexp ((t (:foreground "#ffffff"))))
+ '(ido-indicator ((t (:foreground "#000000"))))
+ '(ido-incomplete-regexp ((t (:foreground "#000000"))))
 
  '(diff-added ((t (:foreground "green"))))
  '(diff-removed ((t (:foreground "red"))))
