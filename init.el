@@ -15,7 +15,6 @@
  '(global-yascroll-bar-mode t)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
- ;; '(scroll-bar-mode (quote right))
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)

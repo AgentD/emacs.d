@@ -14,6 +14,7 @@
 (custom-set-faces
  '(trailing-whitespace ((t (:background "#ffb6b0"))))
  '(minibuffer-prompt ((t (:inherit foreground))))
+ '(mode-line-buffer-id ((t (:inherit background))))
  '(scroll-bar ((t (:background "#454545" :distant-foreground "#454545" :foreground "#454545"))))
  '(dired-directory ((t (:foreground "#75507b"))))
 ;; '(default ((t (:family "Monospace" :foundry "xft" :slant normal :weight
