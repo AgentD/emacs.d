@@ -55,7 +55,7 @@
 ;;(add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 (setq-default auto-fill-function 'do-auto-fill)
-(setq-default fill-column 79)
+(setq-default fill-column 80)
 (setq mouse-autoselect-window t)
 (xterm-mouse-mode 1)
 (setq undo-tree-mode t)
