@@ -12,21 +12,24 @@
 
 ;; usable java indentation
 (add-hook 'java-mode-hook (lambda()
-							  (setq c-basic-offset 4)
-							  (setq tab-width 4)
-							  (c-set-offset 'inline-open 0)))
+		    	(setq c-basic-offset 4)
+				(setq tab-width 4)
+				(c-set-offset 'inline-open 0)))
 
 (add-hook 'sh-mode-hook (lambda()
-			    (setq sh-basic-offset 8)
+				(setq sh-basic-offset 8)
+				(setq tab-width 8)
 			    (setq sh-intendation 8)))
 
 (add-hook 'emacs-lisp-mode-hook (lambda()
-				    (setq c-basic-offset 4)
-				    (setq lisp-body-indent 4)))
+				(setq c-basic-offset 4)
+				(setq tab-width 4)
+				(setq lisp-body-indent 4)))
 
 (add-hook 'haskell-mode-hook (lambda()
-				 (setq c-basic-offset 4)
-				 (setq indent-tabs-mode nil)))
+				(setq c-basic-offset 4)
+				(setq tab-width 4)
+				(setq indent-tabs-mode nil)))
 
 ;; (defun c-lineup-arglist-tabs-only (ignored)
 ;;   "Line up argument lists by tabs, not spaces"
@@ -45,8 +48,8 @@
 ;; 					       c-lineup-arglist-tabs-only))))))
 
 (add-hook 'c-mode-hook (lambda ()
-			   (setq indent-tabs-mode t)
-			   (c-set-style "linux")))
+			    (setq indent-tabs-mode t)
+				(c-set-style "linux")))
 
 ;; max. 80 char
 ;;(add-hook 'text-mode-hook 'turn-on-auto-fill)
