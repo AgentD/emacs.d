@@ -26,12 +26,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(dired-directory ((t (:foreground "#75507b"))))
- '(scroll-bar ((t (:background "#454545" :distant-foreground "#454545" :foreground "#454545"))))
+ '(scroll-bar ((t (:background "#454545" :distant-foreground "#454545"
+			       :foreground "#454545"))))
  '(trailing-whitespace ((t (:background "#ffb6b0")))))
 
-
-(setq frame-title-format '("" "emacs@" system-name " - %b"))
 ;; display buffername in titlebar
+(setq frame-title-format '("" "emacs@" system-name " - %b"))
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
@@ -49,6 +49,7 @@
 (ido-mode t)
 (setq ido-enable-flex-matching t)
 (ido-everywhere t)
+(setq ido-auto-merge-work-directories-length -1)
 (add-hook 'doc-view-mode-hook 'auto-revert-mode) ;; doc view auto update
 
 (load-library "snippets")
