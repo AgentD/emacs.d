@@ -4,10 +4,10 @@
 (global-set-key (kbd "M-S-w") 'backward-kill-sexp)
 (global-set-key (kbd "M-S-d") 'kill-sexp)
 (global-set-key (kbd "<s-d>") 'kill-sexp)
-(global-set-key (kbd "<s-p>") 'backward-paragraph)
-(global-set-key (kbd "<s-n>") 'forward-paragraph)
-(global-set-key (kbd "M-p") 'scroll-down-command)
-(global-set-key (kbd "M-n") 'scroll-up-command)
+(global-set-key (kbd "M-p") 'backward-paragraph)
+(global-set-key (kbd "M-n") 'forward-paragraph)
+(global-set-key (kbd "<s-j>") 'scroll-down-command)
+(global-set-key (kbd "<s-k>") 'scroll-up-command)
 (global-set-key (kbd "M-g") 'goto-line)
 
 
