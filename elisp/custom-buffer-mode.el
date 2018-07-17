@@ -1,6 +1,6 @@
 ;; Forces the messages to 0, and kills the *Messages* buffer - thus disabling it on startup.
-(setq-default message-log-max nil)
-(kill-buffer "*Messages*")
+;;(setq-default message-log-max nil)
+;;(kill-buffer "*Messages*")
 
 ;; Disabled *Completions*
 (add-hook 'minibuffer-exit-hook
