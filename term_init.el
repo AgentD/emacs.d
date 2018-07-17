@@ -6,7 +6,7 @@
  '(display-time-mode t)
  '(inhibit-startup-screen t)
  '(tool-bar-mode nil)
- '(scroll-bar-mode (quote right))
+ '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(menu-bar-mode nil)
