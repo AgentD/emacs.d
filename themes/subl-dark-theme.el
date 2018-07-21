@@ -5,17 +5,18 @@
  'subl-dark
 
 ;; '(default ((t (:background "#1b1e1c" :foreground "#ffffff"))))
- '(default ((t (:background "#000000" :foreground "#ffffff"))))
+ '(default ((t (:background "#050505" :foreground "#ffffff"))))
  '(mouse ((t (:foreground "black"))))
  '(cursor ((t (:background "#ff0000"))))
  '(border ((t (:foreground "blue"))))
- '(fringe ((t (:background "#151515"))))
+ '(fringe ((t (:background "#111111"))))
  '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
  '(mode-line-buffer-id ((t (:bold nil :foreground "#ffffff"))))
  '(region ((t (:background "#114488" :foreground "#ffffff"))))
 
  '(font-lock-builtin-face ((t (:foreground "#f92627"))))
- '(font-lock-comment-face ((t (:foreground "#17f018"))))
+ ;; '(font-lock-comment-face ((t (:foreground "#17f018"))))
+ '(font-lock-comment-face ((t (:foreground "#464557"))))
  '(font-lock-constant-face ((t (:foreground "#ae81ff"))))
  '(font-lock-function-name-face ((t (:foreground "#a6e22e"))))
  '(font-lock-keyword-face ((t (:foreground "#f92627"))))

@@ -50,6 +50,9 @@
 (global-set-key (kbd "C-0") 'text-scale-adjust)
 (global-set-key (kbd "M-<f8>") 'compile)
 
+(global-set-key (kbd "s-k") 'kill-current-buffer)
+(global-set-key (kbd "C-<f4>") 'kill-current-buffer)
+
 
 
 ;;disabled commands
