@@ -15,6 +15,9 @@
  '(global-yascroll-bar-mode t)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
+ '(package-selected-packages
+   (quote
+	(yasnippet visual-fill-column s popup neotree memoize markdown-mode magit haskell-mode flycheck flx fill-column-indicator evil)))
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -26,8 +29,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(dired-directory ((t (:foreground "#75507b"))))
- '(scroll-bar ((t (:background "#454545" :distant-foreground "#454545"
-			       :foreground "#454545"))))
+ '(scroll-bar ((t (:background "#454545" :distant-foreground "#454545" :foreground "#454545"))))
  '(trailing-whitespace ((t (:background "#ffb6b0")))))
 
 ;; display buffername in titlebar

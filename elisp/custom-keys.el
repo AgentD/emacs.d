@@ -34,15 +34,21 @@
 (global-set-key (kbd "C-c b") 'ibuffer)
 (global-set-key (kbd "C-x C-d") 'dired)
 
-(global-set-key (kbd "C-x 4") 'make-frame-command)
 (global-set-key (kbd "<s-tab>") 'other-window)
 (global-set-key (kbd "<f3>") 'neotree-toggle)
 
-;;window resizing
+;;windows
 (global-set-key (kbd "M-C-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "M-C-<up>") 'enlarge-window)
 (global-set-key (kbd "M-C-<down>") 'shrink-window)
 (global-set-key (kbd "M-C-<right>") 'enlarge-window-horizontally)
+
+(global-set-key (kbd "s-0") 'delete-window)
+(global-set-key (kbd "s-1") 'delete-other-windows)
+(global-set-key (kbd "s-2") 'split-window-below)
+(global-set-key (kbd "s-3") 'split-window-right)
+(global-set-key (kbd "C-x 4") 'make-frame-command)
+(global-set-key (kbd "s-4") 'make-frame-command)
 
 ;; font resize
 (global-set-key (kbd "C-=") 'text-scale-increase)
