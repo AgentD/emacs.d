@@ -15,8 +15,7 @@
  '(region ((t (:background "#114488" :foreground "#ffffff"))))
 
  '(font-lock-builtin-face ((t (:foreground "#f92627"))))
- ;; '(font-lock-comment-face ((t (:foreground "#17f018"))))
- '(font-lock-comment-face ((t (:foreground "#464557"))))
+ '(font-lock-comment-face ((t (:foreground "#17f018"))))
  '(font-lock-constant-face ((t (:foreground "#ae81ff"))))
  '(font-lock-function-name-face ((t (:foreground "#a6e22e"))))
  '(font-lock-keyword-face ((t (:foreground "#f92627"))))
