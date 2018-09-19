@@ -16,3 +16,6 @@ elpa/archives
 games/
 zile_backup/
 recentf
+%backup%~
+tramp
+
