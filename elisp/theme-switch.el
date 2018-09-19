@@ -1,4 +1,4 @@
-(setq custom-themes '(gl-dark-alt xcode-dark subl-dark dark-grey))
+(setq custom-themes '(gl-dark-alt xcode-dark subl-dark deeper-blue))
 (setq custom-themes-index 0)
 
 (defun custom-cycle-theme ()
