@@ -18,4 +18,5 @@ zile_backup/
 recentf
 %backup%~
 tramp
-
+eshell/history
+eshell/lastdir
