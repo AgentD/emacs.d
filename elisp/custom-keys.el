@@ -58,7 +58,7 @@
 
 (global-set-key (kbd "s-k") 'kill-current-buffer)
 (global-set-key (kbd "C-<f4>") 'kill-current-buffer)
-
+(global-set-key (kbd "<f3>") 'hs-minor-mode)
 ;;disabled commands
 (global-unset-key (kbd "<f2>"))
 ;;(global-unset-key (kbd "<f3>"))
@@ -70,3 +70,10 @@
                            (local-set-key (kbd "C-c C-c") 'org-latex-export-to-pdf)))
 (add-hook 'dired-mode-hook (lambda()
 							   (local-set-key (kbd "C-h") 'dired-omit-mode)))
+
+(add-hook 'hs-minor-mode-hook (lambda()
+								  (local-set-key (kbd "C-c t") 'hs-toggle-hiding)
+								  (local-set-key (kbd "C-c S") 'hs-show-all)
+								  (local-set-key (kbd "C-c H") 'hs-hide-all)
+								  (local-set-key (kbd "C-c s") 'hs-show-block)
+								  (local-set-key (kbd "C-c h") 'hs-hide-block)))
