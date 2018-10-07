@@ -72,7 +72,7 @@
 							   (local-set-key (kbd "C-h") 'dired-omit-mode)))
 
 (add-hook 'hs-minor-mode-hook (lambda()
-								  (local-set-key (kbd "C-c t") 'hs-toggle-hiding)
+								  (local-set-key (kbd "C-t") 'hs-toggle-hiding)
 								  (local-set-key (kbd "C-c S") 'hs-show-all)
 								  (local-set-key (kbd "C-c H") 'hs-hide-all)
 								  (local-set-key (kbd "C-c s") 'hs-show-block)
