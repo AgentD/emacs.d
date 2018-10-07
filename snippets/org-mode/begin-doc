@@ -7,7 +7,7 @@
 #+LaTeX_HEADER: \usepackage{fullpage}
 #+LaTeX_HEADER: \usepackage{amssymb}
 #+LaTeX_HEADER: \usepackage{booktabs}
-#+LaTeX_HEADER: \usepackage{changepage} 
+#+LaTeX_HEADER: \usepackage{changepage}
 #+LaTeX_HEADER: \usepackage[euler]{textgreek}
 #+LaTeX_HEADER: \usepackage{textcomp}
 #+LaTeX_HEADER: \usepackage[ngerman]{babel}
@@ -15,9 +15,11 @@
 #+LaTeX_HEADER: \usepackage{lmodern}
 #+LateX_HEADER: \usepackage[onehalfspacing]{setspace}
 
-#+OPTIONS: tex:t  
-#+OPTIONS: toc:nil       
+\setlength{\parindent}{0pt}
+#+OPTIONS: tex:t
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
 
 #+Title:
-#+Author: 
-#+Date: 
+#+Author:
+#+Date:

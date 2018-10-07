@@ -1,11 +1,11 @@
 # -*- mode: snippet -*-
 # name: beginn class
-# key: bgcls
+# key: class
 # --
-public class
+public class $1
 {
-        public static void main(String[] args)
-	{
-
-	}
+    public static void main(String[] args)
+    {
+	$0
+    }
 }

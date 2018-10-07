@@ -2,4 +2,4 @@
 # name: frac
 # key: frac
 # --
-\dfrac{}{}
+\dfrac{$1}{$2}$0
