@@ -10,7 +10,6 @@
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(menu-bar-mode nil)
- '(global-font-lock-mode t)
  '(tooltip-mode nil))
 (custom-set-faces
  '(trailing-whitespace ((t (:background "#ffb6b0"))))
