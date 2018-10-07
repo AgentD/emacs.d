@@ -2,12 +2,6 @@
 (setq-default indent-tabs-mode t)
 (setq-default tab-width 8)
 (setq-default show-trailing-whitespace t)
-;; make tab key always call a indent command.
-;; (setq-default tab-always-indent t)
-;; make tab key call indent command or insert tab character, depending on cursor position
-;; (setq-default tab-always-indent nil)
-;; make tab key do indent first then completion.
-;; (setq-default tab-always-indent 'complete)
 
 (defvaralias 'c-basic-offset 'tab-width)
 (setq c-default-style "linux"
@@ -16,7 +10,6 @@
 ;; Make backspace erase the tab instead of removing 1 space at a time.
 (setq backward-delete-char-untabify-method 'hungry)
 
-;; usable java indentation
 (add-hook 'java-mode-hook (lambda()
 		    	(setq c-basic-offset 4)
 				(setq tab-width 4)
@@ -42,6 +35,23 @@
 				(setq tab-width 4)
 				(setq indent-tabs-mode nil)))
 
+(add-hook 'python-mode-hook (lambda ()
+				(setq indent-tabs-mode t)
+				(setq python-indent 4)
+				(setq tab-width 4)))
+
+(add-hook 'org-mode-hook (lambda ()
+				(turn-off-auto-fill)))
+
+(defun hide-trailing-whitespace ()
+	            (when (derived-mode-p 'eshell-mode
+									  'term-mode)
+					(setq auto-fill-mode nil)
+					(setq show-trailing-whitespace nil)))
+
+(add-hook 'after-change-major-mode-hook
+          'hide-trailing-whitespace)
+
 ;; (defun c-lineup-arglist-tabs-only (ignored)
 ;;   "Line up argument lists by tabs, not spaces"
 ;;   (let* ((anchor (c-langelem-pos c-syntactic-element))
@@ -61,9 +71,6 @@
 (add-hook 'c-mode-hook (lambda ()
 			    (setq indent-tabs-mode t)
 				(c-set-style "linux")))
-
-;; max. 80 char
-;;(add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 (setq-default auto-fill-function 'do-auto-fill)
 (setq-default fill-column 80)

@@ -14,6 +14,12 @@
   (setq custom-themes-index 0)
   (custom-load-indexed-theme))
 
+(defun custom-disable-theme ()
+  (interactive)
+  (setq custom-themes-index 0)
+  (custom-load-indexed-theme)
+  (disable-theme (nth custom-themes-index custom-themes)))
+
 (defun custom-try-load-theme (theme)
 	(if (ignore-errors (load-theme theme :no-confirm))
 			(progn (message "Currently enabled theme: '%s'" theme)
@@ -23,3 +29,4 @@
 
 (global-set-key (kbd "<f2>") 'custom-cycle-theme)
 (global-set-key (kbd "C-<f2>") 'custom-default-theme)
+(global-set-key (kbd "S-<f2>") 'custom-disable-theme)
