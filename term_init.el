@@ -1,15 +1,16 @@
 (custom-set-variables
- '(blink-cursor-mode t)
+ '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
- '(display-battery-mode t)
- '(display-time-mode t)
+ '(display-battery-mode nil)
+ '(display-time-mode nil)
  '(inhibit-startup-screen t)
  '(tool-bar-mode nil)
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(menu-bar-mode nil)
+ '(global-font-lock-mode t)
  '(tooltip-mode nil))
 (custom-set-faces
  '(trailing-whitespace ((t (:background "#ffb6b0"))))
@@ -20,6 +21,9 @@
  ;; normal :height 69 :width normal))))
  )
 (add-to-list 'load-path "~/.emacs.d/elisp")
+(setq frame-title-format '("" "emacs@" system-name " - %b"))
+
+(setq visible-cursor nil)
 
 (load-library "custom-editing")
 (load-library "custom-keys")
