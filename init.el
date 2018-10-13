@@ -42,17 +42,17 @@
 (setq ido-enable-flex-matching t)
 (ido-everywhere t)
 (setq ido-auto-merge-work-directories-length -1)
-(add-hook 'doc-view-mode-hook 'auto-revert-mode)
 
-(load-library "snippets")
-;;(load-library "emacs-goodies-el")
+(setq yas-snippet-dirs
+      '("~/.emacs.d/snippets"))
+(yas-global-mode 1)
+
 (load-library "custom-buffer-mode")
 (load-library "custom-terminal-mode")
 (load-library "custom-eshell-mode")
 (load-library "custom-editing")
 (load-library "custom-dired-mode")
 (load-library "custom-keys")
-(load-library "fci-mode")
 (load-library "theme-switch")
 ;; manage backups/autosaves
 (load-library "backup-autosave")
