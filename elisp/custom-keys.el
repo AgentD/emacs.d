@@ -8,7 +8,7 @@
 (global-set-key (kbd "s-m") 'scroll-down-command)
 (global-set-key (kbd "s-n") 'scroll-up-command)
 (global-set-key (kbd "M-g") 'goto-line)
-
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
 (global-set-key (kbd "C-<f10>") 'menu-bar-mode)
 (global-set-key (kbd "<f11>") 'display-line-numbers-mode)

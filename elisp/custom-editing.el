@@ -40,9 +40,6 @@
 				(setq python-indent 4)
 				(setq tab-width 4)))
 
-(add-hook 'org-mode-hook (lambda ()
-				(turn-off-auto-fill)))
-
 (defun hide-trailing-whitespace ()
 	            (when (derived-mode-p 'eshell-mode
 									  'term-mode)
@@ -51,22 +48,6 @@
 
 (add-hook 'after-change-major-mode-hook
           'hide-trailing-whitespace)
-
-;; (defun c-lineup-arglist-tabs-only (ignored)
-;;   "Line up argument lists by tabs, not spaces"
-;;   (let* ((anchor (c-langelem-pos c-syntactic-element))
-;;          (column (c-langelem-2nd-pos c-syntactic-element))
-;;          (offset (- (1+ column) anchor))
-;;          (steps (floor offset c-basic-offset)))
-;;     (* (max steps 1) )))
-;; (add-hook 'c-mode-common-hook (lambda ()
-;; 				  ;; Add kernel style
-;; 				  (c-add-style
-;; 				   "linux-tabs-only"
-;; 				   '("linux" (c-offsets-alist
-;; 					      (arglist-cont-nonempty
-;; 					       c-lineup-gcc-asm-reg
-;; 					       c-lineup-arglist-tabs-only))))))
 
 (add-hook 'c-mode-hook (lambda ()
 			    (setq indent-tabs-mode t)
