@@ -13,7 +13,9 @@
 #+LaTeX_HEADER: \usepackage[ngerman]{babel}
 #+LaTeX_HEADER: \usepackage[utf8]{inputenc}
 #+LaTeX_HEADER: \usepackage{lmodern}
-#+LateX_HEADER: \usepackage[onehalfspacing]{setspace}
+#+LaTeX_HEADER: \usepackage[onehalfspacing]{setspace}
+#+LaTeX_HEADER: \usepackage{mathtools}
+
 
 \setlength{\parindent}{0pt}
 #+OPTIONS: tex:t

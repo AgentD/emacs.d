@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
 # name: or
-# key: \v
+# key: ve
 # --
 \vee $0
