@@ -77,3 +77,4 @@
 								  (local-set-key (kbd "C-c H") 'hs-hide-all)
 								  (local-set-key (kbd "C-c s") 'hs-show-block)
 								  (local-set-key (kbd "C-c h") 'hs-hide-block)))
+(global-unset-key (kbd "C-x C-z")) ;; disables suspend frame via keybind 
