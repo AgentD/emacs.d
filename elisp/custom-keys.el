@@ -65,7 +65,7 @@
 ;;(global-unset-key (kbd "<f4>"))
 (global-unset-key (kbd "<insert>"))
 (global-unset-key (kbd "C-t"))
-(global-unset-key (kbd "M-t"))
+;;(global-unset-key (kbd "M-t"))
 (add-hook 'org-mode-hook (lambda()
                            (local-set-key (kbd "C-c c") 'org-latex-export-to-pdf)
                            (local-set-key (kbd "C-c C-c") 'org-latex-export-to-pdf)))

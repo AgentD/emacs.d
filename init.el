@@ -1,5 +1,6 @@
 (custom-set-variables
- '(battery-mode-line-format "[%b%p%%] ")
+ ;; '(battery-mode-line-format "[%b%p%%] ")
+ '(battery-mode-line-format "%b%p%% ")
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
@@ -7,7 +8,7 @@
  '(display-time-24hr-format t)
  '(display-time-day-and-date nil)
  '(display-time-default-load-average nil)
- '(display-time-mode t)
+ '(display-time-mode nil)
  '(global-yascroll-bar-mode t)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
@@ -30,7 +31,7 @@
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
 (add-to-list 'custom-theme-load-path (file-name-as-directory
-									  "~/.emacs.d/themes"))
+				      "~/.emacs.d/themes"))
 (load-theme 'gl-dark-alt t)
 (enable-theme 'gl-dark-alt)
 
