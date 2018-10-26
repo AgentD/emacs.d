@@ -1,5 +1,4 @@
 (custom-set-variables
- ;; '(battery-mode-line-format "[%b%p%%] ")
  '(battery-mode-line-format "%b%p%% ")
  '(blink-cursor-mode nil)
  '(column-number-mode t)
@@ -12,6 +11,7 @@
  '(global-yascroll-bar-mode t)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
+ '(neo-theme (quote ascii))
  '(package-selected-packages
    (quote
 	(auctex popup undo-tree yasnippet visual-fill-column s markdown-mode magit haskell-mode flycheck flx fill-column-indicator)))

@@ -5,8 +5,8 @@
 (global-set-key (kbd "M-S-d") 'kill-sexp)
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
-(global-set-key (kbd "s-m") 'scroll-down-command)
-(global-set-key (kbd "s-n") 'scroll-up-command)
+(global-set-key (kbd "M-k") 'scroll-down-command)
+(global-set-key (kbd "M-j") 'scroll-up-command)
 (global-set-key (kbd "M-g") 'goto-line)
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
@@ -29,13 +29,14 @@
 (global-set-key (kbd "<f5>") 'previous-buffer)
 (global-set-key (kbd "M-<prior>") 'previous-buffer)
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
-(global-set-key (kbd "<f4>") 'ibuffer)
+(global-set-key (kbd "<f7>") 'ibuffer)
 (global-set-key (kbd "s-b") 'ibuffer)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-c b") 'ibuffer)
 (global-set-key (kbd "C-x C-d") 'dired)
 
 (global-set-key (kbd "<s-tab>") 'other-window)
+(global-set-key (kbd "M-S-<tab>") 'other-window)
 
 ;;windows
 (global-set-key (kbd "M-C-<left>") 'shrink-window-horizontally)
@@ -57,7 +58,6 @@
 (global-set-key (kbd "M-<f8>") 'compile)
 
 (global-set-key (kbd "s-k") 'kill-current-buffer)
-(global-set-key (kbd "C-<f4>") 'kill-current-buffer)
 (global-set-key (kbd "<f3>") 'hs-minor-mode)
 ;;disabled commands
 (global-unset-key (kbd "<f2>"))

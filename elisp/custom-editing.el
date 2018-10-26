@@ -63,6 +63,6 @@
 (setq org-highlight-latex-and-related '(latex script entities))
 
 ;; reuse compilation window even if it is in anoter frame
-(add-to-list 'display-buffer-alist
-			 '("\\*compilaition\\*"
-			   . (nil (reusable-frames . visible))))
+;; (add-to-list 'display-buffer-alist
+;; 			 '("\\*compilaition\\*"
+;;			   . (nil (reusable-frames . visible))))
