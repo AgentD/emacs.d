@@ -4,20 +4,20 @@
 (custom-theme-set-faces
  'monochrome
 
- '(default ((t (:background "#E4E1D6" :foreground "#474747"))))
+ '(default ((t (:background "#e5e3d6" :foreground "#222222"))))
  '(mouse ((t (:foreground "black"))))
- '(cursor ((t (:background "#474747"))))
+ '(cursor ((t (:background "#222222"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#d3d1c9"))))
- '(mode-line ((t (:foreground "#e4e1d9" :background "#474747" ))))
- '(mode-line-buffer-id ((t (:bold nil :foreground "#e0e0e0"))))
- '(region ((t (:background "#474747" :foreground "#e4e1d6"))))
+ '(mode-line ((t (:foreground "#e4e1d9" :background "#222222" ))))
+ '(mode-line-buffer-id ((t (:bold nil :inherit foreground))))
+ '(region ((t (:background "#222222" :foreground "#e4e1d6"))))
 
- '(font-lock-builtin-face ((t (:inherit foreground :underline t))))
+ '(font-lock-builtin-face ((t (:inherit foreground :bold t))))
  '(font-lock-comment-face ((t (:inherit foreground))))
- '(font-lock-constant-face ((t (:underline t :inherit foreground))))
+ '(font-lock-constant-face ((t (:bold t :inherit foreground))))
  '(font-lock-function-name-face ((t (:inherit foreground :bold t))))
- '(font-lock-keyword-face ((t (:inherit foreground ))))
+ '(font-lock-keyword-face ((t (:inherit foreground :bold t))))
  '(font-lock-string-face ((t (:inherit foreground))))
  '(font-lock-type-face ((t (:inherit foreground :bold t))))
  '(font-lock-variable-name-face ((t (:inherit foreground))))

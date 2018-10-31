@@ -1,7 +1,8 @@
 ;; tab width
 (setq-default indent-tabs-mode t)
 (setq-default tab-width 8)
-(setq-default show-trailing-whitespace t)
+(setq-default show-trailing-whitespace nil)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (defvaralias 'c-basic-offset 'tab-width)
 (setq c-default-style "linux"
@@ -64,5 +65,5 @@
 
 ;; reuse compilation window even if it is in anoter frame
 ;; (add-to-list 'display-buffer-alist
-;; 			 '("\\*compilaition\\*"
+;;			 '("\\*compilaition\\*"
 ;;			   . (nil (reusable-frames . visible))))

@@ -19,7 +19,6 @@
 
 (global-set-key (kbd "s-r") 'revert-buffer)
 
-
 (global-set-key (kbd "s-h") 'help)
 
 ;;buffer switching
@@ -81,3 +80,4 @@
 								  (local-set-key (kbd "C-c s") 'hs-show-block)
 								  (local-set-key (kbd "C-c h") 'hs-hide-block)))
 (global-unset-key (kbd "C-x C-z")) ;; disables suspend frame via keybind
+
