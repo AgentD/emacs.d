@@ -2,7 +2,7 @@
 (global-set-key (kbd "C-h") 'delete-backward-char)
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "M-S-w") 'backward-kill-sexp)
-(global-set-key (kbd "M-S-d") 'kill-sexp)
+(global-set-key (kbd "M-S-d") 'kill-word)
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-k") 'scroll-down-command)
@@ -80,4 +80,3 @@
 								  (local-set-key (kbd "C-c s") 'hs-show-block)
 								  (local-set-key (kbd "C-c h") 'hs-hide-block)))
 (global-unset-key (kbd "C-x C-z")) ;; disables suspend frame via keybind
-
