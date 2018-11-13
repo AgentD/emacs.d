@@ -3,7 +3,7 @@
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
- '(display-battery-mode t)
+ '(display-battery-mode nil)
  '(display-time-24hr-format t)
  '(display-time-day-and-date nil)
  '(display-time-default-load-average nil)

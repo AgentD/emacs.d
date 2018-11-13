@@ -5,8 +5,9 @@
 (global-set-key (kbd "M-S-d") 'kill-word)
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
-(global-set-key (kbd "M-k") 'scroll-down-command)
-(global-set-key (kbd "M-j") 'scroll-up-command)
+(global-set-key (kbd "M-k") 'kill-whole-line)
+(global-set-key (kbd "s-p") 'scroll-down-command)
+(global-set-key (kbd "s-n") 'scroll-up-command)
 (global-set-key (kbd "M-g") 'goto-line)
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
@@ -49,7 +50,7 @@
 (global-set-key (kbd "s-3") 'split-window-right)
 (global-set-key (kbd "C-x 4") 'make-frame-command)
 (global-set-key (kbd "s-4") 'make-frame-command)
-
+(global-set-key (kbd "M-o") 'other-frame)
 ;; font resize
 (global-set-key (kbd "C-=") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
