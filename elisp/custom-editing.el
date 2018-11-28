@@ -4,7 +4,7 @@
 (setq-default tab-width 8)
 (setq-default show-trailing-whitespace t)
 (setq-default tab-always-indent nil)
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
+;(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (defvaralias 'c-basic-offset 'tab-width)
 (setq c-default-style "linux"
