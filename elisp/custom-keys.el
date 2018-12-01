@@ -50,7 +50,8 @@
 (global-set-key (kbd "s-3") 'split-window-right)
 (global-set-key (kbd "C-x 4") 'make-frame-command)
 (global-set-key (kbd "s-4") 'make-frame-command)
-(global-set-key (kbd "M-o") 'other-frame)
+(global-set-key (kbd "M-o") 'other-window)
+(global-set-key (kbd "C-x o") 'other-frame)
 ;; font resize
 (global-set-key (kbd "C-=") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)

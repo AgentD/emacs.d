@@ -10,17 +10,15 @@
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(menu-bar-mode nil)
- '(tooltip-mode nil))
+ '(tooltip-mode nil)
+ '(global-font-lock-mode t))
 (custom-set-faces
- '(trailing-whitespace ((t (:background "#ffb6b0"))))
  '(minibuffer-prompt ((t (:inherit foreground))))
  '(mode-line-buffer-id ((t (:inherit background))))
- '(dired-directory ((t (:foreground "#75507b"))))
-;; '(default ((t (:family "Monospace" :foundry "xft" :slant normal :weight
- ;; normal :height 69 :width normal))))
+ '(mode-line ((t (:inherit background :inverse-video t))))
  )
 (add-to-list 'load-path "~/.emacs.d/elisp")
-(setq frame-title-format '("" "emacs@" system-name " - %b"))
+;;(setq frame-title-format '("" "emacs@" system-name " - %b"))
 
 (setq visible-cursor nil)
 
