@@ -12,7 +12,7 @@
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
 (global-set-key (kbd "<f9>") 'delete-trailing-whitespace)
-(global-set-key (kbd "C-<f9>") 'whitespace-mode)
+(global-set-key (kbd "<f8>") 'whitespace-mode)
 (global-set-key (kbd "C-<f10>") 'menu-bar-mode)
 (global-set-key (kbd "<f11>") 'display-line-numbers-mode)
 (global-set-key (kbd "C-<f11>") 'linum-mode)

@@ -62,7 +62,6 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 (put 'suspend-frame 'disabled t)
 (setq org-highlight-latex-and-related '(latex script entities))
-
 ;; reuse compilation window even if it is in anoter frame
 (add-to-list 'display-buffer-alist
 			 '("\\*compilaition\\*"

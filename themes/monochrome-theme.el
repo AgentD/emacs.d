@@ -14,7 +14,7 @@
  '(region ((t (:background "#222222" :foreground "#e4e1d6"))))
 
  '(font-lock-builtin-face ((t (:inherit foreground :bold t))))
- '(font-lock-comment-face ((t (:inherit foreground))))
+ '(font-lock-comment-face ((t (:inherit foreground :italic t))))
  '(font-lock-constant-face ((t (:bold t :inherit foreground))))
  '(font-lock-function-name-face ((t (:inherit foreground :bold t))))
  '(font-lock-keyword-face ((t (:inherit foreground :bold t))))

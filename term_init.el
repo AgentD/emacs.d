@@ -11,10 +11,11 @@
  '(size-indication-mode t)
  '(menu-bar-mode nil)
  '(tooltip-mode nil)
- '(global-font-lock-mode t))
+ '(global-font-lock-mode nil))
 (custom-set-faces
  '(minibuffer-prompt ((t (:inherit foreground))))
  '(mode-line-buffer-id ((t (:inherit background))))
+ '(trailing-whitespace ((t (:background "#ffb6b0"))))
  '(mode-line ((t (:inherit background :inverse-video t))))
  )
 (add-to-list 'load-path "~/.emacs.d/elisp")
