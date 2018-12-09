@@ -1,4 +1,8 @@
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(battery-mode-line-format "%b%p%% ")
  '(blink-cursor-mode nil)
  '(column-number-mode t)
@@ -14,13 +18,17 @@
  '(neo-theme (quote ascii))
  '(package-selected-packages
    (quote
-	(auctex popup undo-tree yasnippet visual-fill-column s markdown-mode magit haskell-mode flycheck flx fill-column-indicator)))
+	(pdf-tools auctex popup undo-tree yasnippet visual-fill-column s markdown-mode magit haskell-mode flycheck flx fill-column-indicator)))
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
 (custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(dired-directory ((t (:foreground "#75507b"))))
  '(trailing-whitespace ((t (:background "#ffb6b0")))))
 

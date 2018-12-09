@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: rref
+# key: rref
+# --
+\stackrel{\text{$$1$}}{\longrightarrow}$0
