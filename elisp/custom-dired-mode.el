@@ -1,4 +1,3 @@
-(add-hook 'dired-load-hook '(lambda () (require 'dired-x)))
-									;; Load Dired X when Dired is loaded.
-(setq dired-omit-files "^\\...+$")
-(setq dired-omit-mode t) ;; Turn on Omit mode.
+(require 'dired-x)
+(setq-default dired-omit-files "^\\...+$")
+(setq-default dired-omit-mode t) ;; Turn on Omit mode.

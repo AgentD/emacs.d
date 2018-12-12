@@ -21,8 +21,6 @@
 (add-to-list 'load-path "~/.emacs.d/elisp")
 ;;(setq frame-title-format '("" "emacs@" system-name " - %b"))
 
-(setq visible-cursor nil)
-
 (load-library "custom-editing")
 (load-library "custom-keys")
 ;; manage backups/autosaves

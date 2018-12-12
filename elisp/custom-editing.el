@@ -57,11 +57,16 @@
 (setq-default auto-fill-function 'do-auto-fill)
 (setq-default fill-column 80)
 (setq mouse-autoselect-window t)
-3(xterm-mouse-mode 1)
+(xterm-mouse-mode 1)
+(setq visible-cursor nil)
 (setq undo-tree-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)
 (put 'suspend-frame 'disabled t)
 (setq org-highlight-latex-and-related '(latex script entities))
+(setq org-src-fontify-natively t
+    org-src-tab-acts-natively t
+    org-confirm-babel-evaluate nil
+    org-edit-src-content-indentation 0)
 ;; reuse compilation window even if it is in anoter frame
 (add-to-list 'display-buffer-alist
 			 '("\\*compilaition\\*"
