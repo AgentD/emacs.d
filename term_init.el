@@ -11,7 +11,7 @@
  '(size-indication-mode t)
  '(menu-bar-mode nil)
  '(tooltip-mode nil)
- '(global-font-lock-mode nil))
+ '(global-font-lock-mode t))
 (custom-set-faces
  '(minibuffer-prompt ((t (:inherit foreground))))
  '(mode-line-buffer-id ((t (:inherit background))))
@@ -22,6 +22,7 @@
 ;;(setq frame-title-format '("" "emacs@" system-name " - %b"))
 
 (load-library "custom-editing")
+(load-library "custom-dired-mode")
 (load-library "custom-keys")
 ;; manage backups/autosaves
 (load-library "backup-autosave")

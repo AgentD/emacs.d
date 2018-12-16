@@ -7,7 +7,7 @@
  '(display-time-24hr-format t)
  '(display-time-day-and-date nil)
  '(display-time-default-load-average nil)
- '(display-time-mode t)
+ '(display-time-mode nil)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
  '(scroll-bar-mode (quote nil))
@@ -50,6 +50,7 @@
 (load-library "custom-eshell-mode")
 (load-library "custom-editing")
 (load-library "custom-dired-mode")
+(load-library "custom-pdf-mode")
 (load-library "custom-keys")
 (load-library "theme-switch")
 ;; manage backups/autosaves

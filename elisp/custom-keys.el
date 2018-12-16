@@ -1,4 +1,5 @@
 ;; Custom keybinds
+(global-set-key (kbd "s-d") 'dired)
 (global-set-key (kbd "C-h") 'delete-backward-char)
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "M-S-w") 'backward-kill-sexp)
@@ -67,12 +68,10 @@
 (global-unset-key (kbd "<insert>"))
 (global-unset-key (kbd "C-t"))
 ;;(global-unset-key (kbd "M-t"))
-(add-hook 'org-mode-hook (lambda()
-                           (local-set-key (kbd "C-c c") 'org-latex-export-to-pdf)
-                           (local-set-key (kbd "C-c C-c") 'org-latex-export-to-pdf)))
 
-(add-hook 'dired-mode-hook (lambda()
-							   (local-set-key (kbd "C-h") 'dired-omit-mode)))
+(add-hook 'org-mode-hook (lambda()
+							 (define-key org-mode-map (kbd "C-c c") 'org-latex-export-to-pdf)
+							 (define-key org-mode-map (kbd "C-c C-c") 'org-latex-export-to-pdf)))
 
 (add-hook 'hs-minor-mode-hook (lambda()
 								  (local-set-key (kbd "C-t") 'hs-toggle-hiding)
@@ -80,4 +79,5 @@
 								  (local-set-key (kbd "C-c H") 'hs-hide-all)
 								  (local-set-key (kbd "C-c s") 'hs-show-block)
 								  (local-set-key (kbd "C-c h") 'hs-hide-block)))
+
 (global-unset-key (kbd "C-x C-z")) ;; disables suspend frame via keybind
