@@ -11,6 +11,8 @@
 (global-set-key (kbd "s-n") 'scroll-up-command)
 (global-set-key (kbd "M-g") 'goto-line)
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+(global-set-key (kbd "C-x SPC") 'cua-rectangle-mark-mode)
+(global-set-key (kbd "C-c SPC") 'rectangle-mark-mode)
 
 (global-set-key (kbd "<f9>") 'delete-trailing-whitespace)
 (global-set-key (kbd "<f8>") 'whitespace-mode)
