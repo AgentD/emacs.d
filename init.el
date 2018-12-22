@@ -1,5 +1,5 @@
 (custom-set-variables
-  '(battery-mode-line-format "%b%p%% ")
+ '(battery-mode-line-format "%b%p%% ")
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
@@ -10,6 +10,9 @@
  '(display-time-mode nil)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
+ '(package-selected-packages
+   (quote
+	(yasnippet visual-fill-column undo-tree s popup pdf-tools markdown-mode magit haskell-mode flycheck flx auctex)))
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)
