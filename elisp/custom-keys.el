@@ -39,12 +39,9 @@
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
 (global-set-key (kbd "<f7>") 'ibuffer)
 (global-set-key (kbd "s-b") 'ibuffer)
-(global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-c b") 'ibuffer)
-(global-set-key (kbd "C-x C-d") 'dired)
 
 (global-set-key (kbd "<s-tab>") 'other-window)
-(global-set-key (kbd "M-S-<tab>") 'other-window)
 
 ;;windows
 (global-set-key (kbd "M-C-<left>") 'shrink-window-horizontally)
@@ -70,7 +67,7 @@
 (global-set-key (kbd "<f3>") 'hs-minor-mode)
 ;;disabled commands
 (global-unset-key (kbd "<f2>"))
-;;(global-unset-key (kbd "<f3>"))
+;;(global-unset-key (h "<f3>"))
 ;;(global-unset-key (kbd "<f4>"))
 (global-unset-key (kbd "<insert>"))
 (global-unset-key (kbd "C-t"))
@@ -86,5 +83,9 @@
 								  (local-set-key (kbd "C-c H") 'hs-hide-all)
 								  (local-set-key (kbd "C-c s") 'hs-show-block)
 								  (local-set-key (kbd "C-c h") 'hs-hide-block)))
+
+(add-hook 'c-mode-hook (lambda()
+								  (local-set-key (kbd "C-c C-c") 'recompile)))
+
 
 (global-unset-key (kbd "C-x C-z")) ;; disables suspend frame via keybind
