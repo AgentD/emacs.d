@@ -1,16 +1,17 @@
 ;; Custom keybinds
+(global-set-key (kbd "C-c d") 'dired)
 (global-set-key (kbd "s-d") 'dired)
 (global-set-key (kbd "C-h") 'delete-backward-char)
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "M-S-w") 'backward-kill-sexp)
-(global-set-key (kbd "M-S-d") 'kill-word)
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-k") 'kill-whole-line)
+(global-set-key (kbd "C-M-k") 'backward-kill-sentence)
 (global-set-key (kbd "s-p") 'scroll-down-command)
 (global-set-key (kbd "s-n") 'scroll-up-command)
 (global-set-key (kbd "M-g") 'goto-line)
-(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+;; (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 (global-set-key (kbd "C-x SPC") 'cua-rectangle-mark-mode)
 (global-set-key (kbd "<C-return>") 'cua-rectangle-mark-mode)
 (global-set-key (kbd "C-c SPC") 'rectangle-mark-mode)
@@ -29,6 +30,7 @@
 (global-set-key (kbd "s-r") 'revert-buffer)
 
 (global-set-key (kbd "s-h") 'help)
+(global-set-key (kbd "C-c h") 'help)
 
 ;;buffer switching
 (global-set-key (kbd "<f6>") 'next-buffer)
@@ -37,7 +39,6 @@
 (global-set-key (kbd "<f5>") 'previous-buffer)
 (global-set-key (kbd "M-<prior>") 'previous-buffer)
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
-(global-set-key (kbd "<f7>") 'ibuffer)
 (global-set-key (kbd "s-b") 'ibuffer)
 (global-set-key (kbd "C-c b") 'ibuffer)
 
@@ -61,10 +62,10 @@
 (global-set-key (kbd "C-=") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
 (global-set-key (kbd "C-0") 'text-scale-adjust)
-(global-set-key (kbd "M-<f8>") 'compile)
 
 (global-set-key (kbd "s-k") 'kill-current-buffer)
 (global-set-key (kbd "<f3>") 'hs-minor-mode)
+
 ;;disabled commands
 (global-unset-key (kbd "<f2>"))
 ;;(global-unset-key (h "<f3>"))
@@ -72,6 +73,8 @@
 (global-unset-key (kbd "<insert>"))
 (global-unset-key (kbd "C-t"))
 ;;(global-unset-key (kbd "M-t"))
+
+(global-set-key (kbd "C-c 1") 'shell-command)
 
 (add-hook 'org-mode-hook (lambda()
 							 (define-key org-mode-map (kbd "C-c c") 'org-latex-export-to-pdf)

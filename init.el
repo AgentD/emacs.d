@@ -12,7 +12,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-	(yasnippet visual-fill-column undo-tree s popup pdf-tools markdown-mode magit haskell-mode flycheck flx auctex)))
+    (yasnippet visual-fill-column undo-tree s popup markdown-mode magit haskell-mode flycheck flx auctex)))
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -46,14 +46,11 @@
       '("~/.emacs.d/snippets"))
 (yas-global-mode 1)
 
-(pdf-tools-install)
-
 (load-library "custom-buffer-mode")
 (load-library "custom-terminal-mode")
 (load-library "custom-eshell-mode")
 (load-library "custom-editing")
 (load-library "custom-dired-mode")
-(load-library "custom-pdf-mode")
 (load-library "custom-keys")
 (load-library "theme-switch")
 ;; manage backups/autosaves

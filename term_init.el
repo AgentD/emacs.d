@@ -19,7 +19,7 @@
  '(mode-line ((t (:inherit background :inverse-video t))))
  )
 (add-to-list 'load-path "~/.emacs.d/elisp")
-;;(setq frame-title-format '("" "emacs@" system-name " - %b"))
+(setq frame-title-format '("" "emacs@" system-name " - %b"))
 
 (load-library "custom-editing")
 (load-library "custom-dired-mode")
