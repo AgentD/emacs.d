@@ -1,6 +1,0 @@
-(define-key pdf-view-mode-map (kbd "h") 'image-backward-scroll)
-(define-key pdf-view-mode-map (kbd "j") 'pdf-view-next-line-or-next-page)
-(define-key pdf-view-mode-map (kbd "k")
-	'pdf-view-previous-line-or-previous-page)
-(define-key pdf-view-mode-map (kbd "l") 'image-forward-hscroll)
-(define-key pdf-view-mode-map (kbd "/") 'isearch-forward)
