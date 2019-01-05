@@ -51,8 +51,9 @@
           'hide-trailing-whitespace)
 
 (add-hook 'c-mode-hook (lambda ()
-			    (setq indent-tabs-mode t)
-				(c-set-style "linux")))
+						   (setq indent-tabs-mode t)
+						   (c-set-style "linux")
+						   (c-set-offset 'comment-intro 0)))
 
 (setq-default auto-fill-function 'do-auto-fill)
 (setq-default fill-column 80)
