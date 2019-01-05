@@ -8,8 +8,11 @@
 (global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-k") 'kill-whole-line)
 (global-set-key (kbd "C-M-k") 'backward-kill-sentence)
-(global-set-key (kbd "s-p") 'scroll-down-command)
-(global-set-key (kbd "s-n") 'scroll-up-command)
+
+;; keybind to overshadow cua-mode
+(define-key cua--cua-keys-keymap (kbd "M-v") 'scroll-down-command)
+
+(global-set-key (kbd "M-c") 'scroll-up-command)
 (global-set-key (kbd "M-g") 'goto-line)
 ;; (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 (global-set-key (kbd "C-x SPC") 'cua-rectangle-mark-mode)
@@ -88,7 +91,7 @@
 								  (local-set-key (kbd "C-c h") 'hs-hide-block)))
 
 (add-hook 'c-mode-hook (lambda()
-								  (local-set-key (kbd "C-c C-c") 'recompile)))
+								  (local-set-key (kbd "C-c k") 'recompile)))
 
 
 (global-unset-key (kbd "C-x C-z")) ;; disables suspend frame via keybind
