@@ -13,10 +13,10 @@
  '(tooltip-mode nil)
  '(global-font-lock-mode t))
 (custom-set-faces
+;; '(mode-line ((t (:inherit background :inverse-video t))))
  '(minibuffer-prompt ((t (:inherit foreground))))
  '(mode-line-buffer-id ((t (:inherit background))))
  '(trailing-whitespace ((t (:background "#ffb6b0"))))
- '(mode-line ((t (:inherit background :inverse-video t))))
  )
 (add-to-list 'load-path "~/.emacs.d/elisp")
 (setq frame-title-format '("" "emacs@" system-name " - %b"))
