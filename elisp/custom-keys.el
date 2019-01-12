@@ -31,6 +31,7 @@
 (global-set-key (kbd "<f12>") 'font-lock-mode)
 
 (global-set-key (kbd "s-r") 'revert-buffer)
+(global-set-key (kbd "C-x r") 'revert-buffer)
 
 (global-set-key (kbd "s-h") 'help)
 (global-set-key (kbd "C-c h") 'help)
@@ -74,6 +75,7 @@
 ;;(global-unset-key (h "<f3>"))
 ;;(global-unset-key (kbd "<f4>"))
 (global-unset-key (kbd "<insert>"))
+(global-unset-key (kbd "<insertchar>"))
 (global-unset-key (kbd "C-t"))
 ;;(global-unset-key (kbd "M-t"))
 
