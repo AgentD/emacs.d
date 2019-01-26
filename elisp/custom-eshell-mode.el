@@ -11,4 +11,5 @@
 		   (eshell))
 		  (t (shell-other-window))))
 
-(global-set-key (kbd "s-s") 'custom-eshell-ow-command)
+(global-set-key (kbd "C-c s") 'custom-eshell-ow-command)
+(global-set-key (kbd "s-s") 'shell)

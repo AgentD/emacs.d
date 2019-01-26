@@ -1,13 +1,15 @@
 (custom-set-variables
- '(battery-mode-line-format "%b%p%% ")
+ ;;'(battery-mode-line-format "%b%p%% ")
+ '(battery-mode-line-format "[%b%p%%] ")
  '(blink-cursor-mode nil)
  '(column-number-mode t)
- '(cua-mode t nil (cua-base))
+ ;; '(cua-mode t nil (cua-base))
+ '(cua-mode nil)
  '(display-battery-mode t)
  '(display-time-24hr-format t)
  '(display-time-day-and-date nil)
  '(display-time-default-load-average nil)
- '(display-time-mode nil)
+ '(display-time-mode t)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
  '(package-selected-packages
@@ -23,7 +25,7 @@
  '(trailing-whitespace ((t (:background "#ffb6b0")))))
 
 (setq frame-title-format '("" "emacs@" system-name " - %b"))
-(setq visible-bell t)
+(setq visible-bell nil)
 (setq vc-follow-symlinks t)
 
 (add-to-list 'load-path "~/.emacs.d/elisp")

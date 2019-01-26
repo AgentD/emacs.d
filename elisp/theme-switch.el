@@ -18,7 +18,9 @@
   (interactive)
   (setq custom-themes-index 0)
   (custom-load-indexed-theme)
-  (disable-theme (nth custom-themes-index custom-themes)))
+  (disable-theme (nth custom-themes-index custom-themes))
+  (setq custom-themes-index 3)
+  (progn (message "Disabled custom theme")))
 
 (defun custom-try-load-theme (theme)
 	(if (ignore-errors (load-theme theme :no-confirm))

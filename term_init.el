@@ -15,6 +15,7 @@
 (custom-set-faces
 ;; '(mode-line ((t (:inherit background :inverse-video t))))
  '(minibuffer-prompt ((t (:inherit foreground))))
+ '(region ((t (:foreground "#e0e0e0" :background "blue"))))
  '(mode-line-buffer-id ((t (:inherit background))))
  '(trailing-whitespace ((t (:background "#ffb6b0"))))
  )
