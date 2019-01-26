@@ -2,17 +2,16 @@
 (global-set-key (kbd "C-c d") 'dired)
 (global-set-key (kbd "s-d") 'dired)
 (global-set-key (kbd "C-h") 'delete-backward-char)
-(global-set-key (kbd "C-w") 'backward-kill-word)
-(global-set-key (kbd "M-S-w") 'backward-kill-sexp)
+
+(global-set-key (kbd "M-W") 'backward-kill-sexp)
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-k") 'kill-whole-line)
 (global-set-key (kbd "C-M-k") 'backward-kill-sentence)
+(global-set-key (kbd "C-c t") 'ansi-term)
 
-;; keybind to overshadow cua-mode
-(define-key cua--cua-keys-keymap (kbd "M-v") 'scroll-down-command)
-
-(global-set-key (kbd "M-c") 'scroll-up-command)
+(global-set-key (kbd "s-p") 'scroll-down-command)
+(global-set-key (kbd "s-n") 'scroll-up-command)
 (global-set-key (kbd "M-g") 'goto-line)
 ;; (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 (global-set-key (kbd "C-x SPC") 'cua-rectangle-mark-mode)
@@ -24,14 +23,15 @@
 (global-set-key (kbd "s-Y") 'undo-tree-redo)
 
 (global-set-key (kbd "<f9>") 'delete-trailing-whitespace)
-(global-set-key (kbd "<f8>") 'whitespace-mode)
+(global-set-key (kbd "S-<f9>") 'whitespace-mode)
+(global-set-key (kbd "C-<f9>") 'whitespace-mode)
 (global-set-key (kbd "C-<f10>") 'menu-bar-mode)
 (global-set-key (kbd "<f11>") 'display-line-numbers-mode)
 (global-set-key (kbd "C-<f11>") 'linum-mode)
 (global-set-key (kbd "<f12>") 'font-lock-mode)
 
 (global-set-key (kbd "s-r") 'revert-buffer)
-(global-set-key (kbd "C-x r") 'revert-buffer)
+(global-set-key (kbd "C-c C-r") 'revert-buffer)
 
 (global-set-key (kbd "s-h") 'help)
 (global-set-key (kbd "C-c h") 'help)
@@ -83,7 +83,11 @@
 
 (add-hook 'org-mode-hook (lambda()
 							 (define-key org-mode-map (kbd "C-c c") 'org-latex-export-to-pdf)
-							 (define-key org-mode-map (kbd "C-c C-c") 'org-latex-export-to-pdf)))
+							 (define-key org-mode-map (kbd "C-c C-c")
+								 'org-latex-export-to-pdf)))
+
+(add-hook 'emacs-lisp-mode-hook (lambda()
+							 (local-set-key (kbd "C-c C-c") 'eval-buffer)))
 
 (add-hook 'hs-minor-mode-hook (lambda()
 								  (local-set-key (kbd "C-t") 'hs-toggle-hiding)
@@ -97,3 +101,20 @@
 
 
 (global-unset-key (kbd "C-x C-z")) ;; disables suspend frame via keybind
+
+
+;; custom cua-like keybinds
+(defconst custom-region-alist
+  `((mark-active
+     ,@(let ((m (make-sparse-keymap)))
+           (define-key m (kbd "C-c") 'kill-ring-save)
+           (define-key m (kbd "C-w") 'kill-region)
+		   (define-key m (kbd "C-h") 'kill-region)
+		   (define-key m (kbd "C-d") 'kill-region)
+		   (define-key m (kbd "C-x") 'kill-region)
+           m))))
+
+(add-to-list 'emulation-mode-map-alists 'custom-region-alist)
+(global-set-key (kbd "C-w") 'backward-kill-word)
+(global-set-key (kbd "C-v") 'yank)
+(global-set-key (kbd "M-c") 'scroll-up-command)
