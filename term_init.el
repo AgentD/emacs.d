@@ -1,7 +1,8 @@
 (custom-set-variables
  '(blink-cursor-mode nil)
  '(column-number-mode t)
- '(cua-mode t nil (cua-base))
+ ;; '(cua-mode t nil (cua-base))
+ '(cua-mode nil)
  '(display-battery-mode nil)
  '(display-time-mode nil)
  '(inhibit-startup-screen t)

@@ -57,6 +57,7 @@
 
 (setq-default auto-fill-function 'do-auto-fill)
 (setq-default fill-column 80)
+(setq-default delete-selection-mode t)
 (setq mouse-autoselect-window t)
 (xterm-mouse-mode 1)
 (setq visible-cursor nil)

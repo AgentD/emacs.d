@@ -10,8 +10,8 @@
 (global-set-key (kbd "C-M-k") 'backward-kill-sentence)
 (global-set-key (kbd "C-c t") 'ansi-term)
 
-(global-set-key (kbd "s-p") 'scroll-down-command)
-(global-set-key (kbd "s-n") 'scroll-up-command)
+(global-set-key (kbd "s-p") 'cua-scroll-down)
+(global-set-key (kbd "s-n") 'cua-scroll-up)
 (global-set-key (kbd "M-g") 'goto-line)
 ;; (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 (global-set-key (kbd "C-x SPC") 'cua-rectangle-mark-mode)
@@ -35,6 +35,10 @@
 
 (global-set-key (kbd "s-h") 'help)
 (global-set-key (kbd "C-c h") 'help)
+
+(global-set-key (kbd "<prior>") 'cua-scroll-down)
+(global-set-key (kbd "<next>") 'cua-scroll-up)
+
 
 ;;buffer switching
 (global-set-key (kbd "<f6>") 'next-buffer)
