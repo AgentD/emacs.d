@@ -57,9 +57,10 @@
 
 (setq-default auto-fill-function 'do-auto-fill)
 (setq-default fill-column 80)
-(setq-default delete-selection-mode t)
 (setq mouse-autoselect-window t)
+(delete-selection-mode 1)
 (xterm-mouse-mode 1)
+(cua-selection-mode 1)
 (setq visible-cursor nil)
 (setq undo-tree-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -72,4 +73,4 @@
 ;; reuse compilation window even if it is in anoter frame
 (add-to-list 'display-buffer-alist
 			 '("\\*compilaition\\*"
-			   . (nil (reusable-frames . visible))))
+ 			   . (nil (reusable-frames . visible))))
