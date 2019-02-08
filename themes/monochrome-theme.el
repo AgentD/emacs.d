@@ -10,7 +10,7 @@
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#d3d1c9"))))
  '(mode-line ((t (:foreground "#e4e1d9" :background "#222222" ))))
- '(mode-line-buffer-id ((t (:bold nil :inherit foreground))))
+;; '(mode-line-buffer-id ((t (:bold nil :inherit foreground))))
  '(region ((t (:background "#222222" :foreground "#e4e1d6"))))
 
  '(font-lock-builtin-face ((t (:inherit foreground :bold t))))

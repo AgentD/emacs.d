@@ -11,7 +11,7 @@
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#151515"))))
  '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
- '(mode-line-buffer-id ((t (:bold nil :foreground "#ffffff"))))
+;; '(mode-line-buffer-id ((t (:bold nil :foreground "#ffffff"))))
  '(region ((t (:background "#114488" :foreground "#ffffff"))))
 
  '(font-lock-builtin-face ((t (:foreground "#7c7c7c"))))

@@ -10,7 +10,7 @@
  '(border ((t (:foreground "#0000ff"))))
  '(fringe ((t (:background "#121212"))))
  '(mode-line ((t (:foreground "#e0e0e0" :background "#292929" ))))
- '(mode-line-buffer-id ((t (:bold nil :foreground "#e0e0e0"))))
+;; '(mode-line-buffer-id ((t (:bold nil :foreground "#e0e0e0"))))
  '(region ((t (:background "#114488" :foreground "#e0e0e0"))))
 
  '(font-lock-builtin-face ((t (:foreground "#4c99eb"))))
