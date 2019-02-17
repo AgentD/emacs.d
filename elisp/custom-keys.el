@@ -1,5 +1,4 @@
 ;; Custom keybinds
-(global-set-key (kbd "C-c d") 'dired)
 (global-set-key (kbd "s-d") 'dired)
 (global-set-key (kbd "C-h") 'delete-backward-char)
 
@@ -62,7 +61,7 @@
 (global-set-key (kbd "C-x 4") 'make-frame-command)
 (global-set-key (kbd "s-4") 'make-frame-command)
 (global-set-key (kbd "M-o") 'other-window)
-(global-set-key (kbd "C-x C-o") 'other-frame)
+
 ;; font resize
 (global-set-key (kbd "C-=") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
@@ -73,8 +72,6 @@
 
 ;;disabled commands
 (global-unset-key (kbd "<f2>"))
-;;(global-unset-key (h "<f3>"))
-;;(global-unset-key (kbd "<f4>"))
 (global-unset-key (kbd "<insert>"))
 (global-unset-key (kbd "<insertchar>"))
 (global-unset-key (kbd "C-t"))
@@ -100,19 +97,15 @@
 (add-hook 'c-mode-hook (lambda()
 								  (local-set-key (kbd "C-c k") 'recompile)))
 
-
 (global-unset-key (kbd "C-x C-z")) ;; disables suspend frame via keybind
-
 
 ;; custom cua-like keybinds
 (defconst custom-region-alist
   `((mark-active
      ,@(let ((m (make-sparse-keymap)))
            (define-key m (kbd "C-c") 'kill-ring-save)
+		   (global-set-key (kbd "C-M-c") 'kill-ring-save)
            (define-key m (kbd "C-w") 'kill-region)
-           (define-key m (kbd "C-M-x") 'kill-region)
-		   (define-key m (kbd "C-h") 'kill-region)
-		   (define-key m (kbd "C-d") 'kill-region)
 		   (define-key m (kbd "C-x") 'kill-region)
            m))))
 
@@ -121,4 +114,3 @@
 (global-set-key (kbd "C-v") 'yank)
 (global-set-key (kbd "M-c") 'scroll-up-command)
 (global-set-key (kbd "C-M-v") 'yank)
-(global-set-key (kbd "C-M-c") 'kill-ring-save)

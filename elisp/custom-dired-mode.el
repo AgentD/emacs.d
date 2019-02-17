@@ -7,6 +7,6 @@
 (define-key dired-mode-map (kbd "h") 'dired-jump)
 (define-key dired-mode-map (kbd "j") 'dired-next-line)
 (define-key dired-mode-map (kbd "k") 'dired-previous-line)
-(define-key dired-mode-map (kbd "h") 'dired-view-file)
+(define-key dired-mode-map (kbd "l") 'dired-view-file)
 (define-key dired-mode-map (kbd "<right>") 'dired-view-file)
 (define-key dired-mode-map (kbd "C-<return>") 'dired-display-file)

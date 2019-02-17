@@ -1,25 +1,18 @@
 (custom-set-variables
- ;;'(battery-mode-line-format "%b%p%% ")
  '(battery-mode-line-format "[%b%p%%] ")
  '(blink-cursor-mode nil)
  '(column-number-mode t)
- ;; '(cua-mode t nil (cua-base))
  '(cua-mode nil)
-;; '(display-battery-mode t)
-  '(display-battery-mode nil)
+ '(display-battery-mode nil)
  '(display-time-24hr-format t)
  '(display-time-day-and-date nil)
  '(display-time-default-load-average nil)
- ;; '(display-time-mode t)
-  '(display-time-mode nil)
+ '(display-time-mode nil)
  '(inhibit-startup-screen t)
- '(menu-bar-mode nil)
- '(package-selected-packages
-   (quote
-    (yasnippet visual-fill-column undo-tree s popup markdown-mode magit haskell-mode flycheck flx auctex)))
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)
+ '(menu-bar-mode nil)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
 (custom-set-faces
@@ -56,6 +49,7 @@
 (load-library "custom-editing")
 (load-library "custom-dired-mode")
 (load-library "custom-keys")
+(load-library "custom-diminish-mode")
 (load-library "theme-switch")
 ;; manage backups/autosaves
 (load-library "backup-autosave")

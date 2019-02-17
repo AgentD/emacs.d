@@ -1,4 +1,4 @@
-;; Disabled *Completions*
+;; Disabled *Completions* Buffer
 (add-hook 'minibuffer-exit-hook
           '(lambda ()
              (let ((buffer "*Completions*"))

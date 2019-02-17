@@ -29,14 +29,17 @@
 (add-hook 'lisp-mode-hook (lambda()
 				(setq c-basic-offset 4)
 				(setq tab-width 4)
+				(setq auto-fill-mode nil)
 				(setq lisp-body-indent 4)))
 
 (add-hook 'haskell-mode-hook (lambda()
 				(setq c-basic-offset 4)
 				(setq tab-width 4)
+				(setq auto-fill-mode nil)
 				(setq indent-tabs-mode nil)))
 
 (add-hook 'python-mode-hook (lambda ()
+				(setq c-basic-offset 4)
 				(setq indent-tabs-mode t)
 				(setq python-indent 4)
 				(setq tab-width 4)))
@@ -62,14 +65,15 @@
 (xterm-mouse-mode 1)
 (cua-selection-mode 1)
 (setq visible-cursor nil)
-(setq undo-tree-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)
 (put 'suspend-frame 'disabled t)
+
 (setq org-highlight-latex-and-related '(latex script entities))
 (setq org-src-fontify-natively t
       org-src-tab-acts-natively t
       org-confirm-babel-evaluate nil
       org-edit-src-content-indentation 0)
+
 ;; reuse compilation window even if it is in anoter frame
 (add-to-list 'display-buffer-alist
 			 '("\\*compilaition\\*"

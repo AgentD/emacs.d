@@ -1,7 +1,6 @@
 (custom-set-variables
  '(blink-cursor-mode nil)
  '(column-number-mode t)
- ;; '(cua-mode t nil (cua-base))
  '(cua-mode nil)
  '(display-battery-mode nil)
  '(display-time-mode nil)
@@ -11,17 +10,15 @@
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(menu-bar-mode nil)
- '(tooltip-mode nil)
- '(global-font-lock-mode t))
+ '(tooltip-mode nil))
 (custom-set-faces
-;; '(mode-line ((t (:inherit background :inverse-video t))))
+ '(mode-line ((t (:inherit background :inverse-video t))))
  '(minibuffer-prompt ((t (:inherit foreground))))
  '(region ((t (:foreground "#e0e0e0" :background "blue"))))
  '(mode-line-buffer-id ((t (:inherit background))))
- '(trailing-whitespace ((t (:background "#ffb6b0"))))
- )
+ '(trailing-whitespace ((t (:background "#ffb6b0")))))
+
 (add-to-list 'load-path "~/.emacs.d/elisp")
-(setq frame-title-format '("" "emacs@" system-name " - %b"))
 
 (load-library "custom-editing")
 (load-library "custom-dired-mode")
