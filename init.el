@@ -1,21 +1,32 @@
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(battery-mode-line-format "[%b%p%%] ")
  '(blink-cursor-mode nil)
  '(column-number-mode t)
- '(cua-mode nil)
+ '(cua-mode nil nil (cua-base))
  '(display-battery-mode nil)
  '(display-time-24hr-format t)
  '(display-time-day-and-date nil)
  '(display-time-default-load-average nil)
  '(display-time-mode nil)
  '(inhibit-startup-screen t)
+ '(menu-bar-mode nil)
+ '(package-selected-packages
+   (quote
+	(yasnippet visual-fill-column undo-tree s popup markdown-mode magit haskell-mode flycheck flx diminish auctex)))
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)
- '(menu-bar-mode nil)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
 (custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(dired-directory ((t (:foreground "#75507b"))))
  '(trailing-whitespace ((t (:background "#ffb6b0")))))
 
