@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: QED
+# key: QED
+# --
+\begin{flushright}
+$\blacksquare/QED\qquad$
+\end{flushright}

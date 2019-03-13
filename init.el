@@ -6,6 +6,7 @@
  '(battery-mode-line-format "[%b%p%%] ")
  '(blink-cursor-mode nil)
  '(column-number-mode t)
+ '(confirm-kill-emacs (quote yes-or-no-p))
  '(cua-mode nil nil (cua-base))
  '(display-battery-mode nil)
  '(display-time-24hr-format t)
@@ -16,12 +17,13 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-	(yasnippet visual-fill-column undo-tree s popup markdown-mode magit haskell-mode flycheck flx diminish auctex)))
+	(yasnippet visual-fill-column undo-tree s popup markdown-mode magit-popup magit haskell-mode flycheck flx diminish auctex)))
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
+	;; ask y or n to kill emacs
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -29,6 +31,18 @@
  ;; If there is more than one, they won't work right.
  '(dired-directory ((t (:foreground "#75507b"))))
  '(trailing-whitespace ((t (:background "#ffb6b0")))))
+ (setq use-dialog-box nil)
+
+
+;;(define-advice delete-frame (:around (oldfun &rest args) confirm-frame-deletion)
+;;"Confirm deleting the frame."
+;;(interactive)
+;;(when (y-or-n-p "Really exit frame? ")
+;;    (apply oldfun args)))
+;;(cond ((> (display-pixel-height) 768))
+;;(custom-set-faces ;; default font size --13
+;; '(default ((t (:family "ttyp0" :foundry "uw" :weight medium
+;; 			:width normal :height 104 ))))))
 
 (setq frame-title-format '("" "emacs@" system-name " - %b"))
 (setq visible-bell nil)
@@ -61,6 +75,7 @@
 (load-library "custom-dired-mode")
 (load-library "custom-keys")
 (load-library "custom-diminish-mode")
+(load-library "custom-font-mode")
 (load-library "theme-switch")
 ;; manage backups/autosaves
 (load-library "backup-autosave")

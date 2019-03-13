@@ -1,8 +1,9 @@
 ;; Custom keybinds
-(global-set-key (kbd "s-d") 'dired)
+(global-set-key (kbd "s-d") 'ido-dired)
+(global-set-key (kbd "C-x C-d") 'ido-dired)
 (global-set-key (kbd "C-h") 'delete-backward-char)
 
-(global-set-key (kbd "M-W") 'backward-kill-sexp)
+(global-set-key (kbd "M-W") 'backward-kill-word)
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-k") 'kill-whole-line)
@@ -49,17 +50,15 @@
 (global-set-key (kbd "<s-tab>") 'other-window)
 
 ;;windows
-(global-set-key (kbd "M-C-<left>") 'shrink-window-horizontally)
-(global-set-key (kbd "M-C-<up>") 'enlarge-window)
-(global-set-key (kbd "M-C-<down>") 'shrink-window)
+(global-set-key (kbd "s-]") 'enlarge-window-horizontally)
+(global-set-key (kbd "s-[") 'shrink-window-horizontally)
+(global-set-key (kbd "s-'") 'enlarge-window)
+(global-set-key (kbd "s-\\") 'shrink-window)
+
 (global-set-key (kbd "M-<right>") 'windmove-right)
 (global-set-key (kbd "M-<left>") 'windmove-left)
 (global-set-key (kbd "M-<up>") 'windmove-up)
 (global-set-key (kbd "M-<down>") 'windmove-down)
-(global-set-key (kbd "C-c <right>") 'windmove-right)
-(global-set-key (kbd "C-c <left>") 'windmove-left)
-(global-set-key (kbd "C-c <up>") 'windmove-up)
-(global-set-key (kbd "C-c <down>") 'windmove-down)
 
 (global-set-key (kbd "s-0") 'delete-window)
 (global-set-key (kbd "s-1") 'delete-other-windows)
@@ -117,7 +116,18 @@
            m))))
 
 (add-to-list 'emulation-mode-map-alists 'custom-region-alist)
-(global-set-key (kbd "C-w") 'backward-kill-word)
+(global-set-key (kbd "C-w") 'backward-kill-sexp)
 (global-set-key (kbd "C-v") 'yank)
 (global-set-key (kbd "M-c") 'scroll-up-command)
 (global-set-key (kbd "C-M-v") 'yank)
+
+(defun match-paren (&optional arg)
+  "Go to the matching parenthesis character if one is adjacent to point."
+  (interactive "^p")
+  (cond ((looking-at "\\s(") (forward-sexp arg))
+        ((looking-back "\\s)" 1) (backward-sexp arg))
+        ;; Now, try to succeed from inside of a bracket
+        ((looking-at "\\s)") (forward-char) (backward-sexp arg))
+        ((looking-back "\\s(" 1) (backward-char) (forward-sexp arg))))
+
+(global-set-key (kbd "C-5") 'match-paren)
