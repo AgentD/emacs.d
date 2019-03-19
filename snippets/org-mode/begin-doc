@@ -5,7 +5,7 @@
 #+LATEX_CLASS: article
 #+LaTeX_HEADER: \usepackage{amsmath}
 #+LaTeX_HEADER: \usepackage{fullpage}
-#+LaTeX_HEADER: \usepackage{amssymb}
+#+LaTeX_HEADER: \usepackage{amsfonts,amsmath,amssymb,amsthm}
 #+LaTeX_HEADER: \usepackage{booktabs}
 #+LaTeX_HEADER: \usepackage{changepage}
 #+LaTeX_HEADER: \usepackage[euler]{textgreek}
@@ -16,9 +16,12 @@
 #+LaTeX_HEADER: \usepackage[onehalfspacing]{setspace}
 #+LaTeX_HEADER: \usepackage{mathtools}
 #+LaTeX_HEADER: \usepackage{pmboxdraw}
-
-
+#+LaTeX_HEADER: \usepackage{listings}
+#+LaTeX_HEADER: \usepackage{marvosym}
+#                            ^-- Lightning
 \setlength{\parindent}{0pt}
+\lstset{basicstyle=\ttfamily,columns=fixed,language=$0,showstringspaces=false}
+
 #+OPTIONS: tex:t
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil

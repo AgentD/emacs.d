@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: QED
-# key: QED
+# name: qed
+# key: qed
 # --
 \begin{flushright}
 $\blacksquare/QED\qquad$

@@ -2,4 +2,4 @@
 # name: printf
 # key: printf
 # --
-System.out.println("$0");
+System.out.printf("$0");

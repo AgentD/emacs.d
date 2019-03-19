@@ -2,6 +2,6 @@
 # name: lst
 # key: lst
 # --
-\begin{lstlisting}
+\begin{lstlisting}[frame=single]
 $0
 \end{lstlisting}
