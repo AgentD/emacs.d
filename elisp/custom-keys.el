@@ -3,7 +3,7 @@
 (global-set-key (kbd "C-x C-d") 'ido-dired)
 (global-set-key (kbd "C-h") 'delete-backward-char)
 
-(global-set-key (kbd "M-W") 'backward-kill-word)
+(global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-k") 'kill-whole-line)
@@ -21,11 +21,11 @@
 (global-set-key (kbd "C-z") 'undo)
 
 (global-set-key (kbd "<f9>") 'delete-trailing-whitespace)
-(global-set-key (kbd "S-<f9>") 'whitespace-mode)
-(global-set-key (kbd "C-<f9>") 'whitespace-mode)
 (global-set-key (kbd "C-<f10>") 'menu-bar-mode)
-(global-set-key (kbd "<f11>") 'display-line-numbers-mode)
-(global-set-key (kbd "<f12>") 'font-lock-mode)
+(global-set-key (kbd "C-<f11>") 'font-lock-mode)
+(global-set-key (kbd "<f11>") 'whitespace-mode)
+(global-set-key (kbd "<f12>") 'fci-mode)
+(global-set-key (kbd "C-<f12>") 'display-line-numbers-mode)
 
 (global-set-key (kbd "s-r") 'revert-buffer)
 (global-set-key (kbd "C-c C-r") 'revert-buffer)
@@ -116,7 +116,7 @@
            m))))
 
 (add-to-list 'emulation-mode-map-alists 'custom-region-alist)
-(global-set-key (kbd "C-w") 'backward-kill-sexp)
+(global-set-key (kbd "M-v") 'backward-kill-sexp)
 (global-set-key (kbd "C-v") 'yank)
 (global-set-key (kbd "M-c") 'scroll-up-command)
 (global-set-key (kbd "C-M-v") 'yank)
