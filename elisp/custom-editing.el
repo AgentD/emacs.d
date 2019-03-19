@@ -45,18 +45,27 @@
 				(setq tab-width 4)))
 
 (defun hide-trailing-whitespace ()
-	            (when (derived-mode-p 'eshell-mode
-									  'term-mode)
-					(setq auto-fill-mode nil)
-					(setq show-trailing-whitespace nil)))
+	(when (derived-mode-p
+		   'eshell-mode
+		   'term-mode)
+		(setq auto-fill-mode nil)
+		(setq show-trailing-whitespace nil)))
 
 (add-hook 'after-change-major-mode-hook
-          'hide-trailing-whitespace)
+		'hide-trailing-whitespace)
 
 (add-hook 'c-mode-hook (lambda ()
-						   (setq indent-tabs-mode t)
-						   (c-set-style "linux")
-						   (c-set-offset 'comment-intro 0)))
+						(setq indent-tabs-mode t)
+						(c-set-style "linux")
+						(c-set-offset 'comment-intro 0)))
+(defun c-lineup-arglist-tabs-only (ignored)
+	"Line up argument lists by tabs, not spaces"
+	(let* ((anchor (c-langelem-pos c-syntactic-element))
+		(c-langelem-2nd-pos c-syntactic-element))
+		(offset (- (1+ column) anchor))
+		(steps (floor offset c-basic-offset)))
+		(* (max steps 1)
+		c-basic-offset))
 
 (setq-default auto-fill-function 'do-auto-fill)
 (setq-default fill-column 80)
@@ -77,4 +86,4 @@
 ;; reuse compilation window even if it is in anoter frame
 (add-to-list 'display-buffer-alist
 			 '("\\*compilaition\\*"
- 			   . (nil (reusable-frames . visible))))
+			   . (nil (reusable-frames . visible))))
