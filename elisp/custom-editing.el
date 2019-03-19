@@ -70,9 +70,9 @@
 
 (setq org-highlight-latex-and-related '(latex script entities))
 (setq org-src-fontify-natively t
-      org-src-tab-acts-natively t
-      org-confirm-babel-evaluate nil
-      org-edit-src-content-indentation 0)
+	  org-src-tab-acts-natively t
+	  org-confirm-babel-evaluate nil
+	  org-edit-src-content-indentation 0)
 
 ;; reuse compilation window even if it is in anoter frame
 (add-to-list 'display-buffer-alist
