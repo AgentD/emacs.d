@@ -24,8 +24,8 @@
 (global-set-key (kbd "C-<f10>") 'menu-bar-mode)
 (global-set-key (kbd "C-<f11>") 'font-lock-mode)
 (global-set-key (kbd "<f11>") 'whitespace-mode)
-(global-set-key (kbd "<f12>") 'fci-mode)
-(global-set-key (kbd "C-<f12>") 'display-line-numbers-mode)
+(global-set-key (kbd "C-<f12>") 'fci-mode)
+(global-set-key (kbd "<f12>") 'display-line-numbers-mode)
 
 (global-set-key (kbd "s-r") 'revert-buffer)
 (global-set-key (kbd "C-c C-r") 'revert-buffer)
