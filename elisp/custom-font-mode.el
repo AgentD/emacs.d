@@ -22,8 +22,6 @@
 						"xft:-uw-ttyp0-medium-r-normal--18-*-75-75-c-*-iso10646-1" )
 	(set-frame-font "xft:-uw-ttyp0-medium-r-normal--18-*-75-75-c-*-iso10646-1" nil t))
 
-
-
 (global-set-key (kbd "<f7>") 'default-font)
 (global-set-key (kbd "<f8>") 'large-font)
 (global-set-key (kbd "M-<f7>") 'dejavu-font)
