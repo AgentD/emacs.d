@@ -4,11 +4,11 @@
  '(column-number-mode t)
  '(confirm-kill-emacs (quote yes-or-no-p))
  '(cua-mode nil nil (cua-base))
- '(display-battery-mode nil)
+ '(display-battery-mode t)
  '(display-time-24hr-format t)
  '(display-time-day-and-date nil)
  '(display-time-default-load-average nil)
- '(display-time-mode nil)
+ '(display-time-mode t)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
  '(package-selected-packages
