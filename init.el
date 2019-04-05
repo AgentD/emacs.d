@@ -1,4 +1,8 @@
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(battery-mode-line-format "[%b%p%%] ")
  '(blink-cursor-mode nil)
  '(column-number-mode t)
@@ -13,7 +17,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-	(fill-column-indicator yasnippet visual-fill-column undo-tree s popup markdown-mode magit-popup magit haskell-mode flycheck flx diminish auctex)))
+	(treemacs company company-lsp dap-mode lsp-java lsp-ui projectile fill-column-indicator yasnippet visual-fill-column undo-tree s popup markdown-mode magit-popup magit haskell-mode flycheck flx diminish auctex)))
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -21,6 +25,10 @@
  '(tooltip-mode nil))
 	;; ask y or n to kill emacs
 (custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(dired-directory ((t (:foreground "#75507b"))))
  '(trailing-whitespace ((t (:background "#ffb6b0")))))
  (setq use-dialog-box nil)
@@ -68,6 +76,7 @@
 (load-library "custom-keys")
 (load-library "custom-diminish-mode")
 (load-library "custom-font-mode")
+
 (load-library "theme-switch")
 ;; manage backups/autosaves
 (load-library "backup-autosave")

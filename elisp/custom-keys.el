@@ -1,6 +1,6 @@
 ;; Custom keybinds
 (global-set-key (kbd "s-d") 'ido-dired)
-(global-set-key (kbd "C-x C-d") 'ido-dired)
+(global-set-key (kbd "C-x C-h") 'mark-whole-buffer)
 (global-set-key (kbd "C-h") 'delete-backward-char)
 
 (global-set-key (kbd "C-w") 'backward-kill-word)
@@ -8,12 +8,11 @@
 (global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-k") 'kill-whole-line)
 (global-set-key (kbd "C-M-k") 'backward-kill-sentence)
-(global-set-key (kbd "C-c t") 'ansi-term)
 
 (global-set-key (kbd "s-p") 'cua-scroll-down)
 (global-set-key (kbd "s-n") 'cua-scroll-up)
 (global-set-key (kbd "M-g") 'goto-line)
-;; (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+
 (global-set-key (kbd "C-x SPC") 'cua-rectangle-mark-mode)
 (global-set-key (kbd "<C-return>") 'cua-rectangle-mark-mode)
 (global-set-key (kbd "C-c SPC") 'rectangle-mark-mode)
@@ -36,16 +35,12 @@
 (global-set-key (kbd "<prior>") 'cua-scroll-down)
 (global-set-key (kbd "<next>") 'cua-scroll-up)
 
-
 ;;buffer switching
 (global-set-key (kbd "<f6>") 'next-buffer)
-(global-set-key (kbd "M-<next>") 'next-buffer)
 (global-set-key (kbd "C-<next>") 'next-buffer)
 (global-set-key (kbd "<f5>") 'previous-buffer)
-(global-set-key (kbd "M-<prior>") 'previous-buffer)
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
 (global-set-key (kbd "s-b") 'ibuffer)
-(global-set-key (kbd "C-c b") 'ibuffer)
 
 (global-set-key (kbd "<s-tab>") 'other-window)
 
@@ -83,12 +78,10 @@
 (global-unset-key (kbd "C-t"))
 ;;(global-unset-key (kbd "M-t"))
 
-(global-set-key (kbd "C-c 1") 'shell-command)
+(global-set-key (kbd "C-c 1") 'eshell)
 
 (add-hook 'org-mode-hook (lambda()
-							 (define-key org-mode-map (kbd "C-c c") 'org-latex-export-to-pdf)
-							 (define-key org-mode-map (kbd "C-c C-c")
-								 'org-latex-export-to-pdf)))
+							 (local-set-key (kbd "C-c C-c") 'org-latex-export-to-pdf)))
 
 (add-hook 'emacs-lisp-mode-hook (lambda()
 							 (local-set-key (kbd "C-c C-c") 'eval-buffer)))
@@ -110,13 +103,13 @@
   `((mark-active
      ,@(let ((m (make-sparse-keymap)))
            (define-key m (kbd "C-c") 'kill-ring-save)
-		   (global-set-key (kbd "C-M-c") 'kill-ring-save)
+		   (define-key m (kbd "C-M-c") 'kill-ring-save)
            (define-key m (kbd "C-w") 'kill-region)
 		   (define-key m (kbd "C-x") 'kill-region)
            m))))
 
 (add-to-list 'emulation-mode-map-alists 'custom-region-alist)
-(global-set-key (kbd "M-v") 'backward-kill-sexp)
+(global-set-key (kbd "M-W") 'backward-kill-sexp)
 (global-set-key (kbd "C-v") 'yank)
 (global-set-key (kbd "M-c") 'scroll-up-command)
 (global-set-key (kbd "C-M-v") 'yank)
@@ -131,3 +124,4 @@
         ((looking-back "\\s(" 1) (backward-char) (forward-sexp arg))))
 
 (global-set-key (kbd "C-5") 'match-paren)
+(global-set-key (kbd "C-]") 'match-paren)

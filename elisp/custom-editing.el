@@ -10,11 +10,12 @@
 
 ;; Make backspace erase the tab instead of removing 1 space at a time.
 (setq backward-delete-char-untabify-method 'hungry)
-
+(add-hook 'java-mode-hook #'lsp)
 (add-hook 'java-mode-hook (lambda()
 		    	(setq c-basic-offset 4)
 				(setq tab-width 4)
-				(c-set-offset 'inline-open 0)))
+				(c-set-offset 'inline-open 0)
+				(load-library "custom-lsp-java-mode")))
 
 (add-hook 'sh-mode-hook (lambda()
 				(setq sh-basic-offset 8)

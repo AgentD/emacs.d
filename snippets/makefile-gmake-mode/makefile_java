@@ -6,7 +6,7 @@ JFLAGS = -g
 JC = javac
 .SUFFIXES: .java .class
 .java.class:
-		$(JC) $(JFLAGS) $*.java
+		$(JC) $(JFLAGS) $(CLASSES)
 
 CLASSES = \
 # file.java \
