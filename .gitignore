@@ -20,3 +20,5 @@ tramp
 eshell/history
 eshell/lastdir
 elpa/pdf-tools-*/epdfinfo
+eclipse.jdt.ls/
+transient/
