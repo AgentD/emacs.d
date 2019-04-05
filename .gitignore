@@ -22,3 +22,5 @@ eshell/lastdir
 elpa/pdf-tools-*/epdfinfo
 eclipse.jdt.ls/
 transient/
+.lsp-session-v1
+.cache/.dap-breakpoints
