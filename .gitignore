@@ -20,7 +20,9 @@ tramp
 eshell/history
 eshell/lastdir
 elpa/pdf-tools-*/epdfinfo
+workspace/
 eclipse.jdt.ls/
 transient/
 .lsp-session-v1
-.cache/.dap-breakpoints
+.cache/
+.dap-breakpoints
