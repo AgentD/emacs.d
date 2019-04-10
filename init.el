@@ -17,7 +17,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-	(treemacs company company-lsp dap-mode lsp-java lsp-ui projectile fill-column-indicator yasnippet visual-fill-column undo-tree s popup markdown-mode magit-popup magit haskell-mode flycheck flx diminish auctex)))
+	(fill-column-indicator yasnippet visual-fill-column undo-tree markdown-mode magit-popup magit haskell-mode flx diminish auctex)))
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)

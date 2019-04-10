@@ -1,12 +1,13 @@
 # -*- mode: snippet -*-
 # name: java
 # key: java
+# expand-env: ((yas-indent-line 'fixed))
 # --
 JFLAGS = -g
 JC = javac
 .SUFFIXES: .java .class
 .java.class:
-		$(JC) $(JFLAGS) $(CLASSES)
+	$(JC) $(JFLAGS) $(CLASSES)
 
 CLASSES = \
 # file.java \
@@ -16,4 +17,4 @@ default: classes
 classes: $(CLASSES:.java=.class)
 
 clean:
-		$(RM) *.class
+	$(RM) *.class
