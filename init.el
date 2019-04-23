@@ -33,17 +33,6 @@
  '(trailing-whitespace ((t (:background "#ffb6b0")))))
  (setq use-dialog-box nil)
 
-
-;;(define-advice delete-frame (:around (oldfun &rest args) confirm-frame-deletion)
-;;"Confirm deleting the frame."
-;;(interactive)
-;;(when (y-or-n-p "Really exit frame? ")
-;;    (apply oldfun args)))
-;;(cond ((> (display-pixel-height) 768))
-;;(custom-set-faces ;; default font size --13
-;; '(default ((t (:family "ttyp0" :foundry "uw" :weight medium
-;; 			:width normal :height 104 ))))))
-
 (setq frame-title-format '("" "emacs@" system-name " - %b"))
 (setq visible-bell nil)
 (setq vc-follow-symlinks t)
