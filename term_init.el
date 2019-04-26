@@ -19,6 +19,8 @@
  '(mode-line-buffer-id ((t (:inherit background))))
  '(trailing-whitespace ((t (:background "#ffb6b0")))))
 
+(setq vc-follow-symlinks t)
+
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
 (load-library "custom-editing")
