@@ -9,4 +9,4 @@
 (define-key dired-mode-map (kbd "k") 'dired-previous-line)
 (define-key dired-mode-map (kbd "l") 'dired-view-file)
 (define-key dired-mode-map (kbd "<right>") 'dired-view-file)
-(define-key dired-mode-map (kbd "S-<return>") 'dired-display-file)
+(define-key dired-mode-map (kbd "<return>") 'dired-display-file)
