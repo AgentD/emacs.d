@@ -111,8 +111,14 @@
 (add-to-list 'emulation-mode-map-alists 'custom-region-alist)
 (global-set-key (kbd "M-W") 'backward-kill-sexp)
 (global-set-key (kbd "C-v") 'yank)
-(global-set-key (kbd "M-c") 'scroll-up-command)
-(global-set-key (kbd "C-M-v") 'yank)
+;;(global-set-key (kbd "M-c") 'scroll-up-command)
+(global-unset-key (kbd "M-c"))
+(global-unset-key (kbd "M-v"))
+(defun yank-primary ()
+  (interactive)
+  (insert
+   (gui-get-primary-selection)))
+(global-set-key (kbd "C-M-v") 'yank-primary)
 
 (defun match-paren (&optional arg)
   "Go to the matching parenthesis character if one is adjacent to point."
