@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: pmatrix
-# key: pmatrix
+# name: pmat
+# key: pmat
 # --
 \begin{pmatrix}
 $0
