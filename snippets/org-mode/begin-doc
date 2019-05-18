@@ -22,7 +22,7 @@
 #+LaTeX_HEADER: \usepackage{tikz}
 
 \setlength{\parindent}{0pt}
-\lstset{basicstyle=\ttfamily,columns=fixed,language=Java,showstringspaces=false}
+\lstset{basicstyle=\ttfamily,columns=fixed,language=C,showstringspaces=false}
 
 #+OPTIONS: tex:t
 #+OPTIONS: toc:nil
