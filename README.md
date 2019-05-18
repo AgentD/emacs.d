@@ -8,12 +8,7 @@
 
 ## Usage
 ### GUI:
-Use:
-
-	$ emacsclient -nc
-
-or
-
+Use
 	$ emacsclient -nc --alternate-editor=""
 
 ### Terminal:
@@ -24,6 +19,3 @@ Use:
 or
 
 	$ emacsclient -nw --alternate-editor=""
-
-## Custom Keybinds
-WIP
