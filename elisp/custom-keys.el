@@ -37,8 +37,10 @@
 
 ;;buffer switching
 (global-set-key (kbd "<f6>") 'next-buffer)
+;;(global-set-key (kbd "<f5>") 'previous-buffer)
+(global-set-key (kbd "M-<next>") 'next-buffer)
 (global-set-key (kbd "C-<next>") 'next-buffer)
-(global-set-key (kbd "<f5>") 'previous-buffer)
+(global-set-key (kbd "M-<prior>") 'previous-buffer)
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
 (global-set-key (kbd "s-b") 'ibuffer)
 

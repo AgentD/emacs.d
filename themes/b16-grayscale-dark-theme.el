@@ -10,7 +10,7 @@
  '(cursor ((t (:background "#ffffff"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#151515"))))
- '(mode-line ((t (:foreground "#ffffff" :background "#292929" ))))
+ '(mode-line ((t (:foreground "#ffffff" :background "#b9b9b9" ))))
 ;; '(mode-line-buffer-id ((t (:bold nil :foreground "#ffffff"))))
  '(region ((t (:background "#114488" :foreground "#ffffff"))))
 

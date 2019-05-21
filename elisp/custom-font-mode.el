@@ -15,13 +15,13 @@
 (defun dejavu-font ()
 	(interactive)
 		(set-face-attribute 'default t :font
-						"DejaVu Sans Mono-7.5" )
-		(set-frame-font "DejaVu Sans Mono-7.5" nil t))
+						"DejaVu Sans Mono:pixelsize=14" )
+		(set-frame-font "DejaVu Sans Mono:pixelsize=14" nil t))
 (defun dejavu-font-large ()
 	(interactive)
 		(set-face-attribute 'default t :font
-						"DejaVu Sans Mono-9" )
-		(set-frame-font "DejaVu Sans Mono-9" nil t))
+						"DejaVu Sans Mono:pixelsize=16" )
+		(set-frame-font "DejaVu Sans Mono:pixelsize=16" t))
 
 (defun large-font ()
 	(interactive)
