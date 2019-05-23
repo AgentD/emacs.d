@@ -3,7 +3,7 @@
 # key: c
 # expand-env: ((yas-indent-line 'fixed))
 # --
-CFLAGS = -std=c99 -Wall -Werror -Wextra
+CFLAGS = -std=c99 -Wall -Werror -Wextra -g
 
 .PHONY: all clean
 

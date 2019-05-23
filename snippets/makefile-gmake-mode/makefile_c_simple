@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: c_simple
-# key: c_simple
-# --
-main: main.c
-	$(CC) main.c -o main -Wall -Wextra -pedantic -std=c99
