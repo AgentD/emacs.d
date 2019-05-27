@@ -3,7 +3,7 @@
 # key: img
 # --
 \begin{center}
-	\includegraphics[width=1.0\textwidth]{}
+	\includegraphics[width=1.0\textwidth]{$0}
  %	\captionof{figure}{}
 	\label{fig:}
 \end{center}

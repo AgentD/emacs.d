@@ -23,6 +23,7 @@
 
 \setlength{\parindent}{0pt}
 \lstset{basicstyle=\ttfamily,columns=fixed,language=C,showstringspaces=false}
+\usetikzlibrary{shapes,arrows,automata}
 
 #+OPTIONS: tex:t
 #+OPTIONS: toc:nil

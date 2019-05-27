@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: align math
+# name: align
 # key: align
 # --
 \begin{align}
-
+$0
 \end{align}

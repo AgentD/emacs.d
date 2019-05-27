@@ -75,6 +75,7 @@
 (setq visible-cursor nil)
 (fset 'yes-or-no-p 'y-or-n-p)
 (put 'suspend-frame 'disabled t)
+(setq tex-fontify-script nil) ;; disables custom fonts in LaTeX buffer display
 
 (setq org-highlight-latex-and-related '(latex script entities))
 (setq org-src-fontify-natively t
