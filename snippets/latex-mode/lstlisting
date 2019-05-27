@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: lst
+# key: lst
+# --
+\begin{lstlisting}[frame=single]
+$0
+\end{lstlisting}
