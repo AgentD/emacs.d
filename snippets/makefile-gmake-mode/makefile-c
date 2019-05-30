@@ -3,6 +3,7 @@
 # key: c
 # expand-env: ((yas-indent-line 'fixed))
 # --
+CC = gcc
 CFLAGS = -std=gnu11 -Wall -Werror -Wextra -g
 
 .PHONY: all clean

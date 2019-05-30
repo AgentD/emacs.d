@@ -17,7 +17,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-	(fill-column-indicator yasnippet visual-fill-column undo-tree markdown-mode magit-popup magit haskell-mode flx diminish auctex)))
+	(solarized-theme fill-column-indicator yasnippet visual-fill-column undo-tree markdown-mode magit-popup magit haskell-mode flx diminish auctex)))
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)
