@@ -1,0 +1,10 @@
+(custom-set-faces
+ '(dired-directory ((t (:foreground "#75507b"))))
+ '(font-latex-sectioning-0-face ((t (:inherit variable-pitch :foreground "#bebebe" :weight bold))))
+ '(font-latex-sectioning-1-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-0-face :height 0.95))))
+ '(font-latex-sectioning-2-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-1-face :height 0.9))))
+ '(font-latex-sectioning-3-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-2-face :height 0.85))))
+ '(font-latex-sectioning-4-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-3-face :height 1.0))))
+ '(font-latex-sectioning-5-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-4-face :height 1.0))))
+ '(trailing-whitespace ((t (:background "#ffb6b0"))))
+ '(variable-pitch ((t (:font "Sans-Serif-16")))))

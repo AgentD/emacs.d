@@ -1,40 +1,46 @@
 # -*- mode: snippet -*-
-# name: Begin Document
+# name: bgdoc
 # key: bgdoc
 # --
 \documentclass[12pt,a4paper]{scrartcl}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage[ngerman]{babel}
-\usepackage{amsmath, capt-of,lipsum}
-\usepackage{graphicx}
+
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage[english]{babel}
 \usepackage{caption}
-\usepackage{booktabs}
-\usepackage{multicol}
-\usepackage{textcomp}
-\usepackage{wrapfig}
-\usepackage{tabularx}
-\usepackage[euler]{textgreek}
-\usepackage{booktabs}
-\usepackage{color}
-\usepackage{subcaption}
-\usepackage{ragged2e}
-\usepackage[version=4]{mhchem}
-\usepackage{enumitem}
+\usepackage{capt-of}
+\usepackage{changepage}
 \usepackage{fullpage}
-\usepackage[onehalfspacing]{setspace}
+\usepackage[euler]{textgreek}
+\usepackage{textcomp}
+\usepackage{mathtools}
+\usepackage{pmboxdraw}
+\usepackage{listings}
+\usepackage{marvosym}
+\usepackage{ragged2e}
+\usepackage{tikz}
+% \usepackage[onehalfspacing]{setspace}
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks=true, % make the links colored
-    linkcolor=black, % color TOC links in blue
-    urlcolor=red, % color URLs in red
-    linktoc=all % 'all' will create links for everything in the TOC
+  colorlinks=true, % make the links colored
+  linkcolor=black, % color TOC links in blue
+  urlcolor=red, % color URLs in red
+  linktoc=all, % 'all' will create links for everything in the TOC
+  citecolor=black
 }
 
 \title{}
 \author{}
 \date{}
 
-\begin{document}
+\usepackage[backend=biber
+, style=authoryear
+, maxcitenames=1
+, natbib=true
+, hyperref=true]{biblatex}
+\addbibresource{literature.bib}
 
+\begin{document}
+\justify
+\setlength{\parindent}{0pt}
 \end{document}

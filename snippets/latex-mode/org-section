@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: org-section
+# key: *
+# --
+\section{$0}

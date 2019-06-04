@@ -2,4 +2,4 @@
 # name: cite
 # key: cite
 # --
-(\cite[vgl.][S. ]{})
+(\cite[p. $1]{$0})

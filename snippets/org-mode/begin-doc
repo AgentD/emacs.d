@@ -3,24 +3,24 @@
 # key: bgdoc
 # --
 #+LATEX_CLASS: article
-#+LaTeX_HEADER: \usepackage{amsmath}
-#+LaTeX_HEADER: \usepackage{fullpage}
-#+LaTeX_HEADER: \usepackage{amsfonts,amsmath,amssymb,amsthm}
-#+LaTeX_HEADER: \usepackage{booktabs}
-#+LaTeX_HEADER: \usepackage{changepage}
-#+LaTeX_HEADER: \usepackage[euler]{textgreek}
-#+LaTeX_HEADER: \usepackage{textcomp}
-#+LaTeX_HEADER: \usepackage[ngerman]{babel}
-#+LaTeX_HEADER: \usepackage[utf8]{inputenc}
-#+LaTeX_HEADER: \usepackage{lmodern}
-#+LaTeX_HEADER: \usepackage[onehalfspacing]{setspace}
-#+LaTeX_HEADER: \usepackage{mathtools}
-#+LaTeX_HEADER: \usepackage{pmboxdraw}
-#+LaTeX_HEADER: \usepackage{listings}
-#+LaTeX_HEADER: \usepackage{marvosym}
-#                            ^-- Lightning
-#+LaTeX_HEADER: \usepackage{tikz}
+#+LaTeX_HEADER:\usepackage{amsfonts,amsmath,amssymb,amsthm}
+#+LaTeX_HEADER:\usepackage{booktabs}
+#+LaTeX_HEADER:\usepackage[english,ngerman]{babel}
+#+LaTeX_HEADER:\usepackage{caption}
+#+LaTeX_HEADER:\usepackage{capt-of}
+#+LaTeX_HEADER:\usepackage{changepage}
+#+LaTeX_HEADER:\usepackage{fullpage}
+#+LaTeX_HEADER:\usepackage[euler]{textgreek}
+#+LaTeX_HEADER:\usepackage{textcomp}
+#+LaTeX_HEADER:\usepackage{mathtools}
+#+LaTeX_HEADER:\usepackage{pmboxdraw}
+#+LaTeX_HEADER:\usepackage{listings}
+#+LaTeX_HEADER:\usepackage{marvosym}
+#+LaTeX_HEADER:\usepackage{ragged2e}
+#+LaTeX_HEADER:\usepackage{tikz}
+# %\usepackage[onehalfspacing]{setspace}
 
+\justify
 \setlength{\parindent}{0pt}
 \lstset{basicstyle=\ttfamily,columns=fixed,language=C,showstringspaces=false}
 \usetikzlibrary{shapes,arrows,automata}
