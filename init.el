@@ -17,7 +17,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-	(solarized-theme fill-column-indicator yasnippet visual-fill-column markdown-mode magit-popup magit haskell-mode flx diminish auctex)))
+	(fill-column-indicator yasnippet visual-fill-column markdown-mode magit-popup magit haskell-mode flx diminish auctex)))
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -59,6 +59,7 @@
 (load-library "custom-keys")
 (load-library "custom-diminish-mode")
 (load-library "custom-font-mode")
+(load-library "custom-ibuffer")
 
 (load-library "theme-switch")
 ;; manage backups/autosaves

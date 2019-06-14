@@ -2,7 +2,7 @@
 # name: Begin Beamer
 # key: bgbeamer
 # --
-\documentclass{beamer}
+\documentclass[t]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage[ngerman]{babel}

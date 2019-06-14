@@ -16,4 +16,4 @@
 		       ("class" "import java.util.*;\n\npublic class $1\n{\n	$0\n}" "class" nil nil nil "/home/gabriel/.emacs.d/snippets/java-mode/beginn-class" nil nil)))
 
 
-;;; Do not edit! File generated at Thu May 30 23:49:55 2019
+;;; Do not edit! File generated at Thu Jun 13 16:09:19 2019

@@ -6,4 +6,4 @@
 		       ("article" "@Article{ ,\nauthor = {},\ntitle = {},\nedition = {},\naddress = {},\npages = {},\njournal = {},\npublisher = {},\nyear = {},\n}" "article" nil nil nil "/home/gabriel/.emacs.d/snippets/bibtex-mode/article" nil nil)))
 
 
-;;; Do not edit! File generated at Thu May 30 23:49:55 2019
+;;; Do not edit! File generated at Thu Jun 13 16:09:19 2019

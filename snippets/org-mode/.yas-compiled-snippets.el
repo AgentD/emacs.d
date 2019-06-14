@@ -9,6 +9,7 @@
 			"/home/gabriel/.emacs.d/snippets/org-mode/tree" nil nil)
 		       ("times" "$\\times$$0" "times" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/times" nil nil)
 		       ("tfrac" "\\tfrac{$1}{$2}$0" "tfrac" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/tfrac" nil nil)
+		       ("tt" "\\texttt{$0}" "tt" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/texttt" nil nil)
 		       ("tag" "\\tag{$0}" "tag" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/tag" nil nil)
 		       ("sum" "\\sum_{$1}^{$2}{$0}" "sum" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/sum" nil nil)
 		       ("subq" "\\subseteq" "subq" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/subq" nil nil)
@@ -20,13 +21,13 @@
 		       ("qq" "\\qquad $0" "qquad" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/qquad" nil nil)
 		       ("qed" "\\begin{flushright}\n$\\blacksquare/QED\\qquad$\n\\end{flushright}\n" "qed" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/qed" nil nil)
 		       ("pmod" "\\pmod{$1} $0" "pmod" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/pmod" nil nil)
-		       ("pmat" "\\begin{pmatrix}\n$0\n\\end{pmatrix}" "pmat" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/pmatrix" nil nil)
+		       ("pmatrix" "\\begin{pmatrix}\n$0\n\\end{pmatrix}" "pmatrix" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/pmatrix" nil nil)
 		       ("ol" "\\overline{$1}$0" "overline" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/overline" nil nil)
 		       ("ne" "\\neg $0" "negation" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/negation" nil nil)
 		       ("mti" "\\times $0" "times" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/mtimes" nil nil)
 		       ("mcal" "\\mathcal{$1}$0" "mcal" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/mcal" nil nil)
 		       ("mbb" "\\mathbb{$1}$0" "mathbb" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/mbb" nil nil)
-		       ("mat" "\\begin{matrix}\n$0\n\\end{matrix}" "mat" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/matrix" nil nil)
+		       ("matrix" "\\begin{matrix}\n$0\n\\end{matrix}" "matrix" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/matrix" nil nil)
 		       ("txt" "\\text{ $1 } $0" "txt" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/math_text" nil nil)
 		       ("sim" "\\sim $0" "sim" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/math-sim" nil nil)
 		       ("lst" "\\begin{lstlisting}[frame=single]\n$0\n\\end{lstlisting}" "lst" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/lstlisting" nil nil)
@@ -38,7 +39,7 @@
 		       ("dfrac" "\\dfrac{$1}{$2}$0" "dfrac" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/dfrac" nil nil)
 		       ("cd" "\\cdot $0" "dot" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/cdot" nil nil)
 		       ("src" "#+BEGIN_SRC $1\n$0\n#+END_SRC" "src" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/begin-src" nil nil)
-		       ("bgdoc" "#+LATEX_CLASS: article\n#+LaTeX_HEADER: \\usepackage{amsmath}\n#+LaTeX_HEADER: \\usepackage{fullpage}\n#+LaTeX_HEADER: \\usepackage{amsfonts,amsmath,amssymb,amsthm}\n#+LaTeX_HEADER: \\usepackage{booktabs}\n#+LaTeX_HEADER: \\usepackage{changepage}\n#+LaTeX_HEADER: \\usepackage[euler]{textgreek}\n#+LaTeX_HEADER: \\usepackage{textcomp}\n#+LaTeX_HEADER: \\usepackage[ngerman]{babel}\n#+LaTeX_HEADER: \\usepackage[utf8]{inputenc}\n#+LaTeX_HEADER: \\usepackage{lmodern}\n#+LaTeX_HEADER: \\usepackage[onehalfspacing]{setspace}\n#+LaTeX_HEADER: \\usepackage{mathtools}\n#+LaTeX_HEADER: \\usepackage{pmboxdraw}\n#+LaTeX_HEADER: \\usepackage{listings}\n#+LaTeX_HEADER: \\usepackage{marvosym}\n#                            ^-- Lightning\n#+LaTeX_HEADER: \\usepackage{tikz}\n\n\\setlength{\\parindent}{0pt}\n\\lstset{basicstyle=\\ttfamily,columns=fixed,language=C,showstringspaces=false}\n\\usetikzlibrary{shapes,arrows,automata}\n\n#+OPTIONS: tex:t\n#+OPTIONS: toc:nil\n#+OPTIONS: num:nil\n\n#+Title:\n#+Author:\n#+Date:" "begindoc" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/begin-doc" nil nil)
+		       ("bgdoc" "#+LATEX_CLASS: article\n#+LaTeX_HEADER:\\usepackage{amsfonts,amsmath,amssymb,amsthm}\n#+LaTeX_HEADER:\\usepackage{booktabs}\n#+LaTeX_HEADER:\\usepackage[english,ngerman]{babel}\n#+LaTeX_HEADER:\\usepackage{caption}\n#+LaTeX_HEADER:\\usepackage{capt-of}\n#+LaTeX_HEADER:\\usepackage{changepage}\n#+LaTeX_HEADER:\\usepackage{fullpage}\n#+LaTeX_HEADER:\\usepackage[euler]{textgreek}\n#+LaTeX_HEADER:\\usepackage{textcomp}\n#+LaTeX_HEADER:\\usepackage{mathtools}\n#+LaTeX_HEADER:\\usepackage{pmboxdraw}\n#+LaTeX_HEADER:\\usepackage{listings}\n#+LaTeX_HEADER:\\usepackage{marvosym}\n#+LaTeX_HEADER:\\usepackage{ragged2e}\n#+LaTeX_HEADER:\\usepackage{tikz}\n# %\\usepackage[onehalfspacing]{setspace}\n\n\\justify\n\\setlength{\\parindent}{0pt}\n\\lstset{basicstyle=\\ttfamily,columns=fixed,language=C,showstringspaces=false}\n\\usetikzlibrary{shapes,arrows,automata}\n\n#+OPTIONS: tex:t\n#+OPTIONS: toc:nil\n#+OPTIONS: num:nil\n\n#+Title:\n#+Author:\n#+Date:" "begindoc" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/begin-doc" nil nil)
 		       ("array" "\\[\\left . \\begin{array}\n$0\n\\end{array}\\right\\]" "array" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/array" nil nil)
 		       ("align*" "\\begin{align*}\n$0\n\\end{align*}" "align no num" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/align_no_num" nil nil)
 		       ("align" "\\begin{align}\n$0\n\\end{align}" "align" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/align-math" nil nil)
@@ -46,4 +47,4 @@
 		       ("Lra" "\\Longrightarrow" "Longrightarrow" nil nil nil "/home/gabriel/.emacs.d/snippets/org-mode/Longrightarrow" nil nil)))
 
 
-;;; Do not edit! File generated at Thu May 30 23:49:56 2019
+;;; Do not edit! File generated at Thu Jun 13 16:09:19 2019

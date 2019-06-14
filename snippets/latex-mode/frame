@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: frame
+# key: frame
+# --
+\section{}
+\begin{frame}[fragile]
+\hypertarget{$1}{}
+\frametitle{}
+$0
+\end{frame}

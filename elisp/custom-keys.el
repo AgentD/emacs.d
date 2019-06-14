@@ -36,13 +36,14 @@
 (global-set-key (kbd "<next>") 'cua-scroll-up)
 
 ;;buffer switching
-(global-set-key (kbd "<f6>") 'next-buffer)
+;;(global-set-key (kbd "<f6>") 'next-buffer)
 ;;(global-set-key (kbd "<f5>") 'previous-buffer)
 (global-set-key (kbd "M-<next>") 'next-buffer)
 (global-set-key (kbd "C-<next>") 'next-buffer)
 (global-set-key (kbd "M-<prior>") 'previous-buffer)
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
 (global-set-key (kbd "s-b") 'ibuffer)
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 (global-set-key (kbd "<s-tab>") 'other-window)
 
@@ -77,7 +78,7 @@
 (global-unset-key (kbd "<f2>"))
 (global-unset-key (kbd "<insert>"))
 (global-unset-key (kbd "<insertchar>"))
-(global-unset-key (kbd "C-t"))
+;;(global-unset-key (kbd "C-t"))
 ;;(global-unset-key (kbd "M-t"))
 
 (global-set-key (kbd "C-c 1") 'eshell)

@@ -22,6 +22,7 @@
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
 (load-library "custom-editing")
+(load-library "custom-ibuffer")
 (load-library "custom-dired-mode")
 (load-library "custom-keys")
 ;; manage backups/autosaves
