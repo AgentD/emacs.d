@@ -5,7 +5,7 @@
  'gl-dark-alt
 
  ;; '(default ((t (:background "black" :foreground "#e0e0e0"))))
- '(default ((t (:background "black"))))
+ '(default ((t (:background "black" :foreground "#bebebe"))))
  '(mouse ((t (:inherit background))))
  '(cursor ((t (:background "#ff0000"))))
  '(border ((t (:foreground "blue"))))

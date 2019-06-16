@@ -9,11 +9,12 @@
 (global-set-key (kbd "M-k") 'kill-whole-line)
 (global-set-key (kbd "C-M-k") 'backward-kill-sentence)
 
-(global-set-key (kbd "s-p") 'cua-scroll-down)
-(global-set-key (kbd "s-n") 'cua-scroll-up)
+(global-set-key (kbd "M-v") 'cua-scroll-down)
+(global-set-key (kbd "M-c") 'cua-scroll-up)
 (global-set-key (kbd "M-g") 'goto-line)
 
 (global-set-key (kbd "C-x SPC") 'cua-rectangle-mark-mode)
+(global-set-key (kbd "C-x C-SPC") 'cua-rectangle-mark-mode)
 (global-set-key (kbd "<C-return>") 'cua-rectangle-mark-mode)
 (global-set-key (kbd "C-c SPC") 'rectangle-mark-mode)
 
@@ -78,13 +79,12 @@
 (global-unset-key (kbd "<f2>"))
 (global-unset-key (kbd "<insert>"))
 (global-unset-key (kbd "<insertchar>"))
-;;(global-unset-key (kbd "C-t"))
-;;(global-unset-key (kbd "M-t"))
-
-(global-set-key (kbd "C-c 1") 'eshell)
+(global-unset-key (kbd "C-t"))
+(global-unset-key (kbd "M-t"))
 
 (add-hook 'org-mode-hook (lambda()
-							 (local-set-key (kbd "C-c C-c") 'org-latex-export-to-pdf)))
+							 (local-set-key (kbd "C-c C-c")	'org-latex-export-to-pdf)
+							 (local-set-key (kbd "C-c c") 'org-export-dispatch)))
 
 (add-hook 'emacs-lisp-mode-hook (lambda()
 							 (local-set-key (kbd "C-c C-c") 'eval-buffer)))
@@ -114,9 +114,6 @@
 (add-to-list 'emulation-mode-map-alists 'custom-region-alist)
 (global-set-key (kbd "M-W") 'backward-kill-sexp)
 (global-set-key (kbd "C-v") 'yank)
-;;(global-set-key (kbd "M-c") 'scroll-up-command)
-(global-unset-key (kbd "M-c"))
-(global-unset-key (kbd "M-v"))
 (defun yank-primary ()
   (interactive)
   (insert
@@ -133,4 +130,3 @@
         ((looking-back "\\s(" 1) (backward-char) (forward-sexp arg))))
 
 (global-set-key (kbd "C-5") 'match-paren)
-(global-set-key (kbd "C-]") 'match-paren)
