@@ -1,5 +1,8 @@
 (custom-set-faces
- '(dired-directory ((t (:foreground "#75507b"))))
+ ;; '(dired-directory ((t (:foreground "#75507b"))))
+ ;;  '(dired-directory ((t (:foreground "#114488"))))
+ '(dired-directory ((t (:foreground "#4286f4"))))
+ '(dired-symlink ((t (:foreground "#75507B"))))
  '(font-latex-sectioning-0-face ((t (:inherit variable-pitch :foreground "#bebebe" :weight bold))))
  '(font-latex-sectioning-1-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-0-face :height 0.95))))
  '(font-latex-sectioning-2-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-1-face :height 0.9))))

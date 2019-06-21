@@ -4,13 +4,13 @@
 (custom-theme-set-faces
  'xcode-dark
 
- '(default ((t (:background "#000000" :foreground "#e0e0e0"))))
+ ;; '(default ((t (:background "#000000" :foreground "#e0e0e0"))))
+ '(default ((t (:background "#000000" :foreground "#bebebe"))))
  '(mouse ((t (:foreground "#000000"))))
  '(cursor ((t (:background "#ff0000"))))
  '(border ((t (:foreground "#121212"))))
  '(fringe ((t (:background "#121212"))))
- '(mode-line ((t (:foreground "#e0e0e0" :background "#292929" ))))
-;; '(mode-line-buffer-id ((t (:bold nil :foreground "#e0e0e0"))))
+ '(mode-line ((t (:inherit foreground :background "#292929" ))))
  ;; '(region ((t (:background "#114488" :foreground "#e0e0e0"))))
   '(region ((t (:background "#00077a"))))
 
@@ -24,15 +24,15 @@
  '(font-lock-variable-name-face ((t (:foreground "#1492ff"))))
  '(font-lock-warning-face ((t (:foreground "Red" :bold t))))
 
- '(minibuffer-prompt ((t (:foreground "#e0e0e0" :bold t))))
+ '(minibuffer-prompt ((t (:inherit foreground :bold t))))
  '(linum ((t (:foreground "#585858" :underline nil))))
  '(line-number ((t (:foreground "#585858" :underline nil))))
 
  '(ido-subdir ((t (:foreground "#a1c659"))))
- '(ido-first-match ((t (:foreground "#e0e0e0" :bold t :underline t))))
+ '(ido-first-match ((t (:inherit foreground :bold t :underline t))))
  '(ido-only-match ((t (:foreground "#ffcc33"))))
- '(ido-indicator ((t (:foreground "#e0e0e0"))))
- '(ido-incomplete-regexp ((t (:foreground "#e0e0e0"))))
+ '(ido-indicator ((t (:inherit foreground))))
+ '(ido-incomplete-regexp ((t (:inherit foreground))))
 
  '(diff-added ((t (:foreground "green"))))
  '(diff-removed ((t (:foreground "red"))))

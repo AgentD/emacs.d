@@ -35,8 +35,8 @@
 
 (add-to-list 'custom-theme-load-path (file-name-as-directory
 				      "~/.emacs.d/themes"))
-(load-theme 'gl-dark-alt t)
-(enable-theme 'gl-dark-alt)
+(load-theme 'gl-dark t)
+(enable-theme 'gl-dark)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
@@ -64,17 +64,3 @@
 (load-library "theme-switch")
 ;; manage backups/autosaves
 (load-library "backup-autosave")
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(dired-directory ((t (:foreground "#75507b"))))
- '(font-latex-sectioning-0-face ((t (:inherit variable-pitch :foreground "#bebebe" :weight bold))))
- '(font-latex-sectioning-1-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-0-face :height 0.95))))
- '(font-latex-sectioning-2-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-1-face :height 0.9))))
- '(font-latex-sectioning-3-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-2-face :height 0.85))))
- '(font-latex-sectioning-4-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-3-face :height 1.0))))
- '(font-latex-sectioning-5-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-4-face :height 1.0))))
- '(trailing-whitespace ((t (:background "#ffb6b0"))))
- '(variable-pitch ((t (:font "Sans-Serif-16")))))
