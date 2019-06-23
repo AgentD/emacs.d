@@ -10,7 +10,10 @@
  '(cursor ((t (:background "#00aa00" :foreground "#002b36"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#073642" :foreground "#586e75"))))
- '(mode-line ((t ( :background "#073642" :forground "#002b36"))))
+ '(mode-line ((t ( :background "#073642" :forground "#839496"))))
+ '(mode-line-inactive ((t ( :background "#002B36" :forground "#839496"
+										:box (:line-width 1 :color "#073642"
+														  :style unspecified)))))
  ;;'(mode-line-buffer-id ((t (:bold nil :foreground "#e0e0e0"))))
  '(region ((t (:background "#93a1a1" :foreground "#002b36"))))
  '(dired-directory ((t (:foreground "#2aa198"))))
