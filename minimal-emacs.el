@@ -17,19 +17,16 @@
  '(tool-bar-mode nil)
  '(tooltip-mode nil)
  '(use-dialog-box nil))
-(global-font-lock-mode 0)
-(when (display-graphic-p)
-	(custom-set-faces
-	 '(default ((t (:background "#FFFFEA" :foreground "#000000"
-								:font "Monospace:pixelsize=14"))))
-	 '(mode-line ((t (:foreground "#000000" :background "#EAFFFF"
-								  :box (:line-width 1 :color "#073642"
-														  :style unspecified)))))
-	 '(region ((t (:foreground "#000000" :background "#EEEE9E"))))
-	 '(cursor ((t (:background "#000000"))))))
+;;(global-font-lock-mode 0)
+(add-to-list 'custom-theme-load-path (file-name-as-directory
+				      "~/.emacs.d/themes"))
+(load-theme 'acme-light t)
+(enable-theme 'acme-light)
 
-(set-face-attribute 'default t  )
-(set-frame-font "Monospace:pixelsize=14" nil t)
+(set-face-attribute 'default t :font
+					"xft:-uw-ttyp0-medium-r-normal--18-*-75-75-c-*-iso10646-1")
+(set-frame-font "xft:-uw-ttyp0-medium-r-normal--18-*-75-75-c-*-iso10646-1"nil t)
+
 (global-set-key (kbd "C-h") 'delete-backward-char)
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (defconst custom-region-alist

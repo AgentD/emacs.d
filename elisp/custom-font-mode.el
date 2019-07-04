@@ -1,15 +1,15 @@
-(defun medium-font ()
-	(interactive)
-	(set-face-attribute 'default t :font
-					"xft:-uw-ttyp0-medium-r-normal--13-*-75-75-c-*-iso10646-1")
-	(set-frame-font "xft:-uw-ttyp0-medium-r-normal--13-*-75-75-c-*-iso10646-1"
-						nil t))
-
 (defun default-font ()
 	(interactive)
 	(set-face-attribute 'default t :font
 					"xft:-uw-ttyp0-medium-r-normal--16-*-75-75-c-*-iso10646-1")
 	(set-frame-font "xft:-uw-ttyp0-medium-r-normal--16-*-75-75-c-*-iso10646-1"
+						nil t))
+
+(defun large-font ()
+	(interactive)
+	(set-face-attribute 'default t :font
+					"xft:-uw-ttyp0-medium-r-normal--18-*-75-75-c-*-iso10646-1")
+	(set-frame-font "xft:-uw-ttyp0-medium-r-normal--18-*-75-75-c-*-iso10646-1"
 						nil t))
 
 (defun dejavu-font ()
