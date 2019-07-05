@@ -29,9 +29,9 @@
  '(linum ((t (:foreground "#585858" :underline nil))))
  '(line-number ((t (:foreground "#585858"  :underline nil))))
 
- '(ido-subdir ((t (:foreground "#a1c659"))))
+ '(ido-subdir ((t (:foreground "#004488"))))
  '(ido-first-match ((t (:inherit foreground :bold t :underline t))))
- '(ido-only-match ((t (:foreground "#ffcc33"))))
+ '(ido-only-match ((t (:foreground "#005500"))))
  '(ido-indicator ((t (:inherit foreground))))
  '(ido-incomplete-regexp ((t (:inherit foreground))))
 
