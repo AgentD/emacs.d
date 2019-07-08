@@ -8,7 +8,7 @@
  '(mouse ((t (:inherit background))))
  '(cursor ((t (:background "#000000"))))
  '(border ((t (:foreground "blue"))))
- '(fringe ((t (:background "#99994C"))))
+ '(fringe ((t (:background "#F1EED4"))))
  '(mode-line ((t (:foreground "#000000" :background "#EAFFFF"
 							  :box (:line-width 1 :color "#073642"
 												:style unspecified)))))
@@ -18,7 +18,7 @@
  '(font-lock-builtin-face ((t (:foreground "#004488"))))
  '(font-lock-comment-face ((t (:foreground "#663311"))))
  '(font-lock-constant-face ((t (:bold t))))
- '(font-lock-function-name-face ((t (:bold t))))
+ '(font-lock-function-name-face ((t (:foreground "#005500" :bold t))))
  '(font-lock-keyword-face ((t (:bold t))))
  '(font-lock-string-face ((t (:foreground "#005500"))))
  '(font-lock-type-face ((t (:foreground "#004488"))))
