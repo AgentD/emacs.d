@@ -7,7 +7,14 @@
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-k") 'kill-whole-line)
-(global-set-key (kbd "C-M-k") 'backward-kill-sentence)
+(defun backward-kill-line (arg)
+  "Kill ARG lines backward."
+  (interactive "p")
+  (kill-line (- 1 arg)))
+(global-set-key (kbd "C-u") 'backward-kill-line) ;; be readline conform
+(global-set-key (kbd "M-u") 'universal-argument)
+(global-set-key (kbd "M-\\") 'universal-argument)
+(global-set-key (kbd "M-U") 'upcase-word)
 
 (global-set-key (kbd "M-v") 'cua-scroll-down)
 (global-set-key (kbd "M-c") 'cua-scroll-up)
@@ -107,8 +114,10 @@
      ,@(let ((m (make-sparse-keymap)))
            (define-key m (kbd "C-c") 'kill-ring-save)
 		   (define-key m (kbd "C-M-c") 'kill-ring-save)
+		   (define-key m (kbd "<mouse-3>") 'kill-ring-save)
            (define-key m (kbd "C-w") 'kill-region)
 		   (define-key m (kbd "C-x") 'kill-region)
+		   (define-key m (kbd "<mouse-2>") 'kill-region)
            m))))
 
 (add-to-list 'emulation-mode-map-alists 'custom-region-alist)
