@@ -6,7 +6,7 @@
 
  '(default ((t (:background "#FFFFEA" :foreground "#000000"))))
  '(mouse ((t (:inherit background))))
- '(cursor ((t (:background "#000000"))))
+ '(cursor ((t (:background "#00aa00"))))
  '(border ((t (:foreground "blue"))))
  '(fringe ((t (:background "#F1EED4"))))
  '(mode-line ((t (:foreground "#000000" :background "#EAFFFF"

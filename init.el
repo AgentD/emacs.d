@@ -51,6 +51,7 @@
       '("~/.emacs.d/snippets"))
 (yas-global-mode 1)
 
+(load-library "aliases")
 (load-library "custom-buffer-mode")
 (load-library "custom-terminal-mode")
 (load-library "custom-eshell-mode")
@@ -60,6 +61,7 @@
 (load-library "custom-diminish-mode")
 (load-library "custom-font-mode")
 (load-library "custom-ibuffer")
+(load-library "custom-mouse")
 
 (load-library "theme-switch")
 ;; manage backups/autosaves

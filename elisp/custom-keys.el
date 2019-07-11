@@ -114,15 +114,15 @@
      ,@(let ((m (make-sparse-keymap)))
            (define-key m (kbd "C-c") 'kill-ring-save)
 		   (define-key m (kbd "C-M-c") 'kill-ring-save)
-		   (define-key m (kbd "<mouse-3>") 'kill-ring-save)
            (define-key m (kbd "C-w") 'kill-region)
 		   (define-key m (kbd "C-x") 'kill-region)
-		   (define-key m (kbd "<mouse-2>") 'kill-region)
+		   (define-key m (kbd "<down-mouse-2>") 'kill-region)
            m))))
 
 (add-to-list 'emulation-mode-map-alists 'custom-region-alist)
 (global-set-key (kbd "M-W") 'backward-kill-sexp)
 (global-set-key (kbd "C-v") 'yank)
+
 (defun yank-primary ()
   (interactive)
   (insert
