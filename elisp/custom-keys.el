@@ -1,5 +1,6 @@
 ;; Custom keybinds
 (global-set-key (kbd "s-d") 'ido-dired)
+(global-set-key (kbd "C-x C-d") 'ido-dired)
 (global-set-key (kbd "C-x C-h") 'mark-whole-buffer)
 (global-set-key (kbd "C-h") 'delete-backward-char)
 
