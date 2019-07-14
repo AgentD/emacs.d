@@ -44,9 +44,6 @@
 (global-set-key (kbd "<prior>") 'cua-scroll-down)
 (global-set-key (kbd "<next>") 'cua-scroll-up)
 
-;;buffer switching
-;;(global-set-key (kbd "<f6>") 'next-buffer)
-;;(global-set-key (kbd "<f5>") 'previous-buffer)
 (global-set-key (kbd "M-<next>") 'next-buffer)
 (global-set-key (kbd "C-<next>") 'next-buffer)
 (global-set-key (kbd "M-<prior>") 'previous-buffer)
@@ -57,10 +54,10 @@
 (global-set-key (kbd "<s-tab>") 'other-window)
 
 ;;windows
-(global-set-key (kbd "s-]") 'enlarge-window-horizontally)
-(global-set-key (kbd "s-[") 'shrink-window-horizontally)
-(global-set-key (kbd "s-'") 'enlarge-window)
-(global-set-key (kbd "s-\\") 'shrink-window)
+(global-set-key (kbd "s-.") 'enlarge-window-horizontally)
+(global-set-key (kbd "s-,") 'shrink-window-horizontally)
+(global-set-key (kbd "s-]") 'enlarge-window)
+(global-set-key (kbd "s-[") 'shrink-window)
 
 (global-set-key (kbd "M-<right>") 'windmove-right)
 (global-set-key (kbd "M-<left>") 'windmove-left)
@@ -80,7 +77,14 @@
 (global-set-key (kbd "C--") 'text-scale-decrease)
 (global-set-key (kbd "C-0") 'text-scale-adjust)
 
-(global-set-key (kbd "s-k") 'kill-current-buffer)
+(defun kill-buffer-and-window ()
+	(interactive)
+	(if (one-window-p)
+			(kill-current-buffer)
+		(progn
+			(kill-current-buffer)
+			(delete-window))))
+(global-set-key (kbd "s-k") 'kill-buffer-and-window)
 (global-set-key (kbd "<f3>") 'hs-minor-mode)
 
 ;;disabled commands

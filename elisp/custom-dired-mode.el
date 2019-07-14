@@ -1,6 +1,7 @@
 (require 'dired-x)
 (setq-default dired-omit-files "^\\...+$")
 (setq-default dired-omit-mode t) ;; Turn on Omit mode.
+(setq-default dired-hide-details-mode t)
 (define-key dired-mode-map (kbd "C-h") 'dired-omit-mode)
 (define-key dired-mode-map (kbd "<left>") 'dired-jump)
 (define-key dired-mode-map (kbd "q") 'dired-jump)
@@ -11,6 +12,8 @@
 (define-key dired-mode-map (kbd "<right>") 'dired-find-file)
 (define-key dired-mode-map (kbd "<return>") 'dired-find-file)
 (define-key dired-mode-map (kbd "S-<return>") 'dired-display-file)
+(define-key dired-mode-map (kbd "C-d") 'dired-hide-details-mode)
+(define-key dired-mode-map (kbd "<return>") 'dired-find-file-other-window)
 
 (defun mydired-sort ()
   "Sort dired listings with directories first."
