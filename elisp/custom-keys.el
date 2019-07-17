@@ -122,6 +122,8 @@
            (define-key m (kbd "C-w") 'kill-region)
 		   (define-key m (kbd "C-x") 'kill-region)
 		   (define-key m (kbd "<down-mouse-2>") 'kill-region)
+		   (define-key m (kbd "<down-mouse-8>") 'kill-region)
+		   (define-key m (kbd "<down-mouse-9>") 'kill-region)
            m))))
 
 (add-to-list 'emulation-mode-map-alists 'custom-region-alist)
