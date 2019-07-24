@@ -1,3 +1,4 @@
+(transient-mark-mode 1)
 ;; tab width
 (setq-default indent-tabs-mode t)
 (setq-default tab-width 8)

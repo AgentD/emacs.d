@@ -1,7 +1,10 @@
 (require 'dired-x)
 (setq-default dired-omit-files "^\\...+$")
-(setq-default dired-omit-mode t) ;; Turn on Omit mode.
-(setq-default dired-hide-details-mode t)
+(defun dired-mode-setup ()
+	(setq-default dired-omit-mode t) ;; Turn on Omit mode.
+	(dired-hide-details-mode 1))
+(add-hook 'dired-mode-hook 'dired-mode-setup)
+
 (define-key dired-mode-map (kbd "C-h") 'dired-omit-mode)
 (define-key dired-mode-map (kbd "<left>") 'dired-jump)
 (define-key dired-mode-map (kbd "q") 'dired-jump)

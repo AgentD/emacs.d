@@ -77,7 +77,7 @@
                (cm-select-region)
                (kill-region (mark) (point)))
              (setq cm-last-command 'cut))
-    (popup-menu (mouse-menu-major-mode-map) click)))
+    (yank)))
 
 (defun cm-mouse-2 ()
   (interactive)

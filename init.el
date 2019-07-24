@@ -46,16 +46,18 @@
 (setq ido-enable-flex-matching t)
 (ido-everywhere t)
 (setq ido-auto-merge-work-directories-length -1)
+(setq ido-default-buffer-method 'selected-window)
+(setq ido-default-file-method 'selected-window)
 
 (setq yas-snippet-dirs
       '("~/.emacs.d/snippets"))
 (yas-global-mode 1)
 
+(load-library "custom-editing")
 (load-library "aliases")
 (load-library "custom-buffer-mode")
 (load-library "custom-terminal-mode")
 (load-library "custom-eshell-mode")
-(load-library "custom-editing")
 (load-library "custom-dired-mode")
 (load-library "custom-keys")
 (load-library "custom-diminish-mode")

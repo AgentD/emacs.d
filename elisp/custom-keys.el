@@ -3,6 +3,8 @@
 (global-set-key (kbd "C-x C-d") 'ido-dired)
 (global-set-key (kbd "C-x C-h") 'mark-whole-buffer)
 (global-set-key (kbd "C-h") 'delete-backward-char)
+(global-set-key (kbd "C-SPC") 'cua-set-mark)
+(global-set-key (kbd "C-@") 'set-mark-command)
 
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "M-p") 'backward-paragraph)
@@ -11,7 +13,10 @@
 (defun backward-kill-line (arg)
   "Kill ARG lines backward."
   (interactive "p")
-  (kill-line (- 1 arg)))
+ (if (eq (point) (line-beginning-position))
+	 (delete-indentation)
+ (kill-line (- 1 arg))))
+
 (global-set-key (kbd "C-u") 'backward-kill-line) ;; be readline conform
 (global-set-key (kbd "M-u") 'universal-argument)
 (global-set-key (kbd "M-\\") 'universal-argument)
@@ -19,6 +24,8 @@
 
 (global-set-key (kbd "M-v") 'cua-scroll-down)
 (global-set-key (kbd "M-c") 'cua-scroll-up)
+(global-set-key (kbd "M-k") 'cua-scroll-down)
+(global-set-key (kbd "M-j") 'cua-scroll-up)
 (global-set-key (kbd "M-g") 'goto-line)
 
 (global-set-key (kbd "C-x SPC") 'cua-rectangle-mark-mode)
@@ -84,7 +91,8 @@
 		(progn
 			(kill-current-buffer)
 			(delete-window))))
-(global-set-key (kbd "s-k") 'kill-buffer-and-window)
+(global-set-key (kbd "C-x k") 'kill-buffer-and-window)
+(global-set-key (kbd "s-k") 'kill-current-buffer)
 (global-set-key (kbd "<f3>") 'hs-minor-mode)
 
 ;;disabled commands
