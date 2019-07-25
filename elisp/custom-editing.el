@@ -145,3 +145,5 @@
 	 (output-dvi "xdvi")
 	 (output-pdf "xpdf")
 	 (output-html "xdg-open"))))
+
+(setq default-input-method "rfc1345")
