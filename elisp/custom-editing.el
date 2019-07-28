@@ -71,7 +71,7 @@
 (setq-default fill-column 80)
 (setq mouse-autoselect-window t)
 (delete-selection-mode 1)
-(xterm-mouse-mode 1)
+;;(xterm-mouse-mode 1)
 (cua-selection-mode 1)
 (setq visible-cursor nil)
 (fset 'yes-or-no-p 'y-or-n-p)
