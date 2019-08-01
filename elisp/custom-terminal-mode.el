@@ -6,7 +6,7 @@
 				(cd "../")
 				(when (file-directory-p "build")
 					(cd "build"))))
-		(start-process "my-urxvt" nil "urxvtc")))
+		(start-process "rxvt" nil "rxvt")))
 
 (global-set-key (kbd "<s-return>") 'run-term)
 (global-set-key (kbd "C-c t") 'run-term)

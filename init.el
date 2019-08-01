@@ -31,6 +31,9 @@
 (setq visible-bell nil)
 (setq vc-follow-symlinks t)
 
+(setq exec-path (append '("~/.bin" "~/bin" "~/.cabal/bin")
+                        exec-path))
+
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
 (add-to-list 'custom-theme-load-path (file-name-as-directory
@@ -63,7 +66,6 @@
 (load-library "custom-diminish-mode")
 (load-library "custom-font-mode")
 (load-library "custom-ibuffer")
-(load-library "custom-mouse")
 
 (load-library "theme-switch")
 ;; manage backups/autosaves

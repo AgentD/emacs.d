@@ -44,16 +44,6 @@
 				(setq python-indent 4)
 				(setq tab-width 4)))
 
-(defun hide-trailing-whitespace ()
-	(when (derived-mode-p
-		   'eshell-mode
-		   'term-mode)
-		(setq auto-fill-mode nil)
-		(setq show-trailing-whitespace nil)))
-
-(add-hook 'after-change-major-mode-hook
-		'hide-trailing-whitespace)
-
 (add-hook 'c-mode-hook (lambda ()
 						(setq indent-tabs-mode t)
 						(c-set-style "linux")
@@ -71,7 +61,7 @@
 (setq-default fill-column 80)
 (setq mouse-autoselect-window t)
 (delete-selection-mode 1)
-;;(xterm-mouse-mode 1)
+(xterm-mouse-mode 1)
 (cua-selection-mode 1)
 (setq visible-cursor nil)
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -147,3 +137,4 @@
 	 (output-html "xdg-open"))))
 
 (setq default-input-method "rfc1345")
+(setq tramp-default-method "ssh")

@@ -51,8 +51,10 @@
 (global-set-key (kbd "<prior>") 'cua-scroll-down)
 (global-set-key (kbd "<next>") 'cua-scroll-up)
 
+(global-set-key (kbd "M-<right>") 'next-bugger)
 (global-set-key (kbd "M-<next>") 'next-buffer)
 (global-set-key (kbd "C-<next>") 'next-buffer)
+(global-set-key (kbd "M-<left>") 'previous-bugger)
 (global-set-key (kbd "M-<prior>") 'previous-buffer)
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
 (global-set-key (kbd "s-b") 'ibuffer)
@@ -65,11 +67,6 @@
 (global-set-key (kbd "s-,") 'shrink-window-horizontally)
 (global-set-key (kbd "s-]") 'enlarge-window)
 (global-set-key (kbd "s-[") 'shrink-window)
-
-(global-set-key (kbd "M-<right>") 'windmove-right)
-(global-set-key (kbd "M-<left>") 'windmove-left)
-(global-set-key (kbd "M-<up>") 'windmove-up)
-(global-set-key (kbd "M-<down>") 'windmove-down)
 
 (global-set-key (kbd "s-0") 'delete-window)
 (global-set-key (kbd "s-1") 'delete-other-windows)
@@ -115,9 +112,6 @@
 								  (local-set-key (kbd "C-c H") 'hs-hide-all)
 								  (local-set-key (kbd "C-c s") 'hs-show-block)
 								  (local-set-key (kbd "C-c h") 'hs-hide-block)))
-
-(add-hook 'c-mode-hook (lambda()
-								  (local-set-key (kbd "C-c k") 'recompile)))
 
 (global-unset-key (kbd "C-x C-z")) ;; disables suspend frame via keybind
 
