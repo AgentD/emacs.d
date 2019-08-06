@@ -17,7 +17,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-	(fill-column-indicator yasnippet visual-fill-column markdown-mode magit-popup magit haskell-mode flx diminish auctex)))
+	(htmlize fill-column-indicator yasnippet visual-fill-column markdown-mode magit-popup magit haskell-mode flx diminish auctex)))
  '(scroll-bar-mode (quote nil))
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -70,3 +70,18 @@
 (load-library "theme-switch")
 ;; manage backups/autosaves
 (load-library "backup-autosave")
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(dired-directory ((t (:foreground "#4286f4"))))
+ '(dired-symlink ((t (:foreground "#75507B"))))
+ '(font-latex-sectioning-0-face ((t (:inherit variable-pitch :foreground "#bebebe" :weight bold))))
+ '(font-latex-sectioning-1-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-0-face :height 0.95))))
+ '(font-latex-sectioning-2-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-1-face :height 0.9))))
+ '(font-latex-sectioning-3-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-2-face :height 0.85))))
+ '(font-latex-sectioning-4-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-3-face :height 1.0))))
+ '(font-latex-sectioning-5-face ((t (:foreground "#bebebe" :inherit font-latex-sectioning-4-face :height 1.0))))
+ '(trailing-whitespace ((t (:background "#ffb6b0"))))
+ '(variable-pitch ((t (:font "Sans-Serif-16")))))
