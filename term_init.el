@@ -13,9 +13,8 @@
  '(tooltip-mode nil))
 (custom-set-faces
  '(minibuffer-prompt ((t (:inherit foreground))))
- '(region ((t (:foreground "#e0e0e0" :background "blue"))))
- '(mode-line-buffer-id ((t (:inherit background))))
- '(trailing-whitespace ((t (:background "#ffb6b0")))))
+ '(region ((t (:foreground "white" :background "blue"))))
+ '(mode-line-buffer-id ((t (:inherit background)))))
 
 (setq vc-follow-symlinks t)
 ;;(global-font-lock-mode 0)

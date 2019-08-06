@@ -51,10 +51,10 @@
 (global-set-key (kbd "<prior>") 'cua-scroll-down)
 (global-set-key (kbd "<next>") 'cua-scroll-up)
 
-(global-set-key (kbd "M-<right>") 'next-bugger)
+(global-set-key (kbd "M-<right>") 'next-buffer)
 (global-set-key (kbd "M-<next>") 'next-buffer)
 (global-set-key (kbd "C-<next>") 'next-buffer)
-(global-set-key (kbd "M-<left>") 'previous-bugger)
+(global-set-key (kbd "M-<left>") 'previous-buffer)
 (global-set-key (kbd "M-<prior>") 'previous-buffer)
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
 (global-set-key (kbd "s-b") 'ibuffer)

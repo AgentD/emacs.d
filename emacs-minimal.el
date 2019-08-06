@@ -88,20 +88,6 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 (put 'suspend-frame 'disabled t)
 
-
-(defun run-term (&optional arg)
-	(interactive "P")
-	(let ((default-directory default-directory))
-		(when arg
-			(when (string-match "^.*/src/$" default-directory)
-				(cd "../")
-				(when (file-directory-p "build")
-					(cd "build"))))
-		(start-process "rxvt" nil "rxvt")))
-
-(global-set-key (kbd "<s-return>") 'run-term)
-(global-set-key (kbd "C-c t") 'run-term)
-
 ;; KEYBINDS
 (global-set-key (kbd "C-x C-d") 'ido-dired)
 (global-set-key (kbd "C-x C-h") 'mark-whole-buffer)
@@ -128,14 +114,11 @@
 
 (global-set-key (kbd "C-x SPC") 'cua-rectangle-mark-mode)
 (global-set-key (kbd "C-x C-SPC") 'cua-rectangle-mark-mode)
-(global-set-key (kbd "C-c SPC") 'rectangle-mark-mode)
 
 (global-set-key (kbd "C-z") 'undo)
 (global-set-key (kbd "C-c h") 'help)
 
-(global-set-key (kbd "M-<right>") 'next-bugger)
 (global-set-key (kbd "C-<next>") 'next-buffer)
-(global-set-key (kbd "M-<left>") 'previous-bugger)
 (global-set-key (kbd "C-<prior>") 'previous-buffer)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
@@ -152,6 +135,7 @@
 			(kill-current-buffer)
 			(delete-window))))
 (global-set-key (kbd "C-x k") 'kill-buffer-and-window)
+
 (global-unset-key (kbd "<f2>"))
 (global-unset-key (kbd "<insert>"))
 (global-unset-key (kbd "<insertchar>"))
