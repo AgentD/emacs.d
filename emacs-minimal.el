@@ -19,7 +19,7 @@
  '(use-dialog-box nil))
 
 (custom-set-faces
- '(default ((t (:background "grey20" :foreground "grey90" :inverse-video nil
+ '(default ((t (:background "black" :foreground "grey90" :inverse-video nil
  :box nil :strike-through nil :overline nil :underline nil :slant normal))))
  '(cursor ((t (:background "green"))))
  '(isearch ((nil (:foreground "dodgerblue" :weight bold))))
