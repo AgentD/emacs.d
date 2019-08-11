@@ -72,7 +72,7 @@
 (yas-global-mode 1)
 
 (load-library "custom-editing")
-(load-library "aliases")
+
 (load-library "custom-buffer-mode")
 (load-library "custom-terminal-mode")
 (load-library "custom-eshell-mode")
@@ -81,7 +81,7 @@
 (load-library "custom-diminish-mode")
 (load-library "custom-font-mode")
 (load-library "custom-ibuffer")
-
 (load-library "theme-switch")
+(load-library "aliases")
 ;; manage backups/autosaves
 (load-library "backup-autosave")
